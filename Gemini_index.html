@@ -1,0 +1,2186 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Gemini 版本差異與生圖額度解析｜自然閱讀筆記</title><style>
+:root{--forest:#234d3b;--deep:#173a2b;--leaf:#6b8f65;--sage:#e6eee3;--cream:#f8f7ef;--paper:#fffef9;--ink:#2c3c32;--muted:#718276;--line:#dbe4d7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC",sans-serif;line-height:1.85}a{color:#326a52}a:hover{color:#1c4b35}.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#153c30,#34654c 60%,#7b9c72);color:#fff;padding:75px max(6vw,25px) 85px}.hero:before,.hero:after{content:"";position:absolute;width:400px;height:400px;border:1px solid #ffffff25;border-radius:48% 52% 70% 30%;transform:rotate(35deg);right:-80px;top:-170px}.hero:after{width:260px;height:260px;right:13%;top:90px;transform:rotate(-25deg)}.eyebrow{letter-spacing:.23em;font-size:12px;color:#d8e8d1;font-weight:700}.hero h1{font-family:Georgia,"Noto Serif TC",serif;font-size:clamp(30px,4vw,54px);max-width:950px;line-height:1.4;margin:16px 0}.hero p{max-width:680px;color:#e1ede1;margin:0}.shell{display:grid;grid-template-columns:260px minmax(0,950px);gap:42px;max-width:1380px;margin:0 auto;padding:45px 30px}.sidebar{align-self:start;position:sticky;top:18px;max-height:calc(100vh - 36px);overflow:auto;padding:24px 16px;background:#f0f3e9;border:1px solid var(--line);border-radius:20px}.sidebar strong{display:block;color:var(--forest);padding:0 10px 10px}.navitem{display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:#526c5c;font-size:13px;line-height:1.5}.navitem:hover,.navitem.active{background:#dce9d8;color:var(--deep)}.depth-3{padding-left:23px;font-size:12px}.depth-2{font-weight:700;margin-top:9px}.paper{min-width:0;background:var(--paper);border:1px solid #e8eadd;border-radius:22px;box-shadow:0 18px 60px #264b3210;padding:clamp(22px,4vw,65px)}.paper h1,.paper h2,.paper h3,.paper h4{font-family:Georgia,"Noto Serif TC",serif;color:var(--deep);line-height:1.45;scroll-margin-top:24px}.paper h1{font-size:32px;border-bottom:2px solid var(--sage);padding-bottom:18px}.paper h2{font-size:25px;margin-top:65px;padding:0 0 12px;border-bottom:1px solid var(--line)}.paper h3{font-size:21px;margin-top:40px}.paper h4{font-size:17px}.paper p,.paper li{overflow-wrap:anywhere}.paper p{margin:16px 0}.paper strong{color:#254e38}.paper blockquote{margin:24px 0;padding:12px 22px;border-left:4px solid #87a882;background:#f1f5ec;border-radius:0 12px 12px 0}.paper blockquote p{margin:9px 0}.paper blockquote blockquote{background:#e7eee2}.paper hr{border:0;border-top:1px dashed #c6d6c6;margin:50px 0}.paper table{display:block;overflow-x:auto;border-collapse:collapse;width:100%;font-size:14px;margin:22px 0 30px}.paper th,.paper td{padding:12px 14px;border:1px solid #dce6d8;min-width:110px;vertical-align:top;line-height:1.65}.paper th{background:#e6eee3;color:#244b38;font-weight:700}.paper tr:nth-child(even) td{background:#fafcf8}.paper code{background:#edf2e8;padding:2px 5px;border-radius:4px}.paper pre{overflow:auto;background:#203d30;color:#e8f5e6;padding:20px;border-radius:12px}.paper pre code{background:transparent;color:inherit}.paper img{max-width:100%;height:auto;border-radius:12px}.paper ul,.paper ol{padding-left:25px}.anchor{opacity:0;font:14px system-ui;margin-left:10px;text-decoration:none}.paper h2:hover .anchor,.paper h3:hover .anchor{opacity:.6}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:22px}.search{flex:1;min-width:160px;padding:12px 16px;border:1px solid #cfdfd1;background:#fff;border-radius:99px;font:inherit;color:var(--ink)}button{border:1px solid #c9ddcd;background:#edf4e9;border-radius:99px;padding:11px 16px;color:var(--forest);font:inherit;cursor:pointer}button:hover{background:#dcebd8}.status{font-size:13px;color:var(--muted)}mark{background:#f8e7a1;border-radius:3px}.note{border:1px solid #dbe5d5;border-radius:12px;background:#f4f7ef;padding:13px 17px;color:#5d7062;font-size:13px;margin-bottom:30px}.mobile-nav{display:none}.footer{max-width:1000px;margin:0 auto 40px;text-align:center;font-size:12px;color:#819287}@media(max-width:900px){.shell{display:block;padding:20px 14px}.sidebar{display:none}.paper{padding:22px}.hero{padding:55px 24px 65px}.mobile-nav{display:block;margin-bottom:16px}.mobile-nav summary{cursor:pointer;padding:13px 16px;background:#eaf1e6;border-radius:12px}.mobile-nav .navitems{max-height:300px;overflow:auto;padding:10px}.paper h2{font-size:22px}}@media print{.hero{padding:20px;background:none;color:#173a2b}.hero p,.eyebrow{color:#526c5c}.sidebar,.toolbar,.mobile-nav,.anchor{display:none!important}.shell{display:block;padding:0}.paper{border:0;box-shadow:none;padding:0}.paper table{overflow:visible;font-size:11px}body{background:#fff}}
+</style></head><body><header class="hero"><div class="eyebrow">NATURE · READING NOTES</div><h1>Gemini 版本差異與<br>生圖額度解析</h1><p>以森林、葉綠與紙張質感呈現的完整閱讀版。保留原始 Markdown 的比較表格、討論內容、來源與操作步驟。</p></header><div class="shell"><aside class="sidebar"><strong>🌿 內容目錄</strong><nav><a class="navitem depth-3" href="#section-1">一、 Gemini 各版本核心差異一覽（台灣個人訂閱方案）</a><a class="navitem depth-3" href="#section-2">二、 對生圖模型的支援與額度差異</a><a class="navitem depth-3" href="#section-6">選購建議</a><a class="navitem depth-3" href="#section-7">一、 教育帳戶各版本額度對照表</a><a class="navitem depth-3" href="#section-8">二、 教育帳戶的 4 個重要特性與限制</a><a class="navitem depth-3" href="#section-9">一、 核心規格與能力對照表</a><a class="navitem depth-3" href="#section-10">二、 4 大關鍵差異解析</a><a class="navitem depth-3" href="#section-11">三、 實務上的最佳搭配工作流</a><a class="navitem depth-3" href="#section-12">一、 三者核心規格與定位對照表</a><a class="navitem depth-3" href="#section-13">二、 具體差異解析</a><a class="navitem depth-3" href="#section-16">三、 該怎麼選？</a><a class="navitem depth-3" href="#section-17">一、 基礎生圖與進階精修步驟</a><a class="navitem depth-3" href="#section-18">二、 讓生圖更精準的 4 個實用技巧</a><a class="navitem depth-2" href="#section-19"></a><a class="navitem depth-3" href="#section-20">一、 如果您是個人付費版用戶 (Google AI Plus / Pro / Ultra)</a><a class="navitem depth-3" href="#section-21">二、 如果您是教育帳戶用戶 (Google AI Pro for Education)</a><a class="navitem depth-3" href="#section-22">三、 如果您是免費版用戶</a><a class="navitem depth-3" href="#section-23">如何快速確認自己是哪一種？</a><a class="navitem depth-3" href="#section-24">避免誤扣 Pro 額度的 2 個關鍵細節</a><a class="navitem depth-3" href="#section-25">若無「用 Pro 重新生成」按鈕的替代精修技巧</a><a class="navitem depth-3" href="#section-26">搭配你目前介面最省額度的操作順序</a><a class="navitem depth-3" href="#section-27">一、 兩種意圖的指令對照表</a><a class="navitem depth-3" href="#section-28">二、 避免誤觸生圖扣額度的 3 個防呆技巧</a><a class="navitem depth-3" href="#section-29">三、 推薦的「零浪費」兩段式對話流程</a><a class="navitem depth-3" href="#section-30">具體的額度扣除計算舉例</a><a class="navitem depth-3" href="#section-31">讓每次「修改」都發揮最大價值的 2 個建議</a><a class="navitem depth-3" href="#section-32">額度消耗總表</a><a class="navitem depth-3" href="#section-33">詳細說明</a><a class="navitem depth-3" href="#section-36">實務建議：如何控制額度與品質</a><a class="navitem depth-3" href="#section-37">一、 三者推理機制與定位對照表</a><a class="navitem depth-3" href="#section-38">二、 具體推理差別白話解析</a><a class="navitem depth-3" href="#section-39">三、 實務上的省額度搭配建議</a><a class="navitem depth-3" href="#section-40">一、 操作步驟與意圖區分</a><a class="navitem depth-3" href="#section-41">二、 兩種情境的實用寫法範本</a><a class="navitem depth-3" href="#section-44">三、 避開限制與省額度的 2 個注意事項</a><a class="navitem depth-3" href="#section-45">一、 單張照片改圖範本（鎖定主體＋局部修改）</a><a class="navitem depth-3" href="#section-46">二、 多圖融合範本（跨圖片提取元素重組）</a><a class="navitem depth-3" href="#section-47">三、 套用範本的 2 個小訣竅</a><a class="navitem depth-3" href="#section-48">一、 操作步驟與模型選擇</a><a class="navitem depth-3" href="#section-49">二、 讓 PDF 分析更精準的 4 種實用指令範本</a><a class="navitem depth-3" href="#section-50">三、 處理 PDF 的 3 個注意事項</a><a class="navitem depth-3" href="#section-51">一、 標準操作流程</a><a class="navitem depth-3" href="#section-52">二、 網頁無法讀取時的 3 個常見原因與替代方案</a><a class="navitem depth-3" href="#section-53">三、 特殊類型連結的處理技巧</a><a class="navitem depth-3" href="#section-54">一、 6 大核心分析與內容提取功能</a><a class="navitem depth-3" href="#section-55">二、 可直接複製的實用指令範本</a><a class="navitem depth-3" href="#section-56">三、 使用時的 3 個限制與注意事項</a><a class="navitem depth-3" href="#section-57">一、 直接貼網址時：用「排除指令」過濾雜訊</a><a class="navitem depth-3" href="#section-58">二、 廣告過多導致網頁無法直接讀取時的 3 種淨化技巧</a><a class="navitem depth-3" href="#section-59">三、 實務搭配建議</a><a class="navitem depth-3" href="#section-60">一、 最佳解決方案：「瀏覽器閱讀模式 ＋ 另存為 PDF」</a><a class="navitem depth-3" href="#section-61">二、 局部精準處理：「純文字複製 ＋ 關鍵圖片截圖上傳」</a><a class="navitem depth-3" href="#section-62">三、 為什麼不建議直接貼網址讓 AI 讀圖？</a><a class="navitem depth-3" href="#section-63">運作時間軸範例</a><a class="navitem depth-3" href="#section-64">兩個補充細節</a><a class="navitem depth-3" href="#section-65">一、 核心長度限制一覽表</a><a class="navitem depth-3" href="#section-66">二、 輸入與輸出的 3 個實務運作機制</a><a class="navitem depth-3" href="#section-67">三、 突破「單次回覆字數限制」的 2 個技巧</a><a class="navitem depth-3" href="#section-68">一、 3 種常見回覆狀態的辨識特徵</a><a class="navitem depth-3" href="#section-69">二、 另一種隱性簡化：對話過長導致「忘記前面」</a><a class="navitem depth-3" href="#section-70">三、 確保獲得「完整不縮水回覆」的 3 個控制技巧</a><a class="navitem depth-3" href="#section-71">防止長對話失憶的 3 個日常習慣</a><a class="navitem depth-3" href="#section-72">一、 總摘要長度的兩道限制</a><a class="navitem depth-3" href="#section-73">二、 實務上最理想的「總摘要長度」建議</a><a class="navitem depth-3" href="#section-74">三、 如果總摘要真的超過 2 萬字怎麼辦？</a><a class="navitem depth-3" href="#section-75">一、 如何完美貼到 Notion（保留表格、標題與粗體）</a><a class="navitem depth-3" href="#section-76">二、 匯出為 .md、.pdf 與 .html 的完整操作方式</a><a class="navitem depth-3" href="#section-77">三、 實用小提醒：直接請我幫你「打包下載」</a><a class="navitem depth-3" href="#section-78">採用「常駐 Thinking 模式」時，唯一需要注意的 3 個細節</a><a class="navitem depth-3" href="#section-79">總結你的最佳工作流節奏</a><a class="navitem depth-3" href="#section-80">可直接複製使用的「最有效全對話彙總指令」</a><a class="navitem depth-3" href="#section-81">為什麼這組指令最有效？</a><a class="navitem depth-3" href="#section-82">為什麼用 .md 檔下載更能獲得完整內容？</a><a class="navitem depth-3" href="#section-83">建議搭配的「完整匯出 .md 檔指令」</a><a class="navitem depth-3" href="#section-84">具體的扣點情境對照</a><a class="navitem depth-3" href="#section-85">避免「手滑誤觸生圖」的 2 個防呆習慣</a><a class="navitem depth-3" href="#section-86">一、 兩種修改方式的記憶差異對照</a><a class="navitem depth-3" href="#section-87">二、 避開「錯誤記憶殘留」的 3 個黃金法則</a><a class="navitem depth-3" href="#section-88">誤區一：賦予物件「不可能的物理屬性」或「邏輯矛盾」</a><a class="navitem depth-3" href="#section-89">誤區二：過度使用「否定句」或「雙重否定」</a><a class="navitem depth-3" href="#section-90">誤區三：將「風格形容詞」與「風格名稱」混用</a><a class="navitem depth-3" href="#section-91">誤區四：對「數量」與「空間關係」描述不清</a><a class="navitem depth-3" href="#section-92">誤區五：指令結構鬆散，缺乏層次</a><a class="navitem depth-3" href="#section-93">誤區六：過度依賴生圖模型「理解不了」的特殊詞彙</a><a class="navitem depth-3" href="#section-94">總結：Gemini 生圖最佳實踐指南</a><a class="navitem depth-3" href="#section-95">一、 設計桌曆前建議提供的 5 大核心資訊</a><a class="navitem depth-3" href="#section-96">二、 可直接複製的桌曆設計提示詞範本</a><a class="navitem depth-3" href="#section-99">三、 實務執行與省額度建議</a><a class="navitem depth-3" href="#section-100">一、 描述桌曆尺寸的 3 大核心維度</a><a class="navitem depth-3" href="#section-101">二、 4 種常見桌曆尺寸的直接套用句型</a><a class="navitem depth-3" href="#section-102">三、 實用小提醒</a><a class="navitem depth-3" href="#section-103">一、 事前準備：從 Gemini 產出「最適合進 Canva 編輯」的底圖</a><a class="navitem depth-3" href="#section-104">二、 匯入 Canva 並「拆解圖層」的 4 個步驟</a><a class="navitem depth-3" href="#section-105">三、 進階技巧：想讓摺紙插畫變成「可自由改色的向量圖（SVG）」？</a><a class="navitem depth-3" href="#section-106">一、 兩大對話類型的核心用詞差異總覽</a><a class="navitem depth-3" href="#section-107">二、 「知識與議題討論」的 4 個用詞建議與注意事項</a><a class="navitem depth-3" href="#section-108">三、 「生圖與設計討論」的 4 個用詞建議與注意事項</a><a class="navitem depth-3" href="#section-109">四、 跨類型通用心法：善用「對話分段」切換思維</a><a class="navitem depth-3" href="#section-110">一、 操作步驟與資訊輸入結構</a><a class="navitem depth-3" href="#section-111">二、 可直接複製的「圖＋文＋個人觀點」交叉評論指令範本</a><a class="navitem depth-3" href="#section-112">三、 讓評論更有深度的 3 個用詞細節</a><a class="navitem depth-3" href="#section-113">一、 最能提升 AI 理解力的 5 種輸入語法</a><a class="navitem depth-3" href="#section-114">二、 操作介面上的 2 個小細節</a><a class="navitem depth-3" href="#section-115">一、 進階 Markdown 輸入技巧（精準控制 AI 回覆長相）</a><a class="navitem depth-3" href="#section-116">二、 輸入 Markdown 時的 2 個防錯注意事項</a><a class="navitem depth-3" href="#section-117">一、 Notion 系統架構設計（三大核心資料庫）</a><a class="navitem depth-3" href="#section-118">二、 日常知識管理與圖文創作 4 階段 SOP</a><a class="navitem depth-3" href="#section-123">三、 Notion 提示詞庫（Prompt Library）高效管理 3 訣竅</a><a class="navitem depth-3" href="#section-124">一、 點擊「匯出到試算表」後的實際運作流程</a><a class="navitem depth-3" href="#section-125">二、 結合你剛建立的「Notion 知識庫」的 3 種進階用法</a></nav></aside><main><details class="mobile-nav"><summary>☰ 展開文章目錄</summary><div class="navitems"><a class="navitem depth-3" href="#section-1">一、 Gemini 各版本核心差異一覽（台灣個人訂閱方案）</a><a class="navitem depth-3" href="#section-2">二、 對生圖模型的支援與額度差異</a><a class="navitem depth-3" href="#section-6">選購建議</a><a class="navitem depth-3" href="#section-7">一、 教育帳戶各版本額度對照表</a><a class="navitem depth-3" href="#section-8">二、 教育帳戶的 4 個重要特性與限制</a><a class="navitem depth-3" href="#section-9">一、 核心規格與能力對照表</a><a class="navitem depth-3" href="#section-10">二、 4 大關鍵差異解析</a><a class="navitem depth-3" href="#section-11">三、 實務上的最佳搭配工作流</a><a class="navitem depth-3" href="#section-12">一、 三者核心規格與定位對照表</a><a class="navitem depth-3" href="#section-13">二、 具體差異解析</a><a class="navitem depth-3" href="#section-16">三、 該怎麼選？</a><a class="navitem depth-3" href="#section-17">一、 基礎生圖與進階精修步驟</a><a class="navitem depth-3" href="#section-18">二、 讓生圖更精準的 4 個實用技巧</a><a class="navitem depth-2" href="#section-19"></a><a class="navitem depth-3" href="#section-20">一、 如果您是個人付費版用戶 (Google AI Plus / Pro / Ultra)</a><a class="navitem depth-3" href="#section-21">二、 如果您是教育帳戶用戶 (Google AI Pro for Education)</a><a class="navitem depth-3" href="#section-22">三、 如果您是免費版用戶</a><a class="navitem depth-3" href="#section-23">如何快速確認自己是哪一種？</a><a class="navitem depth-3" href="#section-24">避免誤扣 Pro 額度的 2 個關鍵細節</a><a class="navitem depth-3" href="#section-25">若無「用 Pro 重新生成」按鈕的替代精修技巧</a><a class="navitem depth-3" href="#section-26">搭配你目前介面最省額度的操作順序</a><a class="navitem depth-3" href="#section-27">一、 兩種意圖的指令對照表</a><a class="navitem depth-3" href="#section-28">二、 避免誤觸生圖扣額度的 3 個防呆技巧</a><a class="navitem depth-3" href="#section-29">三、 推薦的「零浪費」兩段式對話流程</a><a class="navitem depth-3" href="#section-30">具體的額度扣除計算舉例</a><a class="navitem depth-3" href="#section-31">讓每次「修改」都發揮最大價值的 2 個建議</a><a class="navitem depth-3" href="#section-32">額度消耗總表</a><a class="navitem depth-3" href="#section-33">詳細說明</a><a class="navitem depth-3" href="#section-36">實務建議：如何控制額度與品質</a><a class="navitem depth-3" href="#section-37">一、 三者推理機制與定位對照表</a><a class="navitem depth-3" href="#section-38">二、 具體推理差別白話解析</a><a class="navitem depth-3" href="#section-39">三、 實務上的省額度搭配建議</a><a class="navitem depth-3" href="#section-40">一、 操作步驟與意圖區分</a><a class="navitem depth-3" href="#section-41">二、 兩種情境的實用寫法範本</a><a class="navitem depth-3" href="#section-44">三、 避開限制與省額度的 2 個注意事項</a><a class="navitem depth-3" href="#section-45">一、 單張照片改圖範本（鎖定主體＋局部修改）</a><a class="navitem depth-3" href="#section-46">二、 多圖融合範本（跨圖片提取元素重組）</a><a class="navitem depth-3" href="#section-47">三、 套用範本的 2 個小訣竅</a><a class="navitem depth-3" href="#section-48">一、 操作步驟與模型選擇</a><a class="navitem depth-3" href="#section-49">二、 讓 PDF 分析更精準的 4 種實用指令範本</a><a class="navitem depth-3" href="#section-50">三、 處理 PDF 的 3 個注意事項</a><a class="navitem depth-3" href="#section-51">一、 標準操作流程</a><a class="navitem depth-3" href="#section-52">二、 網頁無法讀取時的 3 個常見原因與替代方案</a><a class="navitem depth-3" href="#section-53">三、 特殊類型連結的處理技巧</a><a class="navitem depth-3" href="#section-54">一、 6 大核心分析與內容提取功能</a><a class="navitem depth-3" href="#section-55">二、 可直接複製的實用指令範本</a><a class="navitem depth-3" href="#section-56">三、 使用時的 3 個限制與注意事項</a><a class="navitem depth-3" href="#section-57">一、 直接貼網址時：用「排除指令」過濾雜訊</a><a class="navitem depth-3" href="#section-58">二、 廣告過多導致網頁無法直接讀取時的 3 種淨化技巧</a><a class="navitem depth-3" href="#section-59">三、 實務搭配建議</a><a class="navitem depth-3" href="#section-60">一、 最佳解決方案：「瀏覽器閱讀模式 ＋ 另存為 PDF」</a><a class="navitem depth-3" href="#section-61">二、 局部精準處理：「純文字複製 ＋ 關鍵圖片截圖上傳」</a><a class="navitem depth-3" href="#section-62">三、 為什麼不建議直接貼網址讓 AI 讀圖？</a><a class="navitem depth-3" href="#section-63">運作時間軸範例</a><a class="navitem depth-3" href="#section-64">兩個補充細節</a><a class="navitem depth-3" href="#section-65">一、 核心長度限制一覽表</a><a class="navitem depth-3" href="#section-66">二、 輸入與輸出的 3 個實務運作機制</a><a class="navitem depth-3" href="#section-67">三、 突破「單次回覆字數限制」的 2 個技巧</a><a class="navitem depth-3" href="#section-68">一、 3 種常見回覆狀態的辨識特徵</a><a class="navitem depth-3" href="#section-69">二、 另一種隱性簡化：對話過長導致「忘記前面」</a><a class="navitem depth-3" href="#section-70">三、 確保獲得「完整不縮水回覆」的 3 個控制技巧</a><a class="navitem depth-3" href="#section-71">防止長對話失憶的 3 個日常習慣</a><a class="navitem depth-3" href="#section-72">一、 總摘要長度的兩道限制</a><a class="navitem depth-3" href="#section-73">二、 實務上最理想的「總摘要長度」建議</a><a class="navitem depth-3" href="#section-74">三、 如果總摘要真的超過 2 萬字怎麼辦？</a><a class="navitem depth-3" href="#section-75">一、 如何完美貼到 Notion（保留表格、標題與粗體）</a><a class="navitem depth-3" href="#section-76">二、 匯出為 .md、.pdf 與 .html 的完整操作方式</a><a class="navitem depth-3" href="#section-77">三、 實用小提醒：直接請我幫你「打包下載」</a><a class="navitem depth-3" href="#section-78">採用「常駐 Thinking 模式」時，唯一需要注意的 3 個細節</a><a class="navitem depth-3" href="#section-79">總結你的最佳工作流節奏</a><a class="navitem depth-3" href="#section-80">可直接複製使用的「最有效全對話彙總指令」</a><a class="navitem depth-3" href="#section-81">為什麼這組指令最有效？</a><a class="navitem depth-3" href="#section-82">為什麼用 .md 檔下載更能獲得完整內容？</a><a class="navitem depth-3" href="#section-83">建議搭配的「完整匯出 .md 檔指令」</a><a class="navitem depth-3" href="#section-84">具體的扣點情境對照</a><a class="navitem depth-3" href="#section-85">避免「手滑誤觸生圖」的 2 個防呆習慣</a><a class="navitem depth-3" href="#section-86">一、 兩種修改方式的記憶差異對照</a><a class="navitem depth-3" href="#section-87">二、 避開「錯誤記憶殘留」的 3 個黃金法則</a><a class="navitem depth-3" href="#section-88">誤區一：賦予物件「不可能的物理屬性」或「邏輯矛盾」</a><a class="navitem depth-3" href="#section-89">誤區二：過度使用「否定句」或「雙重否定」</a><a class="navitem depth-3" href="#section-90">誤區三：將「風格形容詞」與「風格名稱」混用</a><a class="navitem depth-3" href="#section-91">誤區四：對「數量」與「空間關係」描述不清</a><a class="navitem depth-3" href="#section-92">誤區五：指令結構鬆散，缺乏層次</a><a class="navitem depth-3" href="#section-93">誤區六：過度依賴生圖模型「理解不了」的特殊詞彙</a><a class="navitem depth-3" href="#section-94">總結：Gemini 生圖最佳實踐指南</a><a class="navitem depth-3" href="#section-95">一、 設計桌曆前建議提供的 5 大核心資訊</a><a class="navitem depth-3" href="#section-96">二、 可直接複製的桌曆設計提示詞範本</a><a class="navitem depth-3" href="#section-99">三、 實務執行與省額度建議</a><a class="navitem depth-3" href="#section-100">一、 描述桌曆尺寸的 3 大核心維度</a><a class="navitem depth-3" href="#section-101">二、 4 種常見桌曆尺寸的直接套用句型</a><a class="navitem depth-3" href="#section-102">三、 實用小提醒</a><a class="navitem depth-3" href="#section-103">一、 事前準備：從 Gemini 產出「最適合進 Canva 編輯」的底圖</a><a class="navitem depth-3" href="#section-104">二、 匯入 Canva 並「拆解圖層」的 4 個步驟</a><a class="navitem depth-3" href="#section-105">三、 進階技巧：想讓摺紙插畫變成「可自由改色的向量圖（SVG）」？</a><a class="navitem depth-3" href="#section-106">一、 兩大對話類型的核心用詞差異總覽</a><a class="navitem depth-3" href="#section-107">二、 「知識與議題討論」的 4 個用詞建議與注意事項</a><a class="navitem depth-3" href="#section-108">三、 「生圖與設計討論」的 4 個用詞建議與注意事項</a><a class="navitem depth-3" href="#section-109">四、 跨類型通用心法：善用「對話分段」切換思維</a><a class="navitem depth-3" href="#section-110">一、 操作步驟與資訊輸入結構</a><a class="navitem depth-3" href="#section-111">二、 可直接複製的「圖＋文＋個人觀點」交叉評論指令範本</a><a class="navitem depth-3" href="#section-112">三、 讓評論更有深度的 3 個用詞細節</a><a class="navitem depth-3" href="#section-113">一、 最能提升 AI 理解力的 5 種輸入語法</a><a class="navitem depth-3" href="#section-114">二、 操作介面上的 2 個小細節</a><a class="navitem depth-3" href="#section-115">一、 進階 Markdown 輸入技巧（精準控制 AI 回覆長相）</a><a class="navitem depth-3" href="#section-116">二、 輸入 Markdown 時的 2 個防錯注意事項</a><a class="navitem depth-3" href="#section-117">一、 Notion 系統架構設計（三大核心資料庫）</a><a class="navitem depth-3" href="#section-118">二、 日常知識管理與圖文創作 4 階段 SOP</a><a class="navitem depth-3" href="#section-123">三、 Notion 提示詞庫（Prompt Library）高效管理 3 訣竅</a><a class="navitem depth-3" href="#section-124">一、 點擊「匯出到試算表」後的實際運作流程</a><a class="navitem depth-3" href="#section-125">二、 結合你剛建立的「Notion 知識庫」的 3 種進階用法</a></div></details><div class="toolbar"><input class="search" id="search" placeholder="搜尋文章關鍵字（Enter 尋找）" aria-label="搜尋文章"><button id="clear">清除</button><button onclick="window.print()">列印 / 儲存 PDF</button><span class="status" id="status"></span></div><article class="paper" id="article"><div class="note">📖 本頁忠實轉換上傳的 Markdown 內容，包含原文中的模型名稱、價格及額度說法；這些資訊尚未逐項查證，實際使用請以 Google 官方最新公告為準。</div><h1><strong>Gemini 版本差異與生圖額度解析</strong></h1>
+<p><a href="https://gemini.google.com/app/9f74d9344b0e7201">https://gemini.google.com/app/9f74d9344b0e7201</a></p>
+<p><em>User prompt: Gemini 的不同版本的差異，對生圖的支緩及額度</em></p>
+<p>Response: 目前 Google 個人版 Gemini 訂閱架構已從過去的「免費 vs. Advanced」二選一，調整為 <strong>免費版</strong> 以及四個付費層級（<strong>Plus、Pro、Ultra 5x、Ultra 20x</strong>）。此外，官方計算額度的方式已從早期的「固定每日對話次數/張數」，全面改為「動態運算量配額（每 5 小時重設一次 + 每週總量上限）」，不同功能消耗的運算權重不同。</p>
+<p>以下為各版本的核心差異與生圖（Nano Banana 系列模型）支援狀況：</p>
+<h3 id="section-1"><strong>一、 Gemini 各版本核心差異一覽（台灣個人訂閱方案）</strong><a class="anchor" href="#section-1" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">比較項目</th>
+  <th style="text-align:left">免費版</th>
+  <th style="text-align:left">Google AI Plus</th>
+  <th style="text-align:left">Google AI Pro <em>(原 Gemini Advanced)</em></th>
+  <th style="text-align:left">Google AI Ultra (5x)</th>
+  <th style="text-align:left">Google AI Ultra (20x)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>台灣月費</strong></td>
+  <td style="text-align:left">NT$ 0</td>
+  <td style="text-align:left">NT$ 165</td>
+  <td style="text-align:left">NT$ 650</td>
+  <td style="text-align:left">NT$ 3,300</td>
+  <td style="text-align:left">NT$ 6,500</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>整體運算用量</strong></td>
+  <td style="text-align:left">基準額度 (1x)</td>
+  <td style="text-align:left">免費版的 <strong>2 倍</strong></td>
+  <td style="text-align:left">免費版的 <strong>4 倍</strong></td>
+  <td style="text-align:left">Pro 的 <strong>5 倍</strong> (免費版 20x)</td>
+  <td style="text-align:left">Pro 的 <strong>20 倍</strong> (免費版 80x)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>脈絡窗口</strong></td>
+  <td style="text-align:left">32K tokens</td>
+  <td style="text-align:left">128K tokens</td>
+  <td style="text-align:left">1M tokens</td>
+  <td style="text-align:left">1M tokens</td>
+  <td style="text-align:left">1M tokens</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>主力推理模型</strong></td>
+  <td style="text-align:left">Flash 輕量模型 (有限度使用高階模型)</td>
+  <td style="text-align:left">進階標準模型 (如 Gemini 4 Hydrogen)</td>
+  <td style="text-align:left">高階推理模型 (如 Gemini 4 Argon / Pro)</td>
+  <td style="text-align:left">旗艦最高權限 (如 Gemini 4 Carbon)</td>
+  <td style="text-align:left">旗艦最高權限 (最高運算優先權)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Google One 空間</strong></td>
+  <td style="text-align:left">15 GB</td>
+  <td style="text-align:left">400 GB</td>
+  <td style="text-align:left">5 TB</td>
+  <td style="text-align:left">20 TB</td>
+  <td style="text-align:left">30 TB</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Flow 影音創作點數</strong></td>
+  <td style="text-align:left">無固定點數 (極有限)</td>
+  <td style="text-align:left">200 點 / 月</td>
+  <td style="text-align:left">1,000 點 / 月</td>
+  <td style="text-align:left">10,000 點 / 月</td>
+  <td style="text-align:left">25,000 點 / 月</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Workspace 整合</strong></td>
+  <td style="text-align:left">無</td>
+  <td style="text-align:left">Gmail、Vids 等基礎整合</td>
+  <td style="text-align:left">Gmail、Docs、Slides 等完整整合</td>
+  <td style="text-align:left">完整整合 + YouTube Premium Lite</td>
+  <td style="text-align:left">完整整合 + YouTube Premium</td>
+</tr>
+</tbody>
+</table>
+<p><em>(註：若為企業用戶，則另有獨立的 Google Workspace / Gemini Enterprise 企業版方案，計費與資料隱私規範依企業授權而定。)</em></p>
+<h3 id="section-2"><strong>二、 對生圖模型的支援與額度差異</strong><a class="anchor" href="#section-2" aria-label="段落連結">#</a></h3>
+<p>Gemini 內建的生圖與修圖引擎為 <strong>Nano Banana</strong> 系列，不同版本在「可用模型等級」、「生成額度」與「修圖規格」上有明顯區隔：</p>
+<h4 id="section-3"><strong>1. 支援的生圖模型等級</strong><a class="anchor" href="#section-3" aria-label="段落連結">#</a></h4>
+<blockquote>
+<ul>
+<li><strong>免費版：</strong> 僅支援標準生圖模型（如 <strong>Nano Banana 2</strong> 基本版）。雖然具備基礎文生圖與簡單修圖能力，但無法使用最高階的 Pro 級生圖模型（或僅有極少量的體驗額度，用完即降回標準版）。</li>
+<li><strong>付費版（Plus / Pro / Ultra）：</strong> 解鎖高階生圖與修圖模型（如 <strong>Nano Banana 2.1 / Nano Banana Pro</strong>）。高階模型具備更強的<strong>邏輯推理能力</strong>、<strong>文字渲染準確度</strong>（大幅改善繁體中文與排版亂碼問題），以及更穩定的光影與高解析度（支援至 4K 輸出）表現。</li>
+</ul>
+</blockquote>
+<h4 id="section-4"><strong>2. 圖片生成與編輯額度</strong><a class="anchor" href="#section-4" aria-label="段落連結">#</a></h4>
+<ul>
+<li><strong>免費版：</strong> 每日約可生成十幾至數十張標準圖片（視伺服器負載動態調整），一旦觸發 5 小時或單日上限便需等待冷卻。</li>
+<li><strong>Google AI Plus（2x 額度）：</strong> 適合日常社群配圖與輕度修圖，每日可用量約為免費版的 2 倍，可流暢使用進階生圖模型。</li>
+<li><strong>Google AI Pro（4x 額度）：</strong> 針對設計與內容創作者設計，每日可穩定生成與編輯約上百張高階圖片，不易在單一工作階段內觸頂。</li>
+<li><strong>Google AI Ultra（20x / 80x 額度）：</strong> 幾乎無日常使用瓶頸（單日最高可達千張級別運算量），並配有最高額度的 Flow 點數，適合需要大量生成商業素材、連續分鏡圖或結合 Veo 影片生成的重度團隊。</li>
+</ul>
+<blockquote>
+<ul>
+<li><strong>計費扣點邏輯：</strong> 官方目前不再公告死板的「每日固定幾張」，而是納入<strong>動態運算量額度</strong>中（每 5 小時刷新一次）。高畫質生圖、局部重繪（Inpainting）與重新生成圖片所消耗的運算權重遠高於純文字對話。</li>
+<li><strong>各級距實際體感上限：</strong></li>
+</ul>
+</blockquote>
+<h4 id="section-5"><strong>3. 參考圖融合與進階編輯能力</strong><a class="anchor" href="#section-5" aria-label="段落連結">#</a></h4>
+<blockquote>
+<ul>
+<li><strong>多圖參考一致性：</strong> 在進行「角色一致性維持」、「多素材融合」或「風格遷移」時，標準模型單次最多僅支援約 <strong>3 張</strong>參考圖輸入；升級至付費版使用高階生圖模型時，單次最多可支援 <strong>14 張</strong>參考圖同時進行融合與角色鎖定。</li>
+<li><strong>商用與浮水印規範：</strong> 所有版本生成的圖片皆內嵌 Google <strong>SynthID</strong> 數位浮水印以供識別；在授權方面，付費方案（Plus / Pro / Ultra）提供更完整的商業專案使用彈性，而免費版主要定位於個人創作與測試體驗。</li>
+</ul>
+</blockquote>
+<h3 id="section-6"><strong>選購建議</strong><a class="anchor" href="#section-6" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>偶爾生成貼圖、簡單插畫：</strong> <strong>免費版</strong>已足夠應付。</li>
+<li><strong>需要精準中文字排版、偶爾修圖＋雲端空間擴充：</strong> <strong>Google AI Plus（NT$165/月）</strong> 性價比最高，能以低門檻解鎖高階生圖模型。</li>
+<li><strong>高頻率產出視覺素材、需要多張參考圖維持角色一致性：</strong> 建議直上 <strong>Google AI Pro（NT$650/月）</strong>。</li>
+</ul>
+</blockquote>
+<p>如果你有特定的生圖用途（例如：電商商品圖去背合成、漫畫分鏡角色固定、或需要結合 Google 簡報/影片製作），可以告訴我，我能幫你評估哪一個方案或操作方式最符合你的需求。</p>
+<p><strong>Sources</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://blog.104.com.tw/gemini-nano-banana-pro/">Gemini生圖告別中文亂碼！Nano Banana Pro正式登場 - 104職場力</a></li>
+<li><a href="https://maplefeather.com/article/nano-banana-2-1-free-vs-paid-2026">Nano Banana 2.1 免費嗎？免費版沒有，我算過最便宜的3 條路 - 夜羽凌</a></li>
+<li><a href="https://www.bnext.com.tw/article/90043/google-gemini-2026-subscription-guide">2026最新Gemini訂閱方案｜Google AI費用多少？價格、功能完整比較</a></li>
+<li><a href="https://www.managertoday.com.tw/articles/view/71652">Google AI 訂閱用戶必看！Gemini 額度怎麼分最划算？一表 ... - 經理人</a></li>
+<li><a href="https://www.balloonconan.com/blog/nano-banana-guide">Nano Banana 是什麼？2 與Pro 差別、免費額度 - 氣球柯男</a></li>
+<li><a href="https://www.jyes.com.tw/news.php?act=view&amp;id=14306">【AI專知】Nano Banana 是什麼？免費版、Pro 的差異？指令教學</a></li>
+<li><a href="https://www.techbang.com/posts/125328-google-gemini-free-tier-limits">Google 終於公布Gemini 用量限制：免費版生圖一天可生成100 張</a></li>
+<li><a href="https://www.pressplay.cc/project/2667A183130728C4AE30928EF3CFF4DD/articles/92E263B284700802C59E4BEB6564FB5C">Google AI Pro 值得買嗎？免費、Plus、Pro、Ultra 價格差別一次看</a></li>
+<li><a href="https://workationlab.com/blog/gemini-ai-plans-taiwan-pricing-comparison-2026">2026 Gemini 訂閱方案比較｜Plus、Pro、Ultra 台灣價格與功能完整</a></li>
+<li><a href="https://www.cool3c.com/article/245833">解答Gemini額度免費與付費每天能問幾次、畫幾張圖Google AI使用</a></li>
+<li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/gemini-image-generation-limitations?hl=zh-tw">Gemini 圖像生成功能限制 - Google Cloud Documentation</a></li>
+<li><a href="https://www.miko3c.com/news-detail/Nano-Banana-Prompt/">Nano Banana Pro 怎麼用：2026 終極指南，從AI 公仔到專業資訊</a></li>
+<li><a href="https://online.senao.com.tw/Article/detail/3107">【人氣精選】2026 最新Google AI 方案比較：Plus、Pro 與Ultra 怎麼選</a></li>
+<li><a href="https://91app.com/blog/google-gemini/">Google Gemini 是什麼？Gemini 3模型有哪些？2026 年最完整功能</a></li>
+<li><a href="https://one.google.com/intl/zh-TW_tw/about/google-ai-plans/">解鎖最強大的模型Gemini 4 Carbon - Google One</a></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 教育帳戶的額度</em></p>
+<p>Response: 教育版帳戶（Google Workspace for Education）的額度與個人版不同，它採用的是「按功能與模型分項計算的明確次數上限」，而非個人版的動態運算配額。</p>
+<p>此外，教育帳戶分為「學校免費/基礎授權（含於 Workspace 內）」<strong>與</strong>「學校加購的 Google AI Pro for Education 授權」兩大級距，兩者在生圖與進階功能上的額度差距非常大：</p>
+<h3 id="section-7"><strong>一、 教育帳戶各版本額度對照表</strong><a class="anchor" href="#section-7" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">功能 / 項目</th>
+  <th style="text-align:left">學校基礎教育授權 <em>(Education Fundamentals / Standard / Plus)</em></th>
+  <th style="text-align:left">學校加購進階授權 <em>(Google AI Pro for Education)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">模型推理額度 (Gemini App)</td>
+  <td style="text-align:left">• <strong>Pro 模型</strong>：每 4 小時最多 <strong>25 次</strong> • <strong>Thinking 模型</strong>：每 4 小時最多 <strong>80 次</strong>（每日上限 300 次） • <strong>Fast 模型</strong>：一般常駐使用 <em>(尖峰時段可能會比付費版先被限流)</em></td>
+  <td style="text-align:left">• <strong>Pro 模型</strong>：每 4 小時最多 <strong>25 次（享有優先存取權）</strong> • <strong>Thinking 模型</strong>：每 4 小時最多 <strong>80 次（享有優先存取權）</strong> • <strong>脈絡窗口</strong>：支援至 <strong>1M tokens</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Nano Banana 2 生圖與修圖</strong> <em>(Gemini App 內)</em></td>
+  <td style="text-align:left">每日最多 <strong>20 張</strong></td>
+  <td style="text-align:left">每日最多 <strong>100 張</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Nano Banana Pro 圖片重繪/進階生圖</strong> <em>(Gemini App 內)</em></td>
+  <td style="text-align:left">每日最多 <strong>3 張</strong></td>
+  <td style="text-align:left">每日最多 <strong>100 張</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Slides 與 Vids 內建生圖</strong> <em>(Nano Banana Pro)</em></td>
+  <td style="text-align:left">• <strong>Fundamentals / Standard</strong>：<strong>無權限</strong> • <strong>Education Plus</strong>：每月 <strong>5 張</strong></td>
+  <td style="text-align:left">每月 <strong>300 張</strong> <em>(跨 Slides 與 Vids 共用)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Deep Research 深度研究</strong></td>
+  <td style="text-align:left">每 4 小時 <strong>1 份</strong>報告</td>
+  <td style="text-align:left">每 4 小時 <strong>5 份</strong>報告</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>影音與簡報生成</strong> <em>(Gemini App 內)</em></td>
+  <td style="text-align:left">• <strong>簡報生成</strong>：每日最多 <strong>20 份</strong> • <strong>影片生成</strong>：無權限 • <strong>音樂生成</strong>：30秒曲目每日 10 首 / 完整曲目每日 5 首</td>
+  <td style="text-align:left">• <strong>影片生成 (Omni)</strong>：每日最多 <strong>3 支</strong> • <strong>音樂生成</strong>：30秒曲目每日 50 首 / 完整曲目每日 20 首</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Workspace 側邊欄整合</strong> <em>(Docs / Sheets / Drive)</em></td>
+  <td style="text-align:left"><strong>無權限</strong></td>
+  <td style="text-align:left"><strong>完整解鎖</strong> <em>(如 Sheets AI 函數每月 25,000 格、Drive 音訊總覽每日 40 次)</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>(註：每日額度於太平洋時間 12:00 AM，即台灣時間下午 16:00 重設；每月額度於每月 1 日重設。)</em></p>
+<h3 id="section-8"><strong>二、 教育帳戶的 4 個重要特性與限制</strong><a class="anchor" href="#section-8" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>如何確認自己是否有「Pro 授權」？</strong> 登入 gemini.google.com 後，查看畫面上方是否有顯示 <strong>Pro</strong> 徽章。若有顯示，代表學校管理員有為你的帳號分配「Google AI Pro for Education」授權（每日可生圖 100 張）；若無，則為一般教育版（每日 20 張一般生圖 + 3 張 Pro 生圖）。</li>
+<li><strong>最高等級隱私保護（不訓練模型）：</strong> 即使使用的是學校免費的 Education Fundamentals 帳號，只要是在教育網域下登入，你的對話內容、上傳的論文與生成的圖片<strong>皆受企業級資料保護，Google 不會將其用於訓練公開模型</strong>，也不會進行人工審查。</li>
+<li><strong>功能開關受限於學校 IT 管理員：</strong> 教育帳戶的生圖功能、Deep Research 或 Gemini App 整體權限，必須由學校的 Google Workspace 管理員在後台開啟才能使用。部分中小學或大專院校會針對學生端關閉「生圖」或「外部擴充功能」，若發現無法生圖，通常是學校政策限制而非額度用盡。</li>
+<li><strong>大學生個人專屬優惠（另計）：</strong> 如果你是年滿 18 歲的大專院校學生，除了直接使用學校配發的 .edu 教育版帳號外，Google 也針對個人帳號推出「<strong>Google AI Pro 學生方案</strong>」（驗證學生身分後可享免費 1 年使用，直接獲得個人版 Pro 的 4 倍動態額度、5 TB 雲端空間與完整生圖權限）。</li>
+</ol>
+</blockquote>
+<p><strong>Sources</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/about-ai-usage-limits">About AI usage limits | Generative AI - Google Workspace Help</a></li>
+<li><a href="https://knowledge.workspace.google.com/admin/generative-ai/workspace-with-gemini/ai-expanded-access">AI Expanded Access | Generative AI - Google Workspace Help</a></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: Nano Banana 2 與 Nano Banana Pro的差別</em></p>
+<p>Response: <strong>Nano Banana 2</strong>（基於 Gemini 3.1 Flash 架構）與 <strong>Nano Banana Pro</strong>（基於 Gemini 3 Pro 架構）並非單純的「新舊替代」關係，而是Google 針對不同創作階段所設計的<strong>雙軌模型</strong>：<strong>Nano Banana 2 主打極速、高性價比與即時知識檢索</strong>；<strong>Nano Banana Pro 主打深度空間推理、複雜幾何控制與商業級精修</strong>。</p>
+<p>在 Gemini 介面中，<strong>系統預設都是先用 Nano Banana 2 生圖</strong>（因為速度快、耗能低）；當需要更高精細度時，付費版或有 Pro 額度的用戶可點擊圖片下方的「重新生成 / 切換至 Pro」來調用 Nano Banana Pro。</p>
+<h3 id="section-9"><strong>一、 核心規格與能力對照表</strong><a class="anchor" href="#section-9" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">比較維度</th>
+  <th style="text-align:left">Nano Banana 2 <em>(Gemini 3.1 Flash Image)</em></th>
+  <th style="text-align:left">Nano Banana Pro <em>(Gemini 3 Pro Image)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>定位比喻</strong></td>
+  <td style="text-align:left"><strong>旗艦智慧型手機相機</strong> (隨拍即得、演算法強、快速迭代)</td>
+  <td style="text-align:left"><strong>專業單眼相機</strong> (深度邏輯推演、物理光影、精雕細琢)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>生成速度</strong></td>
+  <td style="text-align:left"><strong>極快</strong> (1K 約 4–6 秒，比 Pro 快 2–3 倍)</td>
+  <td style="text-align:left"><strong>較慢</strong> (1K 約 10–20 秒，4K 需 30–60 秒)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>畫質與光影細節</strong></td>
+  <td style="text-align:left">達 Pro 約 <strong>95%</strong> 水準，適合螢幕瀏覽與社群媒體</td>
+  <td style="text-align:left"><strong>100% 滿血細節</strong>，物理折射、材質紋理與電影光影更自然</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>獨家核心功能</strong></td>
+  <td style="text-align:left">• <strong>即時搜尋接地 (Search Grounding)</strong>：可聯網抓取真實地標、名人與品牌外觀 • <strong>極端長寬比</strong>：支援 1:4、4:1、1:8、8:1 全景或長條圖</td>
+  <td style="text-align:left">• <strong>工作室級精修控制</strong>：精準調整攝影機角度、景深焦點、色調分級與晝夜光影轉換 • <strong>複雜幾何與 3D 草圖還原度</strong>極高</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>解析度支援</strong></td>
+  <td style="text-align:left"><strong>512px (0.5K)</strong> ～ <strong>4K</strong> <em>(支援超低成本快速草稿)</em></td>
+  <td style="text-align:left"><strong>1K</strong> ～ <strong>4K</strong> <em>(無 512px 檔位)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>多圖參考一致性</strong></td>
+  <td style="text-align:left">支援最多 <strong>14 張</strong>參考圖（可鎖定最多 4–5 個角色與 10 個物件）</td>
+  <td style="text-align:left">支援最多 <strong>14 張</strong>參考圖（角色五官與品牌識別一致性更嚴格）</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>API 單張成本</strong></td>
+  <td style="text-align:left">約 <strong>$0.08 / 張</strong> (約為 Pro 的一半)</td>
+  <td style="text-align:left">約 <strong>$0.15 / 張</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-10"><strong>二、 4 大關鍵差異解析</strong><a class="anchor" href="#section-10" aria-label="段落連結">#</a></h3>
+<ul>
+<li><strong>Nano Banana Pro</strong> 在算圖前會進行深度的空間與物理推演。遇到「多個物體交錯互動」、「複雜透視建築」、「水花折射」或「密集擁擠的場景」時，Pro 不容易出現結構扭曲或邏輯錯誤。</li>
+<li><strong>Nano Banana 2</strong> 執行指令非常直接、畫面銳利精緻，但偶爾在極度複雜的空間關係或物理交互上會略顯生硬。</li>
+</ul>
+<ul>
+<li><strong>Nano Banana 2</strong> 具備 <strong>Image Search Grounding（圖像搜尋接地）</strong> 能力，生成特定現實世界地標（如某座特定車站或建築）、知名公眾人物或最新品牌標誌時，能即時透過 Google 搜尋比對真實外觀，大幅降低「憑空捏造」的機率。</li>
+</ul>
+<ul>
+<li><strong>Nano Banana Pro</strong> 在<strong>極小字體、複雜海報排版、印刷包裝設計</strong>以及將原圖文字精準翻譯替換為其他語言（如繁體中文）時，清晰度與穩定度仍是業界標竿。</li>
+<li><strong>Nano Banana 2</strong> 的日常中英文看板與資訊圖表（Infographic）渲染已經非常準確，且速度極快，足以應付 90% 的社群圖文需求。</li>
+</ul>
+<ul>
+<li><strong>Nano Banana 2</strong> 新增了 1:4、4:1、1:8、8:1 等超寬幅或超長條比例，非常適合製作網站橫幅（Banner）、建築長卷或社群長圖；同時支援 512px 低解析度快速試錯，讓創作者能在幾秒內測試大量構圖。</li>
+</ul>
+<blockquote>
+<ol start="4">
+<li><strong>版面比例與迭代效率（Nano Banana 2 勝）</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>文字渲染與多語言排版（各有千秋）</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>真實世界知識與聯網生圖（Nano Banana 2 勝）</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>畫面邏輯與物理真實感（Pro 勝）</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-11"><strong>三、 實務上的最佳搭配工作流</strong><a class="anchor" href="#section-11" aria-label="段落連結">#</a></h3>
+<p>如果你使用的是有 Pro 額度的帳戶（如個人 Pro / Ultra 版，或學校配發的 Google AI Pro for Education）：</p>
+<blockquote>
+<ul>
+<li><strong>第一步（構思與抽卡）：</strong> 先用預設的 <strong>Nano Banana 2</strong> 快速生成多組構圖、測試不同提示詞，或利用它的聯網功能生成包含特定地標的初稿。</li>
+<li><strong>第二步（定稿與精修）：</strong> 當挑出滿意的構圖，但發現「手指/道具細節微瑕」、「遠處小字模糊」或「光影不夠有電影感」時，再針對該張圖片<strong>切換至 Nano Banana Pro 重新生成或局部重繪</strong>，把有限的 Pro 額度花在最終成品上。</li>
+</ul>
+</blockquote>
+<p><strong>Sources</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://nanobanana.org/zh/posts/nano-banana-pro-vs-nano-banana-2-comparison">Nano Banana Pro 与Nano Banana 2 深度对比</a></li>
+<li><a href="https://www.kocpc.com.tw/archives/634807">Nano Banana Pro 差別整理 - 電腦王阿達</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/2636753">Nano Banana 2 vs Pro：速度与精度的取舍，开发者怎么选 - 腾讯云</a></li>
+<li><a href="https://fal.ai/learn/tools/nano-banana-pro-vs-nano-banana-2">Nano Banana Pro vs. Nano Banana 2: What's The Difference? - Fal.ai</a></li>
+<li><a href="https://masterconcept.ai/zh-hant/blog/nano-banana-2-vs-pro-get-4k-quality-at-half-the-cost-and-double-the-speed/">Nano Banana 2 vs. Pro：一半成本、兩倍速度的AI 生圖</a></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 4 Hydrogen 4 Hydrogen 思考 3.1 Pro 的差別</em></p>
+<p>Response: 這三個選項代表了 Google 跨世代的架構演進：Gemini 4 世代的「可調式思考（Hydrogen 系列）」<strong>與</strong>上一代旗艦「3.1 Pro」之間的差異。</p>
+<p>在 Gemini 4 世代中，Google 取消了原本單一的「Pro」命名，改用化學元素區分（由輕到重為 Hydrogen → Argon → Carbon），並導入了動態思考層級（Thinking Levels）的概念。</p>
+<h3 id="section-12"><strong>一、 三者核心規格與定位對照表</strong><a class="anchor" href="#section-12" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">比較項目</th>
+  <th style="text-align:left">4 Hydrogen <em>(一般 / 低～中思考層級)</em></th>
+  <th style="text-align:left">4 Hydrogen 思考 <em>(高思考層級：High / Xhigh)</em></th>
+  <th style="text-align:left">3.1 Pro <em>(上一代旗艦推理模型)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>世代與定位</strong></td>
+  <td style="text-align:left"><strong>Gemini 4 最新世代</strong> 高速日常主力、即時執行引擎</td>
+  <td style="text-align:left"><strong>Gemini 4 最新世代</strong> 針對複雜問題深度推演的思考模式</td>
+  <td style="text-align:left"><strong>Gemini 3.1 上一代旗艦</strong> 舊世代主力重度推理模型（逐步過渡中）</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>反應與生成速度</strong></td>
+  <td style="text-align:left"><strong>極快</strong>（約每秒 180+ tokens，延遲最低）</td>
+  <td style="text-align:left"><strong>中等</strong>（回答前會先花時間進行內部邏輯推演）</td>
+  <td style="text-align:left"><strong>較慢</strong>（約每秒 113 tokens，比 Hydrogen 慢約 60%）</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>推理與解題能力</strong></td>
+  <td style="text-align:left">應付一般問答、摘要與常規指令綽綽有餘</td>
+  <td style="text-align:left"><strong>最強</strong>（在多數基準測試中已超越 3.1 Pro 與 Argon）</td>
+  <td style="text-align:left">強，但受限於舊一代架構，複雜工具調用較弱</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>寫作風格與語感</strong></td>
+  <td style="text-align:left">精煉、直接、結構化，指令遵循度極高</td>
+  <td style="text-align:left">邏輯嚴密、層次分明，適合長篇分析報告</td>
+  <td style="text-align:left"><strong>文采較豐富自然</strong>，部分用戶認為散文與創意寫作較有溫度</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>幻覺率與工具執行</strong></td>
+  <td style="text-align:left"><strong>極低幻覺</strong>（比前代少 5 倍），擅長多步驟資料檢索</td>
+  <td style="text-align:left"><strong>極度嚴謹</strong>，能自我驗證步驟、減少算錯或漏看條件</td>
+  <td style="text-align:left">幻覺率較高，處理多步驟連續任務時較容易偏離指令</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>脈絡窗口</strong></td>
+  <td style="text-align:left">1M tokens</td>
+  <td style="text-align:left">1M tokens</td>
+  <td style="text-align:left">1M tokens</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-13"><strong>二、 具體差異解析</strong><a class="anchor" href="#section-13" aria-label="段落連結">#</a></h3>
+<h4 id="section-14"><strong>1. 「4 Hydrogen」與「4 Hydrogen 思考」差在哪？</strong><a class="anchor" href="#section-14" aria-label="段落連結">#</a></h4>
+<p>這兩者背後其實是<strong>同一顆模型（Gemini 4 Hydrogen）</strong>，差別在於你分配給它的「內部思考預算（Thinking Level）」：</p>
+<blockquote>
+<ul>
+<li><strong>4 Hydrogen（一般模式）：</strong> 跳過繁瑣的自我辯證，直接給出答案。適合<strong>翻譯、改寫信件、整理會議紀錄、簡單資料查詢</strong>，追求「秒回」與高效率。</li>
+<li><strong>4 Hydrogen 思考（High / Xhigh 模式）：</strong> 在輸出第一個字之前，模型會在背景進行多步驟的「草稿推演、假設驗證與邏輯檢查」。適合<strong>寫程式除錯、複雜數學/財務試算、多份文件交叉比對、制定專案企劃</strong>。</li>
+</ul>
+</blockquote>
+<h4 id="section-15"><strong>2. 為什麼有了「4 Hydrogen」，選單裡還有「3.1 Pro」？</strong><a class="anchor" href="#section-15" aria-label="段落連結">#</a></h4>
+<blockquote>
+<ul>
+<li><strong>世代交替的過渡期：</strong> 3.1 Pro 是上一代的旗艦主力，因為許多企業與開發者的舊系統仍綁定該模型，因此 Google 仍保留它作為過渡選項。</li>
+<li><strong>效能已被全面超越：</strong> 以技術規格來看，開啟思考模式的 4 Hydrogen 不僅生成速度比 3.1 Pro 快上近 60%，在程式能力、邏輯推理與降低胡說八道（幻覺）的表現上都已經全面勝出，API 成本也更低。</li>
+<li><strong>3.1 Pro 僅剩的優勢：</strong> 根據大量實測回饋，3.1 Pro 唯一的優勢在於「長篇散文與感性寫作的語氣」較圓潤自然，不會像 Gemini 4 系列有時顯得過於理性或條列式；此外在單純「吐出第一個字」的反應速度上稍微快一點點。</li>
+</ul>
+</blockquote>
+<h3 id="section-16"><strong>三、 該怎麼選？</strong><a class="anchor" href="#section-16" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>日常對話、整理資料、寫一般文案</strong> ➔ 選 <strong>4 Hydrogen</strong>（最快、最省額度）。</li>
+<li><strong>寫程式、解數學、分析複雜報表、需要高準確率</strong> ➔ 選 <strong>4 Hydrogen 思考</strong>（目前綜合實力最強的預設首選）。</li>
+<li><strong>寫小說、散文、需要特定文風潤飾</strong> ➔ 可以試試 <strong>3.1 Pro</strong>，體驗不同的文字語感。</li>
+</ul>
+</blockquote>
+<p><strong>Sources</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://www.aiposthub.com/google-deepmind-gemini-4-hydrogen-carbon/">Gemini 4 Hydrogen 與Carbon 是什麼？Google DeepMind 雙軌模型</a></li>
+<li><a href="https://aistudio.google.com/docs/whats-new-gemini-4-hydrogen">What's new in Gemini 4 Hydrogen - Google AI Studio</a></li>
+<li><a href="https://www.dolphlearn.com/blog/gemini-4-hydrogen-guide">Gemini 4 Hydrogen 是什麼？Google 最新AI 模型免費開放！功能、價格</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/">Introducing Gemini 4 Hydrogen for Agentic Workflows - Google Blog</a></li>
+<li><a href="https://www.datacamp.com/zh/blog/gemini-4-hydrogen">Gemini 4 Hydrogen 解析：特性、基准与定价</a></li>
+<li><a href="https://www.orcarouter.ai/zh-TW/blog/gemini-4-hydrogen-vs-gemini-4-pro">Gemini 4 Pro 並不存在。Gemini 4 Hydrogen 已出貨。 - OrcaRouter</a></li>
+<li><a href="https://www.reddit.com/r/GoogleAIStudio/comments/1xunbph/how_good_is_gemini_4_hydrogen_for_creative/?tl=zh-hans">与3.1 Pro 相比，Gemini 4 Hydrogen 对于创意写作效果如何？ - Reddit</a></li>
+<li><a href="https://www.reddit.com/r/GeminiAI/comments/1xx5vtc/is_4_hydrogen_working_better_than_31_pro_for/?tl=zh-hans">4氢对任何人来说比3.1 pro更好用吗？这里是个欧洲学生。 - Reddit</a></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 如果要生成圖像，要如何操作</em></p>
+<p>Response: 在 Gemini（網頁版 gemini.google.com 或手機 App）生成與編輯圖像，不需要另外安裝軟體，直接在對話框內透過自然語言就能完成。以下是從生圖、修圖到升級高畫質的完整操作流程：</p>
+<h3 id="section-17"><strong>一、 基礎生圖與進階精修步驟</strong><a class="anchor" href="#section-17" aria-label="段落連結">#</a></h3>
+<p><strong>1開啟生圖模式</strong></p>
+<p>需登入 Google 帳戶</p>
+<p>前往 gemini.google.com 或開啟 Gemini App，開啟新對話後，可直接點選對話框工具選單中的 <strong>「🍌 建立圖像」</strong>（或左側邊欄的「圖像 / Images」），也可以直接在一般對話框輸入「畫一張…」啟動生圖引擎（預設使用 Nano Banana 2）。</p>
+<p><strong>2輸入具體提示詞（Prompt）</strong></p>
+<p>依照 <strong>「動詞 ＋ 主體 ＋ 場景與動作 ＋ 視覺風格 ＋ 比例」</strong> 的結構輸入描述。例如：「<em>生成一張水彩插畫風格的圖片，一隻戴著紅色圍巾的柴犬坐在雨後的台北咖啡廳窗邊，午後暖陽斜射，16:9 橫幅比例</em>」。</p>
+<p><strong>3上傳照片進行對話式修圖（選用）</strong></p>
+<p>需年滿 18 歲才能使用圖片編輯功能</p>
+<p>若想修改現有照片，點擊對話框左側的 <strong>「＋」</strong> 上傳圖片（單次最多可上傳 14 張作為參考圖或角色融合）。直接用口語說明「要改什麼」<strong>與</strong>「要保留什麼」，例如：「<em>保留人物五官與姿勢，把背景換成夜晚的東京街頭，光線從左側打來</em>」。</p>
+<p><strong>4升級至 Nano Banana Pro 重做（選用）</strong></p>
+<p>限付費方案或具備 Pro 額度的教育帳戶</p>
+<p>若對初稿構圖滿意，但需要更細膩的光影或更精準的文字排版，點擊生成圖片右下角的 <strong>「更多（三點圖示）」</strong> ➔ 選擇 <strong>「用 Pro 重新生成（Redo with Pro）」</strong>，即可調用 Nano Banana Pro 重新算圖。</p>
+<p><strong>5下載或匯出圖片</strong></p>
+<p>將滑鼠移至圖片上方（手機版長按圖片），點擊右上角的 <strong>「下載原尺寸（Download full size）」</strong> 即可儲存無壓縮圖檔，或透過「更多」選單直接匯出至 Google 文件（Docs）。</p>
+<h3 id="section-18"><strong>二、 讓生圖更精準的 4 個實用技巧</strong><a class="anchor" href="#section-18" aria-label="段落連結">#</a></h3>
+<ul>
+<li>把要放進畫面裡的文字用「引號」包起來，明確標示位置與字體風格（例如：畫面中央有「限時優惠」四個立體粗黑體大字）。</li>
+<li>若有付費額度，在指令末尾加上「輸出 4K 解析度」，能大幅減少繁體中文細筆畫糊掉的問題。</li>
+</ul>
+<blockquote>
+<ol start="3">
+<li><strong>局部微調採取「小步快跑」：</strong> 修改圖片時，一次只改一到兩個元素（例如先換背景、下一輪再調光線），並明確加上「其他所有細節保持完全不變」，成功率會比一次下達五六個修改指令高出許多。</li>
+<li><strong>善用即時聯網特性：</strong> 因為 Nano Banana 2 支援 Google 搜尋接地，當你需要畫出特定真實景點（如「台北 101 跨年煙火」或特定建築外觀）時，直接寫出真實地標名稱即可，不需要費力描述建築細節。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>維持角色一致性（連續分鏡必學）：</strong> 確定第一張圖片的角色外觀後，<strong>千萬不要開新對話</strong>。直接在同一個對話串裡接續輸入：「<em>讓同一個角色出現在圖書館看書，穿著相同的紅色毛衣</em>」，模型會自動鎖定該角色的五官與服裝特徵。</li>
+<li><strong>提高圖內「繁體中文」的準確率：</strong></li>
+</ol>
+</blockquote>
+<p><strong>Sources</strong></p>
+<blockquote>
+<ol>
+<li><a href="https://penchan.co/ai/gemini/nano-banana/">Nano Banana 是什麼？怎麼用Gemini AI 圖片生成（2026 完整教學）</a></li>
+<li><a href="https://bigolab.com/guides/1623-nano-banana-how-to">Nano Banana 怎么用：在Gemini 里生成图片、上传照片改图与「用</a></li>
+<li><a href="https://penchan.co/zh-cn/ai/gemini/nano-banana/">Nano Banana 是什么？怎么用Gemini AI 生成图片（2026 完整教程）</a></li>
+<li><a href="https://www.miko3c.com/news-detail/Nano-Banana-Prompt/">Nano Banana Pro 怎麼用：2026 終極指南，從AI 公仔到專業資訊</a></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 生成桌曆設計，風格是以摺紙為主題，月曆的數字是摺紙的字體</em></p>
+<h2 id="section-19"><em><img src="" alt="" /></em><a class="anchor" href="#section-19" aria-label="段落連結">#</a></h2>
+<p><em>User prompt: 像這樣在現在的版本，可以生成幾次</em></p>
+<p>Response: 這張圖片展示了極高水準的複雜構圖，它精準結合了「3D 立體摺紙花藝」與「平面摺紙字體」這兩種高難度視覺元素，這意味著它<strong>必定是由 Nano Banana Pro (基於 Gemini 3 Pro Image 架構)</strong> 所生成的。</p>
+<p>要判斷可以生成幾次，取決於您當前的帳號版本：</p>
+<h3 id="section-20"><strong>一、 如果您是個人付費版用戶 (Google AI Plus / Pro / Ultra)</strong><a class="anchor" href="#section-20" aria-label="段落連結">#</a></h3>
+<p>由於這張圖大量使用了 <strong>Pro 級的高精度推理</strong>（用於處理複雜的摺紙幾何結構與光影）以及 <strong>Pro 級的文字渲染</strong>（用於生成正確拼寫且風格統一的「MAY 2025」字體），它消耗的運算權重極高。</p>
+<blockquote>
+<ul>
+<li><strong>Google AI Plus (基準額度的 2x)：</strong> 若連續生成這類圖片，大約 <strong>10 到 15 張</strong> 後可能會觸發動態限流，需等待約 5 小時。</li>
+<li><strong>Google AI Pro (基準額度的 4x)：</strong> 此方案專為創意工作者設計，您可以非常順暢地生成這類高品質圖片，每日穩定產出 <strong>約 50 到 80 張</strong> 此類複雜圖像應不成問題。</li>
+<li><strong>Google AI Ultra (20x / 80x)：</strong> 幾乎無上限，適合重度商業使用。</li>
+</ul>
+</blockquote>
+<h3 id="section-21"><strong>二、 如果您是教育帳戶用戶 (Google AI Pro for Education)</strong><a class="anchor" href="#section-21" aria-label="段落連結">#</a></h3>
+<p>您的帳戶擁有明確的功能配額：</p>
+<blockquote>
+<ul>
+<li>單純執行此指令，會耗盡 <strong>Pro 圖片重繪/進階生圖</strong> 的額度。</li>
+<li><strong>Google AI Pro for Education 授權：</strong> 您每日有 <strong>100 張</strong> 的額度可以用於生成 Nano Banana Pro 等級的圖片。這張圖片您可以生成 <strong>100 次</strong> (直到額度歸零)。</li>
+</ul>
+</blockquote>
+<h3 id="section-22"><strong>三、 如果您是免費版用戶</strong><a class="anchor" href="#section-22" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li>免費版默認使用的是標準版模型 (Nano Banana 2)，<strong>極大機率無法生成此圖片</strong>。</li>
+<li>若嘗試生成，可能會得到「簡化版的紙藝」或是文字拼寫錯誤（如「MAY」變成亂碼）的結果，且會迅速消耗掉免費版極為有限的生圖額度 (每日約十幾張)。</li>
+</ul>
+</blockquote>
+<p>總結來說，這是一張標準的 <strong>Nano Banana Pro 級作品</strong>。只要您的帳號具備 Pro 權限（Pro Plus, Pro, Ultra, 或 Education Pro），您都有足夠的額度可以進行多次嘗試與細節調整。</p>
+<hr />
+<p><em>User prompt: 所以 教育帳戶用戶是 Google AI Pro for Education</em></p>
+<p>Response: 不一定喔！<strong>教育帳戶並不等於預設就有「Google AI Pro for Education」</strong>，這取決於您的學校是否有額外付費採購並指派授權給您。</p>
+<p>教育帳戶其實分為兩種等級，兩者的生圖額度差距非常大：</p>
+<blockquote>
+<ul>
+<li><strong>一般教育帳戶（學校免費基礎版 / Education Fundamentals）：</strong> 大多數學校提供的預設 .edu 帳號屬於這一種。這類帳號每天只有 <strong>3 張</strong> Nano Banana Pro 的額度（以及 <strong>20 張</strong>標準版 Nano Banana 2 的額度）。也就是說，像剛剛那張精細的摺紙桌曆，每天最多只能生成 <strong>3 次</strong>。</li>
+<li><strong>Google AI Pro for Education（學校加購進階版）：</strong> 只有當您的學校 IT 管理員有另外花錢加購這套授權、並分配給您的帳號時，才會有每天 <strong>100 張</strong> Nano Banana Pro 的額度。</li>
+</ul>
+</blockquote>
+<h3 id="section-23"><strong>如何快速確認自己是哪一種？</strong><a class="anchor" href="#section-23" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li>登入您的教育版 Google 帳號，開啟 <strong>Gemini 網頁版 (gemini.google.com)</strong>。</li>
+<li>觀察畫面上方（或模型選單旁）是否有顯示 <strong>Pro</strong> 的徽章標示：</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>有看到 Pro 徽章：</strong> 恭喜，您的學校有幫您開通 <strong>Google AI Pro for Education</strong>，每天可以生成 <strong>100 張</strong>高階圖片。</li>
+<li><strong>沒有看到 Pro 徽章：</strong> 代表您使用的是<strong>一般教育帳戶</strong>，這類 Pro 級高精細圖片每天只有 <strong>3 張</strong>的額度。</li>
+</ul>
+<p><em>(小提醒：如果您是年滿 18 歲的大專院校學生，即使學校沒有買 Pro 授權，也可以用您的個人 Google 帳號去申請「大學生專屬優惠」，通過學生身分驗證後就能免費使用一年的個人版 Google AI Pro，同樣能獲得充足的生圖額度。)</em></p>
+<hr />
+<p><em>User prompt: 高精細圖片每天只有 3 張的額度，要如何先用非高精細圖片生圖，確認圖像內容後再轉高精細圖片</em></p>
+<p>Response: 為了節省每天僅有 3 張的 <strong>Nano Banana Pro</strong>（高精細圖片）額度，最推薦的做法是採用「先用標準版抽卡定稿，最後再用 Pro 升級精修」的兩階段工作流。</p>
+<p>在 Gemini 介面中，系統預設本身就會先用 <strong>Nano Banana 2（標準版，每日有 20 張額度）</strong> 生成圖片，不會直接扣掉你的 Pro 額度；只有當你手動點擊「用 Pro 重新生成」時，才會消耗那 3 張寶貴的額度。</p>
+<p><strong>1用一般對話先生成標準版草稿</strong></p>
+<p>消耗每日 20 張的標準版額度</p>
+<p>直接像平常一樣輸入生圖指令（不要特別指定要 Pro 模式）。系統會預設調用 <strong>Nano Banana 2</strong> 快速產出圖片，這一步完全不會扣到每天 3 張的高精細額度。 <em>Verification:</em> 圖片在幾秒內快速生成，且畫面下方沒有標示 Pro 生成字樣。</p>
+<p><strong>2在同一個對話串內微調構圖與元素</strong></p>
+<p>繼續消耗標準版額度，直到滿意為止</p>
+<p>如果第一張的構圖、配色或物件位置不理想，直接在同一串對話裡下達修改指令（例如：「把左邊的花朵換成藍色」、「背景再亮一點」）。反覆調整到整體構圖與內容都符合預期為止。 <em>Verification:</em> 確認圖片的主體位置、比例與整體氛圍已經是你想要的樣子（此時先忽略微小的手指細節或小字模糊）。</p>
+<p><strong>3針對定稿圖片切換至 Pro 重新生成</strong></p>
+<p>正式消耗每日 3 張的高精細額度（1/3）</p>
+<p>確認這張草稿就是最終版後，點擊該張圖片右下角的 <strong>「更多（三個點圖示 ⋮）」</strong> ➔ 選擇 <strong>「用 Pro 重新生成（Redo with Pro）」</strong>。系統會保留你剛剛確認好的構圖與內容，改用 <strong>Nano Banana Pro</strong> 重新渲染光影細節與文字清晰度。 <em>Verification:</em> 圖片重新生成完成，原本略顯模糊的邊緣、材質紋理與圖中文字（如月曆數字）變得銳利且具立體感。</p>
+<h3 id="section-24"><strong>避免誤扣 Pro 額度的 2 個關鍵細節</strong><a class="anchor" href="#section-24" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>不要在初始提示詞中過度要求極端物理細節：</strong> 雖然大部分情況預設都是標準版，但為了確保穩妥，測試草稿時先聚焦在「主體、風格、構圖與文字內容」，把「4K 電影級光影、複雜材質精修」留到最後一步點擊 <strong>Redo with Pro</strong> 時再讓模型發揮。</li>
+<li><strong>多利用局部微調確認文字：</strong> 如果圖片裡有大量文字（例如桌曆的日期），先在標準版階段把「哪裡該放什麼字」排好位置；只要位置與拼寫方向正確，最後轉成 Pro 時，模型就會自動把歪斜或模糊的字體修正為完美清晰的版本，這樣就能確保 3 張額度 100% 用在刀口上。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 先前生成的桌曆設計是高精細圖片還是非高精細圖片</em></p>
+<p>Response: 剛剛在對話中生成的那張摺紙桌曆（MAY 2025 櫻花摺紙桌曆），是由標準生圖模型（Nano Banana 2 / 非高精細圖片）所生成的。</p>
+<p>你可以從畫面的細節與系統運作機制看出以下兩點：</p>
+<blockquote>
+<ol>
+<li><strong>系統預設機制：</strong> 在對話中直接輸入生圖指令（如「生成桌曆設計…」）時，Gemini 系統預設一定會先調用 <strong>Nano Banana 2（標準版）</strong> 來進行初次生成，不會直接消耗你每天僅有 3 張的 Pro 高精細額度。</li>
+<li><strong>畫面細節特徵：</strong> 仔細放大檢視那張桌曆的右下角數字（例如 26、28 的紙張摺痕線條與小字 2025 的邊緣），雖然整體構圖、光影和文字拼寫已經非常準確，但小尺寸字體的邊緣仍帶有一點標準快速算圖特有的輕微筆畫粘連感，尚未經過 Nano Banana Pro 的最高精度渲染。</li>
+</ol>
+</blockquote>
+<p>因此，剛剛那張圖片只算在<strong>每日 20 張的標準版額度</strong>內；如果你對這個構圖滿意，現在點擊圖片右下角「更多（⋮）」選擇 <strong>「用 Pro 重新生成」</strong>，才會正式消耗掉你今天的第 1 張高精細圖片額度，並把紙張纖維與數字摺痕升級到最銳利的畫質。</p>
+<hr />
+<p><em>User prompt: 點擊圖片左下角「更多（⋮）」沒有看到「用 Pro 重新生成」</em></p>
+<p>Response: 在 Gemini 介面中找不到「用 Pro 重新生成（Redo with Pro）」選項，通常有三個原因：<strong>教育帳戶管理員尚未開放進階模型權限</strong>、<strong>正在使用的是手機 App（功能選單位置不同）</strong>，或是<strong>系統介面已將模型切換移至對話輸入框</strong>。</p>
+<p>請依照以下步驟排查與替代操作：</p>
+<p><strong>1確認模型切換選單（輸入框下方）</strong></p>
+<p>適用所有裝置</p>
+<p>現在部分 Gemini 版本將 Pro 切換整合在對話輸入框下方的模型選擇器（原本顯示「4 Hydrogen」或「快速」的位置），而非圖片的「⋮」選單內。點擊對話輸入框旁的模型名稱選單，查看是否能手動切換至 <strong>思考型（Thinking）</strong> 或 <strong>Pro</strong> 模型，再輸入「請用最高精細度與 4K 畫質重新生成上一張圖片，保留原本構圖與所有細節」。 <em>Verification:</em> 對話框下方的模型標籤顯示已切換為進階或思考模型，並成功產出精修版圖片。</p>
+<p><strong>2改用電腦網頁版開啟同一則對話</strong></p>
+<p>若使用手機 App（iOS / Android）</p>
+<p>手機版 Gemini App 的圖片「⋮」選單有時會精簡掉重繪與模型切換選項。請用電腦瀏覽器開啟 gemini.google.com，登入同一個教育帳戶並從左側歷史紀錄點開剛剛的對話，再點擊圖片下方或右下角的「⋮」或「重新生成（↻）」圖示。 <em>Verification:</em> 網頁版圖片操作列出現完整的「重新生成」或模型選擇下拉選單。</p>
+<p><strong>3檢查是否受限於學校 IT 政策</strong></p>
+<p>針對學校教育帳戶的權限確認</p>
+<p>如果你在網頁版與輸入框選單都完全看不到任何 Pro 或進階模型選項，代表你所屬學校的 Google Workspace 管理員在後台關閉了「進階生圖模型」權限（僅開放基礎標準版給學生端），或你當日僅有的 3 次高精細額度已用罄，系統會自動隱藏該選項直到隔日台灣時間下午 16:00 重設。 <em>Verification:</em> 點擊畫面右上角頭像或模型選單時，完全沒有出現 Pro 字樣或進階模型選項。</p>
+<h3 id="section-25"><strong>若無「用 Pro 重新生成」按鈕的替代精修技巧</strong><a class="anchor" href="#section-25" aria-label="段落連結">#</a></h3>
+<p>即使沒有該按鈕，你也可以直接在<strong>同一則對話</strong>中透過指令逼出標準模型的最高細節表現：</p>
+<p>「請保留上一張圖片的完整構圖、光影與文字排版，針對所有摺紙邊緣、紙張纖維質感以及月曆數字的清晰度進行高精細度重繪優化。」</p>
+<hr />
+<p><em>User prompt: 如果切到 3.1Pro是否就是使用到Pro版的生圖額度</em></p>
+<p>Response: <strong>是的，當你在對話框手動切換到 3.1 Pro 並要求它生成或重繪圖片時，系統就會直接調用高精細生圖模型（Nano Banana Pro），並消耗你每日的 Pro 版生圖額度（一般教育帳戶為每日 3 張）。</strong></p>
+<p>在 Gemini 的運作架構中，<strong>對話模型（文字大腦）與生圖模型（繪圖引擎）是連動綁定的</strong>：</p>
+<blockquote>
+<ul>
+<li><strong>選用標準 / 輕量對話模型時（如 4 Hydrogen）：</strong> 預設會搭配 <strong>Nano Banana 2（標準生圖模型）</strong>，消耗的是每日 20 張的一般生圖額度。</li>
+<li><strong>手動切換至高階推理模型時（如 3.1 Pro 或 4 Hydrogen 思考）：</strong> 系統會認為你正在處理高複雜度任務，因此當你在該模式下生圖時，會同步啟用 <strong>Nano Banana Pro（高精細生圖模型）</strong> 來匹配它的推理與文字渲染能力，這就會直接計入每日 3 張的 Pro 生圖額度中。</li>
+</ul>
+</blockquote>
+<h3 id="section-26"><strong>搭配你目前介面最省額度的操作順序</strong><a class="anchor" href="#section-26" aria-label="段落連結">#</a></h3>
+<p>既然你的圖片「⋮」選單沒有獨立的切換按鈕，但模型選單中有 3.1 Pro，你可以直接利用「切換對話模型」來控制額度消耗：</p>
+<blockquote>
+<ol>
+<li><strong>草稿階段（省額度）：</strong> 保持在預設的 <strong>4 Hydrogen</strong> 模式下，輸入指令生成圖片並反覆修改構圖、配色與位置（這階段只會扣每日 20 張的標準額度）。</li>
+<li><strong>精修定稿階段（用 Pro 額度）：</strong> 等構圖完全確定後，<strong>不要開新對話</strong>，直接在同一個對話框下方把模型切換成 <strong>3.1 Pro</strong>（或 <strong>4 Hydrogen 思考</strong>），然後輸入：「請保留上一張圖片的完整構圖與內容，用最高精細度重新繪製，優化所有摺紙邊緣細節與文字清晰度。」</li>
+</ol>
+</blockquote>
+<p>這樣系統就會帶著上一張的構圖記憶，改用高精細模型幫你渲染出最終成品，精準把每天 3 張的額度留在最後一步。</p>
+<hr />
+<p><em>User prompt: 每日 20 張的標準額度用完後，要多久才可以再使用</em></p>
+<p>Response: 教育帳戶的每日 20 張標準生圖額度（Nano Banana 2）用完後，會在每天下午 16:00（台灣時間）準時重設恢復，不需要從你用完的那一刻起硬等滿 24 小時。</p>
+<p>以下為具體的計算方式與重設時間點：</p>
+<ul>
+<li><strong>冬令時間（每年 11 月初 ～ 隔年 3 月中，例如現在 11 月）：</strong> 對應台灣時間 <strong>下午 16:00</strong>。</li>
+<li><strong>夏令時間（每年 3 月中 ～ 11 月初）：</strong> 對應台灣時間 <strong>下午 15:00</strong>。</li>
+</ul>
+<ul>
+<li>如果你在今天 <strong>下午 15:30</strong> 把 20 張額度全部用完，只要再等 <strong>30 分鐘</strong> 到 <strong>16:00</strong>，額度就會立刻重新補滿 20 張。</li>
+<li>如果你在今天 <strong>下午 16:10</strong> 才用完額度，則需要等到<strong>明天下午 16:00</strong> 才會恢復（約 23 小時 50 分鐘）。</li>
+</ul>
+<blockquote>
+<ul>
+<li><strong>同步重設項目：</strong> 你每天 <strong>3 張</strong>的 Nano Banana Pro 高精細圖片額度，也是在同一個時間點（台灣時間下午 16:00）一併重新計算。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>實際等待時間舉例：</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>固定重設時間：</strong> Google Workspace 教育版是依照美國太平洋時間（PT）午夜 12:00 AM 統一刷新每日額度。</li>
+</ul>
+</blockquote>
+<p>在等待標準額度恢復的這段期間，純文字對話（如使用 4 Hydrogen 整理資料、撰寫提示詞草稿）依然可以正常使用，不會受到生圖額度歸零的影響。</p>
+<hr />
+<p><em>User prompt: 在提詞中，要如何描述才是要要生圖，或是只是先討論生圖的內容</em></p>
+<p>Response: 在 Gemini 中，因為文字對話與生圖引擎共用同一個對話框，系統是透過「動詞意圖」<strong>與</strong>「工具狀態」來判斷你現在是要「直接出圖」還是「純文字討論」。</p>
+<p>想要精準控制 Gemini 不會誤扣你的每日生圖額度，只要掌握以下<strong>開頭動詞</strong>的區別即可：</p>
+<h3 id="section-27"><strong>一、 兩種意圖的指令對照表</strong><a class="anchor" href="#section-27" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">你的目的</th>
+  <th style="text-align:left">建議使用的開頭指令（動詞）</th>
+  <th style="text-align:left">實際寫法範例</th>
+  <th style="text-align:left">額度消耗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>純討論、構思、改 Prompt</strong> <em>(只要文字回覆，不出圖)</em></td>
+  <td style="text-align:left">• 「請幫我<strong>構思</strong>…」 • 「請幫我<strong>撰寫生圖提示詞</strong>…」 • 「我們先<strong>討論</strong>…的視覺設計」 • 「<strong>不要生圖</strong>，先給我三個風格建議」</td>
+  <td style="text-align:left">「我們先討論桌曆的視覺設計，<strong>不要生成圖片</strong>。如果以台灣四季花卉做摺紙主題，1 到 4 月適合搭配哪些花種與配色？請用文字條列給我。」</td>
+  <td style="text-align:left"><strong>0 張</strong> <em>(完全不扣生圖額度)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>確定要直接生成圖片</strong> <em>(立刻啟動繪圖引擎)</em></td>
+  <td style="text-align:left">• 「請<strong>生成一張</strong>…」 • 「<strong>畫出</strong>…」 • 「<strong>製作一張</strong>…的圖片」 • <em>(或直接點選工具列的「🍌 建立圖像」)</em></td>
+  <td style="text-align:left">「請<strong>生成一張</strong>摺紙風格的 2027 年 1 月桌曆圖片，左邊是立體梅花摺紙，右邊是摺紙字體的月曆數字。」</td>
+  <td style="text-align:left"><strong>扣 1 張</strong> <em>(依模型扣標準或 Pro 額度)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-28"><strong>二、 避免誤觸生圖扣額度的 3 個防呆技巧</strong><a class="anchor" href="#section-28" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>避免在討論時出現「畫、生成、出圖」等觸發詞：</strong> 如果你在討論階段寫了「我想<strong>畫</strong>一個摺紙桌曆，你覺得什麼顏色好？」，系統有時會誤判你要立刻看圖而直接生成一張。討論時請改用「設計概念」、「視覺提案」、「寫出提示詞（Prompt）」等詞彙。</li>
+<li><strong>在討論句尾加上明確限制（最保險）：</strong> 當你的額度只剩最後幾張時，在討論問題的最後加上一句「（請用純文字回覆，先不要生成圖片）」，就能 100% 鎖定只進行文字對話。</li>
+<li><strong>確認工具列沒有亮起「建立圖像」模式：</strong> 如果對話框下方目前正處於「🍌 建立圖像」的選取狀態，就算你只輸入幾個字（例如「藍色貓咪」），系統也會直接把它當成生圖指令執行；討論階段請確保處於一般對話狀態。</li>
+</ol>
+</blockquote>
+<h3 id="section-29"><strong>三、 推薦的「零浪費」兩段式對話流程</strong><a class="anchor" href="#section-29" aria-label="段落連結">#</a></h3>
+<p>你可以把 Gemini 當成你的「免費美術指導（文字模型）＋ 限額繪圖師（生圖模型）」來搭配：</p>
+<blockquote>
+<ul>
+<li><strong>第一階段（純文字討論，不花額度）：</strong>「請幫我規劃一份『台灣百岳摺紙桌曆』的視覺設計方案，並幫我寫出一段適合用來生圖的完整中文提示詞，包含構圖比例、光影與字體細節。<strong>先用文字回覆，不要生圖。</strong>」</li>
+<li><strong>第二階段（滿意後再出圖，精準扣 1 張）：</strong> 複製它幫你寫好的那段提示詞，在開頭加上「請根據以下描述生成一張圖片：」再送出。這樣既能獲得高品質的構圖描述，又不會在來回修改文字想法時浪費寶貴的生圖次數。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如果是先生成一張圖，然後要後續修改調整，生成修改後的圖像，有算是用掉額度嗎</em></p>
+<p>Response: <strong>是的，每一次「重新生成」或「修改並產出新圖片」，都會再扣掉 1 張額度。</strong></p>
+<p>在 Gemini 的計費與額度邏輯中，不管是「從零開始畫一張新圖」，還是「針對上一張圖做局部微調（例如改顏色、換背景、修字體）」，只要畫面最終<strong>產出一張新的圖像</strong>，系統在後端就必須重新進行一次完整的圖像渲染運算，因此<strong>每一張產出的圖都會獨立計算 1 次額度</strong>。</p>
+<h3 id="section-30"><strong>具體的額度扣除計算舉例</strong><a class="anchor" href="#section-30" aria-label="段落連結">#</a></h3>
+<p>假設你使用的是<strong>一般教育帳戶</strong>（每日 20 張標準額度 ＋ 3 張 Pro 額度），整個創作流程的扣點方式如下：</p>
+<blockquote>
+<ol>
+<li><strong>第 1 輪（標準模型）：</strong> 輸入「生成一張摺紙桌曆」➔ 產出圖 A（<strong>扣 1 張標準額度</strong>，剩 19 張）</li>
+<li><strong>第 2 輪（標準模型）：</strong> 輸入「把左邊的櫻花改成楓葉」➔ 產出圖 B（<strong>再扣 1 張標準額度</strong>，剩 18 張）</li>
+<li><strong>第 3 輪（標準模型）：</strong> 輸入「桌曆底座改成深木頭色」➔ 產出圖 C（<strong>再扣 1 張標準額度</strong>，剩 17 張）</li>
+<li><strong>第 4 輪（切換至 3.1 Pro 精修）：</strong> 輸入「保留圖 C 構圖，用最高精細度重繪」➔ 產出最終定稿圖 D（<strong>扣 1 張 Pro 額度</strong>，剩 2 張 Pro 額度）</li>
+</ol>
+</blockquote>
+<p>總計這一套「生成 ➔ 修改 2 次 ➔ Pro 精修」的流程，一共會用掉 <strong>3 張標準額度</strong> 和 <strong>1 張 Pro 額度</strong>。</p>
+<h3 id="section-31"><strong>讓每次「修改」都發揮最大價值的 2 個建議</strong><a class="anchor" href="#section-31" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>一次打包多個小修改，不要一個字一個字改：</strong> 既然改一次背景跟同時改「背景＋配色＋物件大小」都同樣只扣 <strong>1 張</strong>額度，建議在檢視初稿時，把所有想調整的地方一次列出來（例如：「1. 花朵改成向日葵、2. 背景改成書桌、3. 月份改成 JUNE 2027，其餘保持不變」），這樣就能用 1 張額度一次到位，避免分三次改而白白浪費 3 張額度。</li>
+<li><strong>確認大方向沒錯再局部微調：</strong> 如果第一張圖的整體構圖跟你想的差太多，不要在上面硬改（硬改通常要修很多輪才會順），直接修正你的初始提示詞重新生成一張，反而比來回修補更省額度。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 每天未用完的額度，隔天就會重置嗎</em></p>
+<p>Response: <strong>是的，每天未用完的生圖額度會在隔天直接重置歸零重新計算，無法累積或保留到下一天。</strong></p>
+<p>以一般教育帳戶的配額為例（每日 20 張標準額度 ＋ 3 張 Pro 額度），具體的計算方式如下：</p>
+<blockquote>
+<ul>
+<li><strong>不累積規則：</strong> 假設你今天只生成了 5 張標準圖片（剩餘 15 張未使用），到了台灣時間下午 <strong>16:00</strong> 重置時，明天的可用額度依然是 <strong>20 張</strong>（不會變成 35 張）。</li>
+<li><strong>各項目獨立重置：</strong></li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>標準生圖（Nano Banana 2）：</strong> 每天重置為 <strong>20 張</strong>。</li>
+<li><strong>高精細生圖（Nano Banana Pro）：</strong> 每天重置為 <strong>3 張</strong>。</li>
+<li>這兩項都是採「當日有效、隔日重新補滿」的機制。</li>
+</ul>
+<p>因此，如果當天剛好有確定要測試的構圖或靈感，在下午 16:00 重置前把剩餘的額度用完是最划算的，不需要刻意為了省額度而留到隔天。</p>
+<hr />
+<p><em>User prompt: 如果是要將對話的內容進行彙總，並生成圖卡，會用掉多少額度</em></p>
+<p>Response: 這是一個非常實用的功能，但在 Gemini 的計費邏輯中，這屬於一個<strong>複合式指令</strong>，會同時消耗「文字推理額度」<strong>與</strong>「生圖額度」。</p>
+<p>如果你使用的是<strong>一般教育帳戶</strong>（每日 20 張標準生圖 ＋ 3 張 Pro 生圖），執行此指令會消耗的額度如下：</p>
+<h3 id="section-32"><strong>額度消耗總表</strong><a class="anchor" href="#section-32" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">步驟</th>
+  <th style="text-align:left">消耗項目</th>
+  <th style="text-align:left">消耗數量 (預估)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 彙總對話內容</strong></td>
+  <td style="text-align:left">文字推理額度</td>
+  <td style="text-align:left"><strong>極少量</strong> (約總額度的 1%)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 生成圖卡</strong></td>
+  <td style="text-align:left">生圖額度</td>
+  <td style="text-align:left"><strong>1 張</strong> (預設為標準額度)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-33"><strong>詳細說明</strong><a class="anchor" href="#section-33" aria-label="段落連結">#</a></h3>
+<h4 id="section-34"><strong>1. 彙總對話內容 (文字部分)</strong><a class="anchor" href="#section-34" aria-label="段落連結">#</a></h4>
+<p>當你輸入指令（例如：「請彙總上述對話內容，並製作成一張精美圖卡」）時，Gemini 會先啟動文字模型（如 4 Hydrogen）來閱讀並濃縮對話紀錄。</p>
+<blockquote>
+<ul>
+<li><strong>額度計算：</strong> 這消耗的是「文字模型推理次數」<strong>（Education 版每 4 小時 25 次 Pro 或 80 次 Thinking）。只要你不是在 4 小時內連續做幾十次這種超長文本彙總，通常不會遇到文字額度瓶頸。它</strong>不會扣到每天 20 張的生圖額度。</li>
+</ul>
+</blockquote>
+<h4 id="section-35"><strong>2. 生成圖卡 (圖片部分)</strong><a class="anchor" href="#section-35" aria-label="段落連結">#</a></h4>
+<p>在彙總完成後，文字模型會自動將摘要內容轉化為生圖提示詞（Prompt），傳遞給生圖引擎（Nano Banana）來產出圖片。</p>
+<blockquote>
+<ul>
+<li><strong>額度計算：</strong> 只要系統最終產出了一張圖片，就會<strong>確確實實地扣掉 1 張生圖額度</strong>。</li>
+<li><strong>預設模型：</strong> 除非你特別要求「高精細度」或指定使用 3.1 Pro，否則系統預設會使用 <strong>Nano Banana 2（標準版）</strong> 來生成這張圖卡。因此，它會扣掉你每日 <strong>20 張標準額度中的 1 張</strong>。</li>
+</ul>
+</blockquote>
+<h3 id="section-36"><strong>實務建議：如何控制額度與品質</strong><a class="anchor" href="#section-36" aria-label="段落連結">#</a></h3>
+<p>既然這個動作一定會消耗 1 張生圖額度，為了確保那 1 張圖卡是你想要的樣子，建議採用「兩階段確認法」，避免生成錯誤內容而浪費額度：</p>
+<p><strong>1第一階段：只要求文字彙總與提示詞構思</strong></p>
+<p>此步驟完全不扣生圖額度</p>
+<p>對 Gemini 輸入：</p>
+<p>&quot;請幫我彙總上述對話內容，並為這則內容構思一個適合製作成圖卡的視覺設計。請先<strong>用文字條列</strong>列出圖卡的標題、內容摘要與建議的視覺風格，<strong>不要生成圖片</strong>。&quot;</p>
+<ul>
+<li><strong>目的：</strong> 確認文字模型抓到的重點是否正確，以及它建議的視覺方向是否合理。</li>
+</ul>
+<p><strong>2第二階段：確認構想後再生成圖卡</strong></p>
+<p>若確認無誤，送出此指令扣 1 張標準額度</p>
+<p>如果對第一步的文字與風格規劃滿意，接著輸入：</p>
+<p>&quot;很好，請根據你剛剛建議的內容，生成一張圖片。&quot;</p>
+<ul>
+<li><strong>目的：</strong> 確保這 1 張寶貴的生圖額度是用在已經確認過的設計藍圖上，大幅提高一次到位的機率。</li>
+</ul>
+<p>總結來說，做這個動作就是「消耗 1 張當日的標準生圖額度」，文字部分則幾乎可以忽略不計。</p>
+<hr />
+<p><em>User prompt: 「文字模型推理次數」（Education 版每 4 小時 25 次 Pro 或 80 次 Thinking）其中 Hydrogen, Pro及Thinking在推理上有什麼差別</em></p>
+<p>Response: 這三個名詞代表了 Gemini 系統中「不同層級的模型架構」<strong>與</strong>「思考運作模式」。教育版之所以將它們拆開計算額度（每 4 小時 25 次 Pro、80 次 Thinking，而一般 Fast/Hydrogen 則為常駐使用），是因為它們背後消耗的伺服器算力與思考深度完全不同。</p>
+<h3 id="section-37"><strong>一、 三者推理機制與定位對照表</strong><a class="anchor" href="#section-37" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">比較維度</th>
+  <th style="text-align:left">4 Hydrogen <em>(一般 / 快速模式)</em></th>
+  <th style="text-align:left">Thinking <em>(思考模式，如 4 Hydrogen 思考)</em></th>
+  <th style="text-align:left">Pro <em>(高階模型，如 3.1 Pro / Argon)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>本質定位</strong></td>
+  <td style="text-align:left"><strong>直覺反應型引擎</strong> (最新世代輕量高速架構)</td>
+  <td style="text-align:left"><strong>深度邏輯推演模式</strong> (啟用內部思維鏈驗證)</td>
+  <td style="text-align:left"><strong>全能重裝型大腦</strong> (參數規模最大、知識與理解最深)</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>教育版額度</strong></td>
+  <td style="text-align:left"><strong>一般常駐使用</strong> (無每 4 小時嚴格次數上限)</td>
+  <td style="text-align:left">每 4 小時 <strong>80 次</strong> (每日總上限 300 次)</td>
+  <td style="text-align:left">每 4 小時 <strong>25 次</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>思考方式</strong></td>
+  <td style="text-align:left"><strong>直接輸出</strong>：看到問題立刻憑直覺生成答案，不做額外內部草稿。</td>
+  <td style="text-align:left"><strong>先想後說</strong>：回答前會在背景產生隱藏的「思考過程」，拆解步驟、自我檢查邏輯漏洞後才輸出。</td>
+  <td style="text-align:left"><strong>深度理解與整合</strong>：本身具備極龐大的知識庫與語意理解力，能同時處理極度複雜的多重條件。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>最擅長任務</strong></td>
+  <td style="text-align:left">翻譯、文章摘要、潤飾信件、基礎問答、快速腦力激盪。</td>
+  <td style="text-align:left">數學計算、程式除錯（Debug）、邏輯謎題、嚴謹的步驟規劃。</td>
+  <td style="text-align:left">跨領域長文分析、複雜企劃撰寫、高難度創意寫作、細膩語氣掌握。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-38"><strong>二、 具體推理差別白話解析</strong><a class="anchor" href="#section-38" aria-label="段落連結">#</a></h3>
+<p>你可以把這三者想像成三種不同工作風格的助理：</p>
+<ul>
+<li><strong>運作方式：</strong> 收到指令後「不打草稿、秒回答案」。因為最新一代（Gemini 4）的基礎能力已經很強，應付日常對話、整理重點、寫一般生圖提示詞綽綽有餘，且不會扣到你的 25 次或 80 次限額。</li>
+<li><strong>弱點：</strong> 遇到需要轉好幾個彎的數學題、或包含十幾個限制條件的複雜指令時，容易因為「沒先想清楚就回答」而算錯或漏掉條件。</li>
+</ul>
+<ul>
+<li><strong>運作方式：</strong> 當你開啟 Thinking（例如選擇 4 Hydrogen 思考），系統會分配額外的「思考預算（Thinking Budget）」給模型。你在畫面上會看到它顯示「正在思考…」，這時它正在內部進行<strong>逐步推演（Chain-of-Thought）</strong>——先列出解法、檢查有沒有算錯、發現矛盾再推翻重算，確認無誤後才給你最終答案。</li>
+<li><strong>額度設計原因：</strong> 因為這套「自我辯證」過程會消耗數倍的算力，所以教育版限制每 4 小時最多使用 <strong>80 次</strong>。</li>
+</ul>
+<ul>
+<li><strong>運作方式：</strong> Pro 代表的是<strong>模型本身的體量與知識深度</strong>（例如上一代旗艦 3.1 Pro 或 Gemini 4 的高階款 Argon）。它不只會推理，更強在<strong>對人類語言細微差別的理解、長篇脈絡的掌握（1M tokens）以及跨領域知識的融會貫通</strong>。</li>
+<li><strong>額度設計原因：</strong> 由於大模型每次運算佔用的硬體資源最高，且在多模態理解（同時看懂複雜圖表、長份 PDF 論文並精準作答）上消耗極大，因此教育版給的配額最珍貴，每 4 小時僅有 <strong>25 次</strong>。</li>
+</ul>
+<blockquote>
+<ol start="3">
+<li><strong>Pro（閱歷最深、知識最廣的資深顧問）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>Thinking（會打草稿、自我檢查的理科生）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>4 Hydrogen（反應最快的執行助理）：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-39"><strong>三、 實務上的省額度搭配建議</strong><a class="anchor" href="#section-39" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>90% 的日常任務（包含對話討論、濃縮摘要、寫生圖指令）：</strong> 留在預設的 <strong>4 Hydrogen</strong> 即可，完全不用擔心每 4 小時的次數限制。</li>
+<li><strong>需要精準邏輯與算數（寫程式、排複雜課表、核對數據）：</strong> 切換到 <strong>Thinking（80 次額度）</strong>，讓它先打草稿再回答，準確率會大幅提升。</li>
+<li><strong>處理超長文件、深度報告或高精細生圖：</strong> 再動用最珍貴的 <strong>Pro（25 次額度）</strong>，把額度留在最需要深度理解的關鍵時刻。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如果是要分析上傳的圖像，或是生圖時參考上傳的圖像，要如何處理</em></p>
+<p>Response: 在 Gemini 中上傳圖片主要有兩種用途：<strong>「純視覺分析（不生圖）」與「參考原圖進行生圖／改圖（會扣生圖額度）」</strong>。兩者的上傳操作完全相同，但<strong>搭配的模型</strong>與<strong>提示詞寫法</strong>有明確區別。</p>
+<h3 id="section-40"><strong>一、 操作步驟與意圖區分</strong><a class="anchor" href="#section-40" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>上傳圖片：</strong> 點擊對話框左下角的 <strong>「＋」</strong>（或直接把圖片拖曳進對話框，手機版點選相機／相簿圖示）。如果是多圖參考或比較，單次最多可選取多張圖片（生圖參考上限為 14 張）。</li>
+<li><strong>依目的選擇模型與寫法：</strong></li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">使用情境</th>
+  <th style="text-align:left">建議選擇的模型</th>
+  <th style="text-align:left">提示詞（Prompt）核心寫法</th>
+  <th style="text-align:left">額度消耗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>情境 A：純分析上傳的圖片</strong> <em>(例如：擷取圖片文字、分析圖表數據、拆解構圖風格)</em></td>
+  <td style="text-align:left">• 一般圖表/文字擷取：選 <strong>4 Hydrogen</strong> • 複雜數據/多圖深度比對：選 <strong>4 Hydrogen 思考</strong> 或 <strong>3.1 Pro</strong></td>
+  <td style="text-align:left">開頭使用「分析、整理、說明、提取、翻譯」等動詞，並明確避免出圖。 <em>範例：「請分析這張圖片的色彩搭配與構圖比例，並條列說明，<strong>不要生成圖片</strong>。」</em></td>
+  <td style="text-align:left"><strong>0 張生圖額度</strong> <em>(僅計入一般文字推理次數)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>情境 B：參考上傳的圖片生圖</strong> <em>(例如：換背景、角色一致性延伸、風格遷移)</em></td>
+  <td style="text-align:left">• 草稿測試：選 <strong>4 Hydrogen</strong> • 高精細完稿：選 <strong>3.1 Pro</strong></td>
+  <td style="text-align:left">開頭使用「參考這張圖片、保留…並修改…、生成一張…」，明確區分「保留元素」與「替換元素」。 <em>範例：「參考圖一的人物五官與服裝，讓她坐在圖二的咖啡廳場景中，<strong>生成一張</strong>寫實風格照片。」</em></td>
+  <td style="text-align:left"><strong>扣 1 張生圖額度</strong> <em>(依模型扣標準或 Pro 額度)</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-41"><strong>二、 兩種情境的實用寫法範本</strong><a class="anchor" href="#section-41" aria-label="段落連結">#</a></h3>
+<h4 id="section-42"><strong>1. 純分析圖像（零生圖額度消耗）</strong><a class="anchor" href="#section-42" aria-label="段落連結">#</a></h4>
+<blockquote>
+<ul>
+<li><strong>擷取圖片中的表格與文字：</strong>「請將這張圖片中的所有文字與數據轉錄成 Markdown 表格，保留原本的欄位結構，並幫我總結三個重點。」</li>
+<li><strong>反推圖片的生圖提示詞（逆向工程）：</strong>「請分析這張圖片的藝術風格、光影來源、鏡頭景深與材質細節，幫我寫成一段可以用來生圖的中文提示詞。<strong>請用純文字回覆，不要生成圖片。</strong>」</li>
+</ul>
+</blockquote>
+<h4 id="section-43"><strong>2. 參考上傳圖片生圖（精準控制改動範圍）</strong><a class="anchor" href="#section-43" aria-label="段落連結">#</a></h4>
+<blockquote>
+<ul>
+<li><strong>單圖局部修改（改背景或物件）：</strong>「參考上傳的這張商品照，<strong>完整保留瓶身的形狀、標籤文字與光澤</strong>，將原本的白色背景替換成清晨的木質餐桌，旁邊放一杯黑咖啡，自然陽光從右側灑落。」</li>
+<li><strong>多圖融合（角色＋場景／風格結合）：</strong>「我上傳了兩張圖片。請<strong>參考第一張圖片的角色外觀與髮型</strong>，套用<strong>第二張圖片的摺紙藝術風格</strong>，生成一張該角色的半身肖像。」</li>
+</ul>
+</blockquote>
+<h3 id="section-44"><strong>三、 避開限制與省額度的 2 個注意事項</strong><a class="anchor" href="#section-44" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>帳戶年齡與權限限制：</strong> 透過上傳圖片進行「人像編輯或生圖參考」功能，Google 規定帳號必須設定為<strong>年滿 18 歲</strong>；若使用教育帳戶，也需確保學校 IT 管理員沒有在後台關閉「圖片上傳與編輯」權限。</li>
+<li><strong>多圖上傳時標明順序：</strong> 當你一次上傳 2 張以上的參考圖時，在指令中直接用「第一張圖（圖一）、第二張圖（圖二）」來指稱各自負責的元素（例如圖一當主角、圖二當背景），模型的融合準確率會高出許多，減少重試浪費的額度。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 幫忙寫一組「多圖融合」或「照片改圖」的專屬指令</em></p>
+<p>Response: 以下為你整理好可直接複製使用的「照片改圖」<strong>與</strong>「多圖融合」專屬指令範本。只要把括號 [ ] 內的文字替換成你的實際需求，就能大幅提高一次到位的成功率，避免浪費生圖額度：</p>
+<h3 id="section-45"><strong>一、 單張照片改圖範本（鎖定主體＋局部修改）</strong><a class="anchor" href="#section-45" aria-label="段落連結">#</a></h3>
+<p><strong>1. 商業攝影級換背景（適合電商商品、人像去背合成）</strong></p>
+<p>「請參考我上傳的這張圖片，<strong>完整保留主角（或商品）的外觀輪廓、材質紋理、五官表情與原有比例，絕不更動主體細節</strong>。將原本的背景完全移除，替換為 [午後陽光灑落的北歐風木質咖啡廳桌面 / 夜間霓虹閃爍的東京街頭]。請自動調整主體邊緣的光影反射與地面陰影，讓主角與新背景的光線方向、色溫完全自然融合，呈現單眼相機拍攝的淺景深寫實質感。」</p>
+<p><strong>2. 局部元素替換（改服裝、改顏色、增減配件）</strong></p>
+<p>「請以我上傳的這張圖片為基礎進行局部修改。<strong>保持畫面中的構圖角度、背景環境、光線與人物姿勢完全不變</strong>，僅將 [人物身上的白色T恤] 替換為 [深藍色的針織毛衣]，並在 [右側桌面上增加一杯冒著熱氣的拿鐵]。修改處的布料皺褶與光影需符合原本畫面的光源方向。」</p>
+<h3 id="section-46"><strong>二、 多圖融合範本（跨圖片提取元素重組）</strong><a class="anchor" href="#section-46" aria-label="段落連結">#</a></h3>
+<p><strong>1. 角色＋場景融合（維持角色一致性，適合故事繪本、生活照合成）</strong></p>
+<p>「我上傳了兩張圖片。請提取<strong>第一張圖片中的 [人物五官、髮型與服裝穿搭]</strong>，將他置入<strong>第二張圖片的 [森林木屋前庭場景]</strong> 中。請讓人物 [坐在木椅上看書，面帶微笑]，並根據第二張圖片的 [黃昏暖色調光線] 重新計算人物身上的受光面與陰影，保持兩張圖的畫風與真實度完全一致，生成一張自然和諧的全身照。」</p>
+<p><strong>2. 風格遷移融合（把照片變成特定藝術風格，如摺紙、公仔、水彩）</strong></p>
+<p>「我上傳了兩張圖片。請完整保留<strong>第一張圖片的 [人物動作、構圖位置與場景配置]</strong>，但將整個畫面的視覺材質與藝術風格，完全轉換為<strong>第二張圖片所呈現的 [3D 立體手工摺紙藝術風格 / 黏土定格動畫質感]</strong>。要求所有物體都具備第二張圖片的紙張摺痕、光影層次與色彩搭配，重新生成一張高精細度的藝術作品。」</p>
+<p><strong>3. 雙人／多物件同框合成（把不同照片的人或物放進同一張圖）</strong></p>
+<p>「我上傳了兩張圖片。請將<strong>第一張圖片的 [左側女性]</strong> 與<strong>第二張圖片的 [右側男性]</strong> 合成在同一張畫面中，讓兩人 [並肩站在海邊沙灘上看向鏡頭]。請維持兩人各自原本的臉部特徵、身高比例與服裝細節，統一調整為 [晴朗午後的自然海邊日光]，避免出現拼貼感或邊緣生硬的狀況。」</p>
+<h3 id="section-47"><strong>三、 套用範本的 2 個小訣竅</strong><a class="anchor" href="#section-47" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>先用 4 Hydrogen 測試，滿意再切 3.1 Pro：</strong> 套用上述多圖融合指令時，建議先在預設模式下測試構圖與人物臉部有沒有跑掉（消耗標準額度）；確認位置與融合度都滿意後，再切換至 3.1 Pro 並輸入「<em>保留上一張圖的構圖與細節，以最高精細度重新渲染</em>」進行最終精修。</li>
+<li><strong>比例控制：</strong> 如果你有特定的版面需求（例如要做成手機桌布或簡報橫圖），只要在任何一組範本的最後加上「<strong>，畫面比例為 16:9 橫幅（或 9:16 直幅）</strong>」即可。</li>
+</ul>
+</blockquote>
+<p>如果你手邊剛好有想修改的照片或具體主題，也可以直接告訴我你的兩張圖分別是什麼，我能幫你把括號內的描述填好、微調成最精準的指令！</p>
+<hr />
+<p><em>User prompt: 如果是提供pdf檔來進術內容的分析或彙總，要如何處理</em></p>
+<p>Response: 在 Gemini 中處理 PDF 文件非常強大（尤其是具備 1M tokens 超長脈絡窗口的模型，一次可閱讀數百頁的論文、財報或講義）。這類純文件分析<strong>完全不會消耗你的生圖額度</strong>，只會計算文字模型推理次數。</p>
+<p>以下為上傳 PDF 進行分析與彙總的完整操作流程與高效率技巧：</p>
+<h3 id="section-48"><strong>一、 操作步驟與模型選擇</strong><a class="anchor" href="#section-48" aria-label="段落連結">#</a></h3>
+<ul>
+<li><strong>一般報告、會議紀錄、文章摘要：</strong> 使用預設的 <strong>4 Hydrogen</strong> 即可（速度最快，且不扣每 4 小時的限量額度）。</li>
+<li><strong>包含大量數據表格、財務試算、多份合約條款交叉比對：</strong> 建議切換至 <strong>4 Hydrogen 思考</strong>（每 4 小時 80 次額度），讓模型先在背景核對數字與邏輯再輸出。</li>
+<li><strong>上百頁的學術論文、深度專業報告：</strong> 可切換至 <strong>3.1 Pro</strong>（每 4 小時 25 次額度），發揮其最強的長文深度理解力。</li>
+</ul>
+<blockquote>
+<ol>
+<li><strong>上傳檔案：</strong> 點擊對話框左下角的 <strong>「＋」</strong>（或直接把 PDF 拖曳進視窗；若檔案已存在雲端，也可直接選取「從 Google 雲端硬碟新增」）。單次可同時上傳多份 PDF 進行交叉比對。</li>
+<li><strong>依文件複雜度選擇模型：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-49"><strong>二、 讓 PDF 分析更精準的 4 種實用指令範本</strong><a class="anchor" href="#section-49" aria-label="段落連結">#</a></h3>
+<p>上傳 PDF 後，避免只打「幫我總結這份文件」（容易得到太籠統的回答），建議直接套用以下結構化指令：</p>
+<p><strong>1. 結構化重點摘要（快速掌握長文核心）</strong></p>
+<p>「請閱讀我上傳的這份 PDF，用繁體中文幫我整理一份結構化摘要，包含：(1) 三句話核心結論、(2) 5 個關鍵論點與對應的頁碼標註、(3) 文中提到的具體數據或案例。」</p>
+<p><strong>2. 數據與表格提取（把 PDF 內的資料轉成可用表格）</strong></p>
+<p>「請提取這份 PDF 中所有關於 [營收數據 / 實驗結果 / 專案時程] 的資訊，整理成一張乾淨的 Markdown 表格，並指出其中變化幅度最大或異常的三個項目。」</p>
+<p><strong>3. 多份 PDF 交叉比對（找出差異與矛盾）</strong></p>
+<p>「我上傳了兩份 PDF（分別為 [2025 版本] 與 [2026 版本]）。請逐條比對這兩份文件在 [規格要求 / 預算編列 / 條款內容] 上的具體差異，並用表格列出『新增項目、刪除項目、修改前後對照』。」</p>
+<p><strong>4. 針對特定問題精準檢索（避免模型自行腦補）</strong></p>
+<p>「請<strong>嚴格根據這份 PDF 的內容</strong>回答以下問題：[輸入你的問題]。回答時請務必附上該資訊出現在第幾頁或哪個章節；如果文件中沒有提到相關資訊，請直接回答『文件中未提及』，切勿自行推測。」</p>
+<h3 id="section-50"><strong>三、 處理 PDF 的 3 個注意事項</strong><a class="anchor" href="#section-50" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>掃描檔（純圖片 PDF）也能讀：</strong> 即使你的 PDF 是整份掃描出來的圖片檔（無法反白複製文字），Gemini 的多模態視覺引擎也能直接辨識裡面的文字、手寫筆記與圖表，不需要另外找 OCR 軟體轉檔。</li>
+<li><strong>追問細節不會重複消耗大量額度：</strong> 第一輪上傳並請它摘要後，接著在同一個對話串裡針對某個章節繼續追問（例如：「請詳細解釋第 12 頁提到的那個實驗方法」），模型會直接從對話記憶中調用內容，反應速度會非常快。</li>
+<li><strong>從純文字分析轉成「視覺圖卡」：</strong> 如果你想把這份 PDF 的核心重點做成一張資訊圖表，建議<strong>先用文字完成上述的摘要確認</strong>，滿意後再於下一輪輸入：「<em>請根據你剛剛整理的三個核心重點，生成一張簡潔的資訊圖卡（Infographic）</em>」，這樣就能精準只花 <strong>1 張</strong>標準生圖額度產出圖卡。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如果是提供網頁連結來分析網頁中的內容，要如何處理</em></p>
+<p>Response: 在 Gemini 中直接貼上網頁連結（URL）進行內容分析或彙總，與處理 PDF 類似，<strong>完全不會消耗你的生圖額度</strong>，僅計入一般文字推理次數。</p>
+<p>不過，網頁抓取涉及即時連線與網站權限，操作時需注意以下執行方式與限制排查：</p>
+<h3 id="section-51"><strong>一、 標準操作流程</strong><a class="anchor" href="#section-51" aria-label="段落連結">#</a></h3>
+<ul>
+<li><em>重點摘要範例：</em>「請讀取這篇網頁的內容，用繁體中文條列出 5 個核心重點與具體數據：[貼上網址]」</li>
+<li><em>多網頁比較範例：</em>「請比較這兩個網頁中針對 [產品規格 / 政策方案] 的差異，並整理成 Markdown 表格：[網址一]、[網址二]」</li>
+</ul>
+<ul>
+<li>一般新聞、部落格文章摘要：使用預設的 <strong>4 Hydrogen</strong> 即可（速度最快，不佔用限量次數）。</li>
+<li>複雜數據分析、多篇長文交叉比對：切換至 <strong>4 Hydrogen 思考</strong> 或 <strong>3.1 Pro</strong>。</li>
+</ul>
+<blockquote>
+<ol start="2">
+<li><strong>模型選擇建議：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>貼上完整網址並下達指令：</strong> 在對話框中貼上完整的 https://... 連結，並直接說明分析需求（單次可貼上多個連結進行交叉比較）。</li>
+</ol>
+</blockquote>
+<h3 id="section-52"><strong>二、 網頁無法讀取時的 3 個常見原因與替代方案</strong><a class="anchor" href="#section-52" aria-label="段落連結">#</a></h3>
+<p>有時 Gemini 會回覆「無法存取該網頁」或只抓到部分標題，這通常是因為目標網站設有技術阻擋，而非你的額度問題：</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">常見阻擋原因</th>
+  <th style="text-align:left">具體表現</th>
+  <th style="text-align:left">替代解決方案</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 需要登入或付費牆（Paywall）</strong></td>
+  <td style="text-align:left">會員專屬文章、校內資料庫、需要帳號密碼才能看的內部網頁。</td>
+  <td style="text-align:left">系統只能讀取公開網頁。請在瀏覽器開啟該網頁後，按 <strong>Ctrl + A（全選）➔ Ctrl + C（複製）</strong>，直接將純文字貼進對話框讓 Gemini 分析。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 網站封鎖爬蟲（反抓取機制）</strong></td>
+  <td style="text-align:left">部分社群平台貼文（如特定 Threads、IG 貼文）、論壇或購物網站。</td>
+  <td style="text-align:left">瀏覽器開啟網頁後按 <strong>Ctrl + P（列印）➔ 選擇「另存為 PDF」</strong>，再把存下來的 PDF 檔透過對話框左下角「＋」上傳，即可 100% 完整讀取版面與圖表。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>3. 動態載入網頁（JavaScript 渲染）</strong></td>
+  <td style="text-align:left">網頁內容需要往下滑動才會陸續顯示，導致 AI 只抓到前半段。</td>
+  <td style="text-align:left">同樣建議使用瀏覽器的「另存為 PDF」<strong>或</strong>全選複製文字的方式餵給 Gemini，確保內容沒有遺漏。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-53"><strong>三、 特殊類型連結的處理技巧</strong><a class="anchor" href="#section-53" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>YouTube 影片連結：</strong> 教育版帳戶若學校管理員有開啟「Google Workspace 擴充功能（YouTube）」，直接貼上 YouTube 網址就能請 Gemini 根據字幕摘要影片重點、列出時間軸，甚至針對影片內容提問（不需要自己轉逐字稿）。</li>
+<li><strong>Google 雲端硬碟文件連結（Docs / Sheets）：</strong> 建議不要直接貼網址，而是點擊對話框左下角的 <strong>「＋」➔「從 Google 雲端硬碟新增」</strong> 直接選取檔案，這樣就不會受限於檔案的公開分享權限設定。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 直接貼上 YouTube 網址可以進行哪些分析及操作</em></p>
+<p>Response: 在 Gemini 中直接貼上公開的 YouTube 網址，系統不僅能讀取影片字幕，還能結合多模態視覺理解去「看懂」畫面裡的簡報、程式碼與圖表。這項操作<strong>完全不會消耗你的生圖額度</strong>，僅計入一般文字推理次數。</p>
+<p>以下為你可以進行的核心分析與實用操作：</p>
+<h3 id="section-54"><strong>一、 6 大核心分析與內容提取功能</strong><a class="anchor" href="#section-54" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>重點摘要與章節時間軸（Timestamp）拆解：</strong> 針對動輒一兩個小時的講座、線上課程或發表會，快速提煉核心結論，並自動生成帶有 [MM:SS] 時間戳記的章節大綱，方便你直接點擊跳轉到想看的段落。</li>
+<li><strong>畫面視覺內容辨識（簡報、白板、程式碼）：</strong> Gemini 具備影片畫面掃描能力，不僅能聽聲音，還能直接讀取影片畫面中出現的 <strong>投影片文字、白板草圖、數據圖表或終端機程式碼</strong>，並幫你轉錄成純文字或 Markdown 表格。</li>
+<li><strong>指定時間點精準提問：</strong> 你可以直接針對特定時間段發問（例如：「請解釋影片 04:15 到 06:30 之間講師提到的核心概念，以及畫面上的架構圖代表什麼意思？」）。</li>
+<li><strong>跨語言重點翻譯與整理：</strong> 貼上全英文、日文或韓文影片連結，直接要求用<strong>繁體中文</strong>整理架構化筆記，大幅降低觀看外語教學或國際研討會的門檻。</li>
+<li><strong>內容再製與學習輔助（考題、社群貼文、行動清單）：</strong> 將影片內容直接轉換為其他格式，例如：「根據這支教學影片出 5 題選擇題並附解答」、「將影片重點改寫成一篇 300 字的社群分享貼文」或「列出影片中提到的所有操作步驟清單」。</li>
+<li><strong>多支影片交叉比對（最多支援 10 支）：</strong> 在同一個對話框一次貼上多支公開影片網址（例如不同創作者針對同一款產品的評測），要求 Gemini 比較各支影片的觀點差異、優缺點評價並整合成對照表。</li>
+</ol>
+</blockquote>
+<h3 id="section-55"><strong>二、 可直接複製的實用指令範本</strong><a class="anchor" href="#section-55" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>快速抓重點＋時間軸：</strong>「請分析這支 YouTube 影片：[貼上網址]。用繁體中文為我整理：(1) 3 個核心結論、(2) 帶有 [MM:SS] 時間戳記的詳細章節重點摘要、(3) 畫面中簡報或圖表出現的重要數據。」</li>
+<li><strong>教學影片轉操作步驟 / 程式碼提取：</strong>「這是一支教學影片：[貼上網址]。請提取影片中示範的完整操作步驟，並將畫面中出現的程式碼（或公式）完整轉錄出來，附上中文註解。」</li>
+<li><strong>多支影片觀點比較：</strong>「請比較這兩支影片針對 [主題名稱] 的看法：[網址一]、[網址二]。請用 Markdown 表格列出兩者在核心論點、優缺點分析上的異同之處。」</li>
+</ul>
+</blockquote>
+<h3 id="section-56"><strong>三、 使用時的 3 個限制與注意事項</strong><a class="anchor" href="#section-56" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>僅支援「公開」影片：</strong> 無法讀取設為「私人（Private）」或「不公開（Unlisted）」的影片連結，也無法分析需要付費訂閱才能觀看的會員專屬影片。</li>
+<li><strong>影片長度與每日上限：</strong> 單支影片最長支援約 <strong>3 小時</strong>；若是免費版或基礎帳戶，每日可分析的 YouTube 影片總時長上限為 <strong>8 小時</strong>。</li>
+<li><strong>教育帳戶權限確認：</strong> 若使用學校配發的教育帳戶貼上網址後顯示「無法存取或沒有權限」，通常是學校 IT 管理員在 Google Workspace 後台關閉了「YouTube 擴充功能」的連動權限所致。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 有些網頁的內容夾雜許多廣告，要如何只萃取本文的內容</em></p>
+<p>Response: 面對夾雜大量蓋板廣告、側邊欄推薦文章與彈出視窗的網頁，你可以透過「指令過濾」<strong>或</strong>「瀏覽器先淨化再匯入」兩種方式，讓 Gemini 精準只萃取乾淨的正文。</p>
+<h3 id="section-57"><strong>一、 直接貼網址時：用「排除指令」過濾雜訊</strong><a class="anchor" href="#section-57" aria-label="段落連結">#</a></h3>
+<p>如果該網頁允許 Gemini 直接讀取，只要在提示詞中明確下達<strong>過濾邊界條件</strong>，模型就會自動忽略導覽列與廣告區塊：</p>
+<p>「請讀取這個網頁：[貼上網址]。<strong>請自動過濾並忽略網頁中所有的廣告橫幅、彈出視窗、側邊欄推薦、相關文章連結與頁尾版權宣告</strong>，只針對這篇文章的『核心本文（Main Article）』進行完整萃取，並用繁體中文幫我整理成條列式重點摘要（或逐段保留原文）。」</p>
+<h3 id="section-58"><strong>二、 廣告過多導致網頁無法直接讀取時的 3 種淨化技巧</strong><a class="anchor" href="#section-58" aria-label="段落連結">#</a></h3>
+<p>很多新聞網站或內容農場因為廣告腳本太重，會導致 Gemini 抓取失敗或抓到一堆廣告文字。這時建議先用瀏覽器把網頁「洗乾淨」再丟給 Gemini：</p>
+<ul>
+<li><strong>操作方式：</strong> 在電腦版 Edge、Safari、Firefox 或手機瀏覽器開啟網頁後，點擊網址列右側的「閱讀模式（書本圖示）」（Chrome 則可在頁面按右鍵選擇「以閱讀模式開啟」）。</li>
+<li><strong>效果：</strong> 瀏覽器會瞬間把所有廣告、圖片與排版全部移除，只留下純淨的標題與內文。此時直接按 <strong>Ctrl + A（全選）➔ Ctrl + C（複製）</strong>，貼進 Gemini 對話框即可。</li>
+</ul>
+<ul>
+<li>如果正文裡穿插了幾張重要的數據圖表不想漏掉，開啟瀏覽器的「閱讀模式」後，直接按 <strong>Ctrl + P（列印）➔ 選擇「另存為 PDF」</strong>，再把這份已經去除廣告的乾淨 PDF 上傳給 Gemini。</li>
+</ul>
+<ul>
+<li>不開閱讀模式，直接在充滿廣告的網頁上按 Ctrl + A 全選複製，整坨貼進 Gemini 對話框，並在最上方加上一句：「以下是我從網頁直接複製的內容，裡面混雜了大量廣告與選單文字。<strong>請幫我把所有廣告與無關的導覽文字剔除，只提取出真正屬於文章本體的內容</strong>，並幫我整理重點：」</li>
+<li>因為 Gemini 的語意理解力極強，即使你貼進去的文字混雜了「限時特賣」、「延伸閱讀」等字眼，它也能精準辨識並過濾掉。</li>
+</ul>
+<blockquote>
+<ol start="3">
+<li><strong>整頁全選貼上並交給 AI 清洗（最省事）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>「閱讀模式」搭配「另存為 PDF」（適合想保留文章內關鍵圖表時）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>使用瀏覽器內建的「閱讀模式（Reader View）」再複製（最乾淨）：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-59"><strong>三、 實務搭配建議</strong><a class="anchor" href="#section-59" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>處理超長雜亂文字時選 4 Hydrogen：</strong> 貼上整頁複製的文字通常字數較多，使用預設的 <strong>4 Hydrogen</strong> 處理文本清洗與去廣告摘要速度最快，且完全不會消耗你每 4 小時的限量推理額度。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 網頁內的本文中的圖像要如何連同本文讀取整理</em></p>
+<p>Response: 當網頁本文中包含重要圖表、資訊圖卡或照片時，單純貼上網址或複製文字（Ctrl + A）會漏掉圖片資訊，因為純文字複製不會帶入圖像檔案。</p>
+<p>要讓 Gemini <strong>「連同本文文字＋內嵌圖像」一起完整讀取並交叉整理</strong>（且不消耗生圖額度），最可靠的方法有兩種，依網頁廣告多寡選擇即可：</p>
+<h3 id="section-60"><strong>一、 最佳解決方案：「瀏覽器閱讀模式 ＋ 另存為 PDF」</strong><a class="anchor" href="#section-60" aria-label="段落連結">#</a></h3>
+<p>這是最能同時達成「去廣告」<strong>與</strong>「保留本文圖片」的標準做法，因為 Gemini 的多模態視覺引擎可以直接看懂 PDF 裡的每一張圖表與照片：</p>
+<ul>
+<li><em>檢查小細節：</em> 儲存前在預覽畫面確認「背景圖形」或本文圖片有正常顯示，沒有被切斷。</li>
+</ul>
+<blockquote>
+<ol start="3">
+<li><strong>上傳並下達圖文整合指令：</strong> 將存好的 PDF 拖曳進 Gemini 對話框，輸入以下指令：「請完整閱讀我上傳的這份 PDF，<strong>同時結合『內文文字』與『文章中插圖／數據圖表』的視覺資訊</strong>，幫我整理一份圖文整合重點報告。針對文中的每一張圖片或圖表，請一併說明它所呈現的具體數據或視覺重點，並整合進對應的段落摘要中。」</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>開啟瀏覽器閱讀模式：</strong> 在電腦版瀏覽器（Edge、Safari、Firefox 或 Chrome 右鍵「以閱讀模式開啟」）點選閱讀模式，自動過濾掉網頁周邊的廣告橫幅與側邊欄，只留下乾淨的標題、內文與<strong>本文內的插圖</strong>。</li>
+<li><strong>存成 PDF 檔案：</strong> 按下 <strong>Ctrl + P（Mac 為 Cmd + P）</strong> ➔ 目的地選擇 <strong>「另存為 PDF」</strong>。</li>
+</ol>
+</blockquote>
+<h3 id="section-61"><strong>二、 局部精準處理：「純文字複製 ＋ 關鍵圖片截圖上傳」</strong><a class="anchor" href="#section-61" aria-label="段落連結">#</a></h3>
+<p>如果網頁不支援閱讀模式，或文章很長但你<strong>只在意其中 2～3 張關鍵圖表</strong>，用這個方法最快：</p>
+<blockquote>
+<ol>
+<li><strong>複製文字：</strong> 直接在網頁上複製你要的本文段落，貼進 Gemini 對話框（先不要送出）。</li>
+<li><strong>截圖貼上關鍵圖片：</strong> 使用系統截圖快捷鍵（Windows 按 <strong>Win + Shift + S</strong>、Mac 按 <strong>Cmd + Ctrl + Shift + 4</strong>）框選網頁中的關鍵圖表，直接回到 Gemini 對話框按 <strong>Ctrl + V（貼上）</strong>。你可以在同一則訊息裡連續貼上多張截圖與文字。</li>
+<li><strong>下達整合指令：</strong>「以上是我從網頁擷取的本文文字與文中的幾張關鍵圖表。請將文字內容與圖片中的數據／細節互相對照整合，為我整理一份完整的分析摘要。」</li>
+</ol>
+</blockquote>
+<h3 id="section-62"><strong>三、 為什麼不建議直接貼網址讓 AI 讀圖？</strong><a class="anchor" href="#section-62" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>技術限制：</strong> 直接貼上網頁 URL 時，Gemini 的網頁讀取工具主要抓取的是網頁的 HTML 文字結構，通常<strong>不會自動下載並解析網頁內嵌的圖片檔案</strong>（特別是延遲載入 Lazy-loading 的圖片或防盜鏈圖片）。</li>
+<li><strong>額度提醒：</strong> 無論是用「閱讀模式轉 PDF 上傳」還是「文字＋截圖貼上」，都屬於<strong>多模態輸入分析</strong>，<strong>完全不會扣掉你每日 20 張或 3 張的生圖額度</strong>。如果圖表數據非常複雜，建議將對話模型切換至 <strong>4 Hydrogen 思考</strong>（每 4 小時 80 次額度），解讀圖表數字的準確率會最高。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 4 Hydrogen 思考（每 4 小時 80 次額度）如果用完，是只用完時之後的4小時重置，還是一開始使用後的4小時重置</em></p>
+<p>Response: <strong>是從你「發出第 1 次請求（開始使用）」的那一刻起算，滿 4 小時後全部重置（滾動式時間窗口，Rolling 4-hour Window）</strong>，並不是等到第 80 次全部用完才開始倒數 4 小時。</p>
+<p>以下用具體時間點舉例說明：</p>
+<h3 id="section-63"><strong>運作時間軸範例</strong><a class="anchor" href="#section-63" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>10:00（開始計算）：</strong> 你在 4 Hydrogen 思考 模式下送出了第 1 則訊息。系統在後台啟動了一個 <strong>10:00 ～ 14:00</strong> 的 4 小時計算週期（此時剩餘 79 次）。</li>
+<li><strong>11:30（額度用盡）：</strong> 你在一個半小時內密集操作，把剩下的 79 次全部用完，畫面跳出「已達上限」的提示。</li>
+<li><strong>14:00（準時重置）：</strong> 你不需要從 11:30 等到 15:30，只要到了 <strong>14:00</strong>（距離你 10:00 第一次發問剛好滿 4 小時），這 80 次額度就會<strong>整批重新補滿</strong>。</li>
+</ul>
+</blockquote>
+<h3 id="section-64"><strong>兩個補充細節</strong><a class="anchor" href="#section-64" aria-label="段落連結">#</a></h3>
+<ul>
+<li><strong>每 4 小時 80 次：</strong> 採上述「第一次發問起算 4 小時」的滾動重置。</li>
+<li><strong>每日總上限 300 次：</strong> 則跟生圖額度一樣，固定在每天下午 16:00（台灣冬令時間，對應美國太平洋時間午夜 12:00）統一歸零重算。</li>
+</ul>
+<blockquote>
+<ol start="2">
+<li><strong>用完 80 次期間的替代做法：</strong> 在等待 4 小時窗口重置的空檔，你依然可以切回預設的 <strong>4 Hydrogen（一般模式）</strong> 繼續對話，這個模式不佔用每 4 小時的思考額度，不會影響一般文字查詢與整理。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>每日總上限 300 次的重置時間不同：</strong></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 每次的對話，輸入的文字與回覆的文字的長度有什麼限制</em></p>
+<p>Response: 在 Gemini 中，「單次輸入長度」與「單次回覆長度」的限制完全不同，且會根據你使用的<strong>帳戶方案</strong>與<strong>選擇的模型</strong>有所差異：</p>
+<h3 id="section-65"><strong>一、 核心長度限制一覽表</strong><a class="anchor" href="#section-65" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">限制項目</th>
+  <th style="text-align:left">一般教育版 / 免費版 <em>(Education Fundamentals / Standard)</em></th>
+  <th style="text-align:left">進階教育版 / 個人付費版 <em>(AI Pro for Education / AI Pro / Ultra)</em></th>
+  <th style="text-align:left">實際中文字數換算概念</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>單次輸入＋對話記憶上限</strong> <em>(脈絡窗口 Context Window)</em></td>
+  <td style="text-align:left"><strong>32K tokens</strong> <em>(部分升級教育版已放寬至 128K)</em></td>
+  <td style="text-align:left"><strong>1M tokens</strong> <em>(1,000,000 tokens)</em></td>
+  <td style="text-align:left">• <strong>32K：</strong> 約 2 萬～2.5 萬個繁體中文字（約 40 頁文件） • <strong>1M：</strong> 約 60 萬～75 萬個繁體中文字（約 1,500 頁書籍）</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>單次回覆輸出上限</strong> <em>(Max Output Tokens)</em></td>
+  <td style="text-align:left"><strong>最高 8K～64K tokens</strong> <em>(視模型而定，一般網頁版預設單輪約 4K～8K tokens)</em></td>
+  <td style="text-align:left"><strong>最高 64K tokens</strong> <em>(4 Hydrogen / 3.1 Pro 最大輸出上限)</em></td>
+  <td style="text-align:left">網頁版單次實際回覆通常落在 <strong>3,000～6,000 個繁體中文字</strong>左右</td>
+</tr>
+</tbody>
+</table>
+<p><em>(註：在繁體中文環境下，1 個中文字大約消耗 <strong>1.5 到 2 個 tokens</strong>；英文則是 1 個單字約 1.3 個 tokens。)</em></p>
+<h3 id="section-66"><strong>二、 輸入與輸出的 3 個實務運作機制</strong><a class="anchor" href="#section-66" aria-label="段落連結">#</a></h3>
+<ul>
+<li>如果你在同一則對話裡不斷追問並上傳多個大檔案，當累計字數超過上限時，系統會開始自動遺忘最前面的對話內容，或提示「對話過長，請開啟新對話」。</li>
+</ul>
+<ul>
+<li>雖然 Gemini 4 與 3.1 Pro 的技術規格最高支援單次輸出達 <strong>64K tokens</strong>（約 4 萬多字），但在一般對話介面中，為了維持反應速度與閱讀體驗，模型預設會將單次回覆控制在 <strong>3,000～6,000 個中文字</strong>以內。</li>
+<li>如果你要求它「把這份 100 頁的 PDF 逐字翻譯」，它寫到約四、五千字時就會停下來。</li>
+</ul>
+<ul>
+<li>網頁版輸入框直接貼上超長純文字時，若超過約 2～3 萬字，有時會出現貼上卡頓或自動轉成「純文字附件（pasted_text.txt）」的情況。建議超過 1 萬字的資料直接存成 <strong>.txt 或 .pdf 檔案上傳</strong>，系統讀取會更穩定。</li>
+</ul>
+<blockquote>
+<ol start="3">
+<li><strong>超過單次輸入框貼上上限時的處理方式：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>為什麼輸入可以幾十萬字，但回覆通常只有幾千字？</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>輸入是「整串對話累計計算」的：</strong> 所謂的脈絡窗口（32K 或 1M tokens），計算的是「你這一次輸入的文字 ＋ 上傳的 PDF／圖片 ＋ 同一則對話串先前所有的歷史紀錄」的總和。</li>
+</ol>
+</blockquote>
+<h3 id="section-67"><strong>三、 突破「單次回覆字數限制」的 2 個技巧</strong><a class="anchor" href="#section-67" aria-label="段落連結">#</a></h3>
+<p>當你需要 Gemini 產出上萬字的長篇報告、完整程式碼或逐章翻譯時，不要要求它「一次全部寫完」（容易寫到一半斷掉或自動大幅濃縮），請改用以下做法：</p>
+<blockquote>
+<ul>
+<li><strong>技巧 1：先列大綱，再「分段生成」</strong> 先請它列出 5 個章節大綱，接著在下一輪輸入：「<em>請先完整撰寫第一章與第二章，字數盡量詳細，寫完後停下來等我指令</em>」，確認後再輸入「<em>請繼續撰寫第三章與第四章</em>」。</li>
+<li><strong>技巧 2：遇到輸出中斷時輸入「請繼續」</strong> 如果模型寫到一半因為觸及單次輸出上限而突然停在半句話，只要直接輸入「請繼續（從剛剛中斷的地方接續寫完）」，它就會無縫接軌把剩下的內容補齊。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如何知道是簡單回覆或是完整回覆，或是說限於回覆字數而簡化回覆的內容</em></p>
+<p>Response: 要判斷 Gemini 給出的是「完整回覆」還是「因長度上限而遭簡化／截斷的回覆」，可以從<strong>結尾狀態</strong>、<strong>內容結構特徵</strong>以及<strong>脈絡記憶（Context）表現</strong>這三個面向來辨識。</p>
+<h3 id="section-68"><strong>一、 3 種常見回覆狀態的辨識特徵</strong><a class="anchor" href="#section-68" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">回覆狀態</th>
+  <th style="text-align:left">畫面與文字特徵</th>
+  <th style="text-align:left">背後發生了什麼事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 正常的完整回覆</strong></td>
+  <td style="text-align:left">• 段落結構完整，有自然的結語或總結。 • 原本要求列出的項目（例如 10 個重點、5 個步驟）<strong>全部都有列出</strong>，沒有跳號或草草帶過。</td>
+  <td style="text-align:left">模型在單次輸出額度內順利完成任務，沒有觸及字數上限。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 觸及輸出上限的「硬截斷」</strong></td>
+  <td style="text-align:left">• 句子寫到一半<strong>突然停在半空中</strong>，沒有句號（例如：「第三個原因主要是因為系統在處理大量數據時會…」）。 • 程式碼區塊只有開頭的 ```，沒有結尾的 ```。 • 表格畫到一半突然消失。</td>
+  <td style="text-align:left">單次回覆達到了系統設定的輸出字數天花板（網頁版通常約 3,000～6,000 個繁體中文字），被系統強制切斷。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>3. 模型的「自我壓縮簡化」</strong></td>
+  <td style="text-align:left">• 沒有斷在半句話，結構看起來完整，但<strong>後半段明顯變得很敷衍</strong>。 • 例如你請它分析 10 份資料，前 3 份寫得很詳細，第 4～10 份變成只用一句話帶過，甚至出現「<em>（以下其餘項目以此類推，略）</em>」的字眼。</td>
+  <td style="text-align:left">模型預判全部展開會超過單次回覆字數上限，因此在生成過程中自動啟動「濃縮策略」，主動省略細節以求在字數限制內收尾。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-69"><strong>二、 另一種隱性簡化：對話過長導致「忘記前面」</strong><a class="anchor" href="#section-69" aria-label="段落連結">#</a></h3>
+<p>除了單次回覆的字數限制外，如果<strong>同一則對話串已經來回聊了幾十輪，或上傳了好幾份大型 PDF</strong>，當總字數逼近脈絡窗口上限（例如一般教育版的 32K tokens）時，會出現以下徵兆：</p>
+<blockquote>
+<ul>
+<li><strong>遺忘早期設定：</strong> 開始無視你在一開始設定的格式要求（例如忘記要用表格呈現、忘記要附上頁碼）。</li>
+<li><strong>引用錯誤或變模糊：</strong> 針對最早上傳的第一份文件提問時，回答變得籠統不精確，因為最前面的對話紀錄已經被系統擠出記憶區外了。</li>
+</ul>
+</blockquote>
+<h3 id="section-70"><strong>三、 確保獲得「完整不縮水回覆」的 3 個控制技巧</strong><a class="anchor" href="#section-70" aria-label="段落連結">#</a></h3>
+<p>當你需要處理長文整理、逐條翻譯或詳細報告時，可以在指令中加入<strong>防簡化限制</strong>，主動掌控輸出深度：</p>
+<blockquote>
+<ol>
+<li><strong>加上「禁止省略」的明確指令：</strong> 在提示詞末尾加上：「<strong>請逐項完整展開說明，嚴禁使用『以此類推』、『略』或過度濃縮的方式帶過任何一個項目。</strong>」</li>
+<li><strong>主動設定「分段輸出」的煞車點：</strong> 如果內容明顯超過 4,000 字（例如要整理 20 頁講義），不要讓模型自己決定在哪裡縮水，直接指定分批處理：「這份文件共有 10 個章節。<strong>這次請你只針對第 1 到第 3 章進行最詳細的完整解析</strong>，寫完第 3 章後就先停下來，等我說『繼續』再寫第 4 到第 6 章。」</li>
+<li><strong>看到硬截斷時，立刻接續生成：</strong> 只要發現句子或程式碼停在半空中，直接在下一輪輸入「請繼續（從剛剛中斷的最後一句話無縫接續寫完）」，模型就會接著把剩下的部分完整補齊。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 如果對話次數太多會忘記先前的對話，要如何處理，例如要進行對話的彙總及生圖，會不會只從最後的對話往前推算幾次的對話來彙總，或是全部都會彙總，或是可以分段彙總</em></p>
+<p>Response: <strong>是的，如果對話串過長，直接請它彙總確實會發生「只保留近期對話、遺忘最前面內容」的狀況。</strong> 系統並非「一刀切掉全部舊對話」，而是採用<strong>滑動視窗（Sliding Window）機制：當總字數超過脈絡上限（一般教育版約 32K tokens / 約 2.5 萬中文字；Pro 版為 1M tokens / 約 70 萬中文字）時，系統會從最舊的第一輪對話開始往後擠出記憶區</strong>，導致它只看得到「從最後一輪往前推算的有限對話」。</p>
+<p>為了避免長對話彙總漏掉早期重點，最穩妥的做法是採用「分段彙總 ➔ 匯出合併 ➔ 新對話生圖」的標準工作流：</p>
+<p><strong>1以「主題或階段」為錨點進行分段彙總</strong></p>
+<p>適用超過 20～30 輪的長對話</p>
+<p>不要只下達「幫我總結以上全部對話」（容易只抓到後半段）。直接在對話框指明早期的具體關鍵字或段落範圍，分批提取摘要。例如先輸入：「<em>請只針對我們在這則對話<strong>最一開始討論的『桌曆設計與版本差異』部分</strong>進行重點摘要，整理成 5 點條列</em>」；完成後再針對中段與後段下達相同指令。 <em>Verification:</em> 確認 AI 產出的早期摘要有準確包含最初幾輪的具體數據與細節；若發現它答非所問或編造內容，代表最前端的對話已被系統擠出記憶區。</p>
+<p><strong>2將各段摘要複製並整合為總綱</strong></p>
+<p>避免在同一個對話串裡越滾越大</p>
+<p>將剛剛分批產出的幾段文字摘要複製下來（或直接點擊每則回覆下方的「分享與匯出 ➔ 匯出至 Google 文件」），在記事本或 Google 文件中貼在一起，形成一份精煉的「總摘要文字稿」。 <em>Verification:</em> 確認整合後的純文字總摘要已涵蓋從頭到尾的所有核心重點，且字數控制在 2,000 字以內。</p>
+<p><strong>3開啟「全新對話」貼上總摘要再生成圖卡</strong></p>
+<p>釋放全部記憶容量並確保生圖精準</p>
+<p>點擊左上角 <strong>「＋ 發起新對話」</strong>，把整理好的總摘要貼進全新的對話框中，再下達生圖指令（例如：「<em>請根據以下這份完整摘要內容，生成一張結構清晰、排版美觀的資訊圖卡</em>」）。 <em>Verification:</em> 新對話完全沒有舊紀錄干擾，圖卡能 100% 完整呈現前、中、後期的所有重點，不會只偏重最後幾輪的話題。</p>
+<h3 id="section-71"><strong>防止長對話失憶的 3 個日常習慣</strong><a class="anchor" href="#section-71" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>善用「置頂／關鍵字錨定」測試記憶邊界：</strong> 如果不確定系統還記不記得最前面的內容，可以在彙總前先問一句：「<em>你還記得我們這個對話的第一個問題是什麼嗎？</em>」只要它能精準答出，就代表整串對話都還在它的記憶範圍內，可以直接進行「全對話一次彙總」。</li>
+<li><strong>「討論階段」與「產出階段」分開開視窗：</strong> 當一個主題聊超過 15～20 輪、準備要產出最終報告或圖卡時，養成習慣把文字結論帶到<strong>新對話</strong>中執行生圖，既能避免記憶混亂，也能讓生圖模型專注在純淨的提示詞上。</li>
+<li><strong>多利用「匯出至 Google 文件」功能：</strong> 每一則重要的階段性回覆，都可以直接點選下方的匯出按鈕存進 Google 雲端硬碟；最後只要開新對話並從雲端硬碟把這幾份文件一次選進來，就能讓 AI 零遺漏地進行跨文件總結與製圖。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 發起新對話可以利用將前一個對話的總摘貼進全新的對話框中，來延續對話的內容，這樣新的對話會記住貼上的總摘，但總摘本身的長度有什麼限制</em></p>
+<p>Response: 將前一個對話的總摘要貼進全新對話框時，這段總摘要的長度限制取決於「對話框直接貼上的介面限制」<strong>與</strong>「模型本身的脈絡窗口（Context Window）上限」這兩道關卡。</p>
+<h3 id="section-72"><strong>一、 總摘要長度的兩道限制</strong><a class="anchor" href="#section-72" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">限制層級</th>
+  <th style="text-align:left">一般教育版 / 免費版 <em>(Education Fundamentals / Standard)</em></th>
+  <th style="text-align:left">進階教育版 / 個人付費版 <em>(AI Pro for Education / AI Pro / Ultra)</em></th>
+  <th style="text-align:left">實際表現與處理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 網頁輸入框直接貼上限制</strong></td>
+  <td style="text-align:left">約 <strong>2 萬～3 萬個中文字</strong> <em>(超過時輸入框會自動轉為純文字附件)</em></td>
+  <td style="text-align:left">約 <strong>2 萬～3 萬個中文字</strong> <em>(超過時同樣會自動打包成 .txt 附件)</em></td>
+  <td style="text-align:left">這是瀏覽器前端介面為了防止網頁卡頓的設計；只要字數過長，系統會自動把你貼上的文字變成一個 pasted_text.txt 檔案掛在對話框裡，<strong>不影響讀取</strong>。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 模型最大記憶容量上限</strong> <em>(脈絡窗口 Context Window)</em></td>
+  <td style="text-align:left"><strong>32K tokens</strong> <em>(約 2 萬～2.5 萬個繁體中文字) (部分升級教育版為 128K / 約 9 萬字)</em></td>
+  <td style="text-align:left"><strong>1M tokens</strong> <em>(約 60 萬～75 萬個繁體中文字)</em></td>
+  <td style="text-align:left">這是模型「一次能消化多少總字數」的硬上限。如果貼上的總摘要（或附件）超過這個上限，系統會顯示「訊息過長」並拒絕送出。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-73"><strong>二、 實務上最理想的「總摘要長度」建議</strong><a class="anchor" href="#section-73" aria-label="段落連結">#</a></h3>
+<p>雖然高階模型最高能塞進幾十萬字，但為了讓新對話「精準記住重點、不產生資訊稀釋、且保留足夠空間讓你繼續往後聊」，總摘要的長度並不是越長越好：</p>
+<ul>
+<li><strong>原因 1（留足後續對話空間）：</strong> 如果你使用的是 32K tokens 的一般教育版，光是一開頭就貼了 2 萬字的總摘要，代表你的記憶容量一開場就用掉了 80%～90%，沒聊幾句又會開始遺忘開頭的摘要。將摘要濃縮在 <strong>3,000 字以內</strong>，能保留超過 85% 的記憶空間供新對話延續使用。</li>
+<li><strong>原因 2（避免注意力分散）：</strong> 給 AI 的「前情提要」越精煉結構化（例如：背景設定、已確認結論、待辦事項），模型在後續回答或生圖時的遵循度就越高，不會被冗長的流水帳干擾。</li>
+</ul>
+<blockquote>
+<ul>
+<li><strong>最佳黃金長度：1,500 ～ 4,000 個繁體中文字</strong></li>
+</ul>
+</blockquote>
+<h3 id="section-74"><strong>三、 如果總摘要真的超過 2 萬字怎麼辦？</strong><a class="anchor" href="#section-74" aria-label="段落連結">#</a></h3>
+<p>如果你彙總的是一整本書或超大型專案紀錄，總摘要本身就高達 2～3 萬字以上：</p>
+<blockquote>
+<ol>
+<li><strong>存成 .txt 或 .pdf 檔案上傳：</strong> 不要硬塞在文字輸入框裡，直接存成純文字檔或 PDF 透過左下角 <strong>「＋」</strong> 上傳，系統讀取大檔案的穩定度遠高於直接貼上長文字。</li>
+<li><strong>開頭加上「記憶錨定指令」：</strong> 在貼上或上傳總摘要的最上方，加上這句指令讓新對話立刻進入狀態：「以上（或附件）是我們前一個專案對話的完整背景與階段性結論。請先完整閱讀並記住這些核心設定，接著我們將從這個基礎繼續往下討論（或生成圖卡）。確認讀取完成後，請先簡短回覆『已載入前次專案記憶，請指示下一步』即可。」</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 對話回覆的格式是mardown嗎，要如何貼到Notion，或是如何存成md檔，PDF檔及網頁html，要完整對話的輸出，或是選取其中幾段對話輸出</em></p>
+<p>Response: <strong>是的，Gemini 所有對話回覆的底層格式都是標準的 Markdown</strong>（包含標題 #、粗體 **、條列式與 Markdown 表格），這也是為什麼你直接選取畫面上的文字複製時，有時格式會跑掉，但透過正確的按鈕複製就能完美保留排版。</p>
+<p>以下針對「貼到 Notion」<strong>以及</strong>「匯出為 .md、.pdf、.html（支援單段或整串對話）」整理最完整的操作方式：</p>
+<h3 id="section-75"><strong>一、 如何完美貼到 Notion（保留表格、標題與粗體）</strong><a class="anchor" href="#section-75" aria-label="段落連結">#</a></h3>
+<p>千萬不要用滑鼠反白選取網頁文字再按 Ctrl + C（這樣會連帶複製網頁的 CSS 樣式，貼進 Notion 時表格容易錯亂）。請用以下標準做法：</p>
+<blockquote>
+<ol>
+<li><strong>點擊回覆底部的「複製」圖示（📋）：</strong> 將滑鼠移到該則 Gemini 回覆的最下方，點擊「複製（Copy）」<strong>按鈕。這個按鈕會自動把整則回覆轉換為</strong>純淨的標準 Markdown 語法存進剪貼簿。</li>
+<li><strong>直接貼進 Notion 頁面：</strong> 打開 Notion 頁面，直接按 <strong>Ctrl + V（Mac 為 Cmd + V）</strong>。Notion 原生支援 Markdown 解析，會自動把 ### 轉成標題、- 轉成項目符號，並將 Markdown 表格完整還原成 Notion 的原生表格。</li>
+<li><strong>只想貼「其中幾段」到 Notion 時：</strong> 如果一則回覆很長、你只要中間某個表格或段落，建議先貼進純文字記事本（或直接貼進 Notion 頁面後再刪除不需要的區塊）；若需要頻繁局部擷取，可安裝瀏覽器外掛（如 <em>Copy as Markdown</em>），就能在網頁反白選取局部文字時直接複製成 Markdown。</li>
+</ol>
+</blockquote>
+<h3 id="section-76"><strong>二、 匯出為 .md、.pdf 與 .html 的完整操作方式</strong><a class="anchor" href="#section-76" aria-label="段落連結">#</a></h3>
+<p>你可以根據要「只存單則／幾段回覆」還是「整串對話紀錄打包匯出」，選擇對應的方法：</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">輸出格式</th>
+  <th style="text-align:left">單則回覆 / 局部段落輸出</th>
+  <th style="text-align:left">整串完整對話輸出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Markdown (.md)</strong></td>
+  <td style="text-align:left">1. 點擊回覆下方的 <strong>「複製（📋）」</strong> 按鈕。 2. 打開電腦記事本（或 VS Code / Typora / Obsidian），貼上後存檔，將副檔名改為 .md 即可。 <em>(也可直接對我說：「請幫我把這段內容存成 .md 檔下載」，我能直接生成可下載的 .md 檔案給你)</em></td>
+  <td style="text-align:left">1. 在對話最後一輪對 Gemini 下達指令： <em>「請將我們這整串對話的問答重點整理出來，並幫我匯出成一個可下載的 .md 檔案」</em>。 2. 若要一字不漏備份所有問答，建議安裝免費瀏覽器外掛（如 <strong>Gemini Exporter</strong> 或 <strong>Save ChatGPT/Gemini to Markdown</strong>），可一鍵將整串對話轉成單一 .md 檔。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>PDF 檔 (.pdf)</strong></td>
+  <td style="text-align:left"><strong>方法 A（直接要求生成）：</strong> 在對話框輸入「<em>請幫我把剛剛那段內容製作成一份排版精美的 PDF 檔</em>」，系統會直接產出可下載的 PDF 連結。 <strong>方法 B（透過 Google 文件）：</strong> 點擊回覆下方的 <strong>「分享與匯出（↗）」➔「匯出至 Google 文件」</strong>，開啟後點選「檔案 ➔ 下載 ➔ PDF 文件」。</td>
+  <td style="text-align:left"><strong>瀏覽器內建列印法（最完整、連圖片都能保留）：</strong> 1. 捲動到對話串最上方（確保所有歷史紀錄都已載入畫面）。 2. 按下 <strong>Ctrl + P（Mac 為 Cmd + P）</strong> ➔ 目的地選擇 <strong>「另存為 PDF」</strong>。 3. 展開「更多設定」，勾選「背景圖形」，即可把整串對話（包含表格與生成的圖片）完整存成 PDF。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>網頁檔 (.html)</strong></td>
+  <td style="text-align:left"><strong>透過 Google 文件轉換（最乾淨）：</strong> 1. 點擊該則回覆下方的 <strong>「分享與匯出（↗）」➔「匯出至 Google 文件」</strong>。 2. 在 Google 文件上方選單點選 <strong>「檔案 ➔ 下載 ➔ 網頁（.html，已壓縮）」</strong>，解壓縮後即為乾淨的標準 HTML 網頁檔。</td>
+  <td style="text-align:left"><strong>瀏覽器完整網頁儲存法：</strong> 1. 確保整串對話都已捲動載入完成。 2. 在網頁空白處按右鍵選擇 <strong>「另存新檔（Save as）」</strong>（或按 Ctrl + S）。 3. 存檔類型選擇 <strong>「網頁，全部（Webpage, Complete）」</strong> 或 <strong>「網頁，單一檔案（.mhtml）」</strong>，即可離線用瀏覽器開啟整串對話。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-77"><strong>三、 實用小提醒：直接請我幫你「打包下載」</strong><a class="anchor" href="#section-77" aria-label="段落連結">#</a></h3>
+<p>如果你目前正在整理的這串對話內容（例如你剛剛問的所有版本差異、額度計算、生圖與 PDF 處理技巧），想要直接存成檔案帶走，<strong>不需要自己手動複製貼上</strong>： 你只要直接在對話框對我說：<strong>「請幫我把這整串對話的所有問答重點，直接生成一個可下載的 .md 檔（或 .pdf 檔）」</strong>，我就能直接調用檔案生成工具，在對話框產出下載按鈕給你。</p>
+<hr />
+<p><em>User prompt: 如果是要比較深度的對話，若果4小時內不會超過80次，可以直接切到 Thinking模式對話，因為對話時會包括輸入的時間，閱讀回覆內容的時間，或是整理到Notion的時間，所以一次的對話時間，以4小時80次來算，等於是 4x60/80=3分鐘，等於一次對話的時間平均是3分鐘，已算是足夠在重置前，就可以繼續對話下去，而且可以連續繼對話4小時的話，也是算是很重度對話了</em></p>
+<p>Response: 你的時間精算非常準確，這個策略在實務上完全成立，甚至可以說是教育版帳戶把效益最大化的「黃金配置」。</p>
+<p>將每 4 小時 80 次的配額換算成 <strong>平均每 3 分鐘一次深度互動</strong>，加上你還需要閱讀長篇回覆、複製貼上到 Notion 排版以及思考下一個問題的時間，在正常的人機協作節奏下，<strong>確實幾乎不可能把這 80 次用完</strong>，而且 4 小時一到又會無縫自動補滿。</p>
+<h3 id="section-78"><strong>採用「常駐 Thinking 模式」時，唯一需要注意的 3 個細節</strong><a class="anchor" href="#section-78" aria-label="段落連結">#</a></h3>
+<p>既然你已經算出在純文字深度對話中 80 次綽綽有餘，直接常駐 <strong>4 Hydrogen 思考</strong> 是非常聰明的做法，但實務操作上只需避開以下三個會「意外消耗其他額度」的狀況即可：</p>
+<blockquote>
+<ol>
+<li><strong>準備「生圖」前，記得先切回一般模式：</strong> 之前提過，在 Thinking（思考）模式下直接生圖，系統可能會判定為高複雜度繪圖需求而扣掉你每日僅有 <strong>3 張</strong>的 Pro 精細生圖額度。因此，深度文字討論時放心地用 4 Hydrogen 思考；一旦討論完要出圖，先切回預設的 4 Hydrogen 跑草稿，就能保住每日 20 張標準生圖與 3 張 Pro 額度的完美分工。</li>
+<li><strong>留意「每日總上限 300 次」的天花板：</strong> 雖然每 4 小時有 80 次，但系統還設有一道<strong>每日總上限 300 次</strong>（下午 16:00 重置）。如果當天進行超過 3 個完整的 4 小時重度工作階段（例如從早聊到晚超過 12 小時），在接近 300 次時系統會自動切換回一般 4 Hydrogen 模式。</li>
+<li><strong>極簡問題會稍微多等 2～3 秒：</strong> 在 Thinking 模式下，就算你只問「這句英文怎麼翻」，它還是會先在背景跑一遍思考流程，回覆速度會比一般模式慢個 2 到 5 秒。但以每輪 3 分鐘的深度研究節奏來說，這幾秒鐘的等待換來更嚴謹的邏輯與零漏網細節，性價比非常高。</li>
+</ol>
+</blockquote>
+<h3 id="section-79"><strong>總結你的最佳工作流節奏</strong><a class="anchor" href="#section-79" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>深度研究、分析 PDF／網頁、整理筆記進 Notion：</strong> 全程直接開啟 <strong>4 Hydrogen 思考</strong>（享受平均每 3 分鐘一次的高品質深度推理，無縫銜接 4 小時重置）。</li>
+<li><strong>需要生成圖卡或圖片草稿時：</strong> 暫時切回 <strong>4 Hydrogen</strong> 測試構圖（每日 20 張額度），確認滿意後再切回 <strong>3.1 Pro / Thinking</strong> 做最後精修（每日 3 張額度）。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如何下將以上對話彙總的指令，可以得到最有效最重點的彙總</em></p>
+<p>Response: 要讓 Gemini 把這整串長對話（從版本差異、教育版額度、生圖技巧、檔案與網頁分析，到 Notion 匯出與最佳工作流）完整且不遺漏地彙總成最精華的筆記，關鍵在於「鎖定全對話範圍（防截斷與防失憶）」<strong>、</strong>「指定結構化輸出格式（方便直接貼進 Notion）」<strong>以及</strong>「要求保留具體數字與指令範本」。</p>
+<p>你可以直接複製以下這組「全對話精華彙總指令」<strong>貼在對話框送出（建議保持在 4 Hydrogen 思考 模式下執行，但</strong>先不要生圖）：</p>
+<h3 id="section-80"><strong>可直接複製使用的「最有效全對話彙總指令」</strong><a class="anchor" href="#section-80" aria-label="段落連結">#</a></h3>
+<p>「請針對我們<strong>從第一則訊息到目前為止的『整串完整對話』</strong>，進行系統化的深度彙總與知識萃取。<strong>（請用純文字 Markdown 格式回覆，先不要生成圖片）</strong></p>
+<p>為確保內容完整且具備高度實用性，請嚴格遵守以下 4 項輸出規範：</p>
+<blockquote>
+<ol>
+<li><strong>禁止省略或過度濃縮：</strong> 請涵蓋對話中討論的所有主題（包含：版本與模型差異、教育帳戶各項目具體額度與重置時間、雙軌生圖省額度工作流、PDF／網頁／YouTube 處理技巧、長度與記憶上限對策、Notion 與多格式匯出方法），嚴禁使用『以此類推』或帶過細節。</li>
+<li><strong>保留所有關鍵數據與時間規則：</strong> 所有提到的具體數字（如每日 20 張／3 張、每 4 小時 80 次／25 次、每日 300 次上限、台灣時間 16:00 重置、32K／1M tokens 換算等）都必須精準保留。</li>
+<li><strong>結構化排版（可直接貼入 Notion）：</strong> 請使用清晰的層級標題（##、###）、重點粗體、以及 <strong>Markdown 表格</strong>進行對照整理。</li>
+<li><strong>獨立整理『萬用提示詞指令庫』：</strong> 在報告最後一個章節，將對話中提到最實用的指令範本（包含：防誤扣生圖的討論指令、多圖融合與改圖指令、PDF 精準檢索指令、跨對話記憶交接指令）獨立彙整成可直接複製的區塊。」</li>
+</ol>
+</blockquote>
+<h3 id="section-81"><strong>為什麼這組指令最有效？</strong><a class="anchor" href="#section-81" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>防失憶錨定：</strong> 開頭明確指定「從第一則訊息到目前為止」，強制模型在背景掃描整條脈絡窗口，避免只總結最後幾輪關於 Notion 和 Thinking 模式的話題。</li>
+<li><strong>防簡化鎖定：</strong> 第 1 點與第 2 點明確要求「禁止省略」並「保留具體數字」，能防止模型在長對話總結時把珍貴的額度數字與重置時間抽象化。</li>
+<li><strong>直接對接你的工作流：</strong> 第 3 點與第 4 點直接幫你把排版轉成 <strong>Notion 友善的 Markdown 表格與指令庫</strong>，輸出後你只要點一下回覆下方的「複製（📋）」按鈕，貼進 Notion 就是一份排版完美的專屬操作手冊。</li>
+</ul>
+</blockquote>
+<p><em>(小提示：如果你希望這份彙總之後也能存成 .md 檔下載，只要在送出上述指令並確認文字內容滿意後，下一輪直接對我說「請把剛剛這份總結存成 .md 檔給我下載」即可。)</em></p>
+<hr />
+<p><em>User prompt: 如果彙總的內容過長，避免被分段或是簡化，可以用md的檔案下載來獲得完整的彙總內容嗎</em></p>
+<p>Response: <strong>可以，而且這是最理想、最不容易被截斷或簡化的輸出方式！</strong></p>
+<p>當你直接要求 Gemini 將長篇彙總生成為可下載的 <strong>.md 檔案</strong>（而非直接印在網頁對話框裡）時，系統在後端會調用檔案生成引擎把完整內容寫入純文字檔案中，這能有效避開網頁對話框介面為了防止畫面過長而觸發的「排版截斷」或「UI 顯示上限」，讓輸出容量更貼近模型本身最高 <strong>64K tokens</strong> 的技術天花板。</p>
+<h3 id="section-82"><strong>為什麼用 .md 檔下載更能獲得完整內容？</strong><a class="anchor" href="#section-82" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>繞過前端聊天視窗的顯示限制：</strong> 網頁版對話氣泡有時會在 3,000～5,000 字左右為了流暢度而中斷；直接生成 .md 檔案則是純資料寫入，能一次容納數萬字的完整結構化筆記。</li>
+<li><strong>一鍵無損匯入 Notion：</strong> 下載 .md 檔後，在 Notion 頁面右上角點擊 <strong>••• ➔ Import（匯入） ➔ Markdown</strong>，就能把整份長達數萬字的檔案（包含所有表格、階層標題與程式碼區塊）一字不漏地匯入成排版完美的 Notion 頁面，連手動複製貼上都省了。</li>
+<li><strong>永久留存且不佔後續對話記憶：</strong> 生成檔案下載後，你可以隨時開啟新對話並把這個 .md 檔當作「專案知識庫附件」重新上傳，完全不佔用輸入框字數。</li>
+</ol>
+</blockquote>
+<h3 id="section-83"><strong>建議搭配的「完整匯出 .md 檔指令」</strong><a class="anchor" href="#section-83" aria-label="段落連結">#</a></h3>
+<p>只要在之前的指令基礎上，加上明確的「檔案生成」<strong>與</strong>「字數深度要求」即可。你可以直接複製以下這段送出：</p>
+<p>「請針對我們<strong>從第一則訊息到目前為止的『整串完整對話』</strong>，進行無遺漏的系統化深度彙總，並<strong>直接生成一個可下載的 .md 檔案</strong>（檔名：Gemini_完整操作與額度指南.md）。</p>
+<p>為避免內容遭到簡化或壓縮，請務必遵守以下規範：</p>
+<blockquote>
+<ol>
+<li><strong>完整展開不縮水：</strong> 請將對話中討論的所有主題（包含：版本與模型差異、教育帳戶各項目具體額度與重置時間、雙軌生圖省額度工作流、PDF／網頁／YouTube 處理技巧、長度與記憶上限對策、Notion 與多格式匯出方法）<strong>逐章節詳細寫入檔案中</strong>，嚴禁使用『以此類推』、『略』或過度濃縮帶過。</li>
+<li><strong>保留所有關鍵數據與時間規則：</strong> 所有提到的具體數字（如每日 20 張／3 張、每 4 小時 80 次／25 次、每日 300 次上限、台灣時間 16:00 重置、32K／1M tokens 換算等）都必須精準收錄。</li>
+<li><strong>獨立附錄『萬用提示詞指令庫』：</strong> 在檔案最後附上一個完整章節，收錄對話中所有可直接複製的實用指令範本。」</li>
+</ol>
+</blockquote>
+<p><em>(註：如果這串對話真的累積到上百輪、連單一檔案寫入都接近上限時，你依然可以要求它「分批生成 Part1.md 與 Part2.md 兩個檔案」，就能達到 100% 零壓縮的完整保存。)</em></p>
+<hr />
+<p><em>User prompt: 如果是生圖的部份，也可以只提供圖檔的下載而不顯示在畫面中嗎，回答問題就好</em></p>
+<p>Response: <strong>沒辦法喔。</strong> 在 Gemini 的生圖運作機制中，只要調用生圖引擎（Nano Banana 系列）生成圖片，系統<strong>必定會將圖片直接渲染顯示在對話畫面中</strong>（圖片右上角才會附帶「下載原尺寸」按鈕），無法設定成「不顯示預覽圖、只提供純檔案下載連結」。</p>
+<p>此外，即使系統能隱藏畫面不顯示，只要後端執行了生圖運算，<strong>一樣會正常扣除 1 張生圖額度</strong>，並不會因為不顯示在畫面上就省下額度或加快速度。</p>
+<p><em>(補充：只有在要求生成「純程式碼繪圖」如 SVG 向量圖檔，或請它將你「已經上傳的照片」裁切/轉檔為 .zip 壓縮包時，才會以純下載檔案的形式提供，不會用到 AI 生圖模型。)</em></p>
+<hr />
+<p><em>User prompt: 如果不甚觸發了生圖，但經修改原對話不用生圖，也會算是一次生圖的次數嗎</em></p>
+<p>Response: <strong>會的，只要系統已經觸發並開始運算（或已經顯示出圖片），就算你馬上按「停止生成」或點擊「編輯（鉛筆圖示）」修改原本的訊息為不用生圖，那一次的生圖額度通常還是已經被扣掉了。</strong></p>
+<p>在 Gemini 的後端計費邏輯中，額度的扣除時間點是「模型收到指令並調用生圖引擎（Nano Banana）的那一瞬間」，而不是等到整張圖完全渲染完成或你確認保留之後才扣點。</p>
+<h3 id="section-84"><strong>具體的扣點情境對照</strong><a class="anchor" href="#section-84" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">操作情境</th>
+  <th style="text-align:left">是否會扣除 1 次生圖額度？</th>
+  <th style="text-align:left">原因說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 已經生出圖片，再點「編輯訊息」改成純文字</strong></td>
+  <td style="text-align:left"><strong>會扣 1 次</strong></td>
+  <td style="text-align:left">圖像已經運算完成，編輯原訊息重新送出只會產生新的分支回覆，不會把之前已經消耗的伺服器算力退還。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 看到顯示「正在生成圖片…」，立刻按「停止（■）」</strong></td>
+  <td style="text-align:left"><strong>極高機率會扣 1 次</strong></td>
+  <td style="text-align:left">只要畫面上已經跳出「正在生成圖片」的動畫，代表後端繪圖引擎已經啟動並佔用算力資源，中斷請求通常仍計入 1 次呼叫。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>3. 誤觸後因系統錯誤／網路斷線而完全沒生出圖</strong></td>
+  <td style="text-align:left"><strong>通常不扣（或自動退回）</strong></td>
+  <td style="text-align:left">若是因為伺服器本身發生錯誤（顯示「發生錯誤，請再試一次」且無圖片產出），系統通常不會將該次失敗計入每日額度。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-85"><strong>避免「手滑誤觸生圖」的 2 個防呆習慣</strong><a class="anchor" href="#section-85" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>檢查對話框工具列狀態：</strong> 每次輸入文字前，瞄一眼輸入框下方，確認 <strong>「🍌 建立圖像」</strong> 沒有處於藍色選取亮起狀態（在該模式下，即使只輸入名詞也會直接扣額度出圖）。</li>
+<li><strong>養成句尾防呆習慣：</strong> 在討論構思階段，只要句子裡有出現「設計、海報、圖卡、畫面」等字眼，順手在最後加上 <strong>「（先用純文字回覆，不要生圖）」</strong>，就能徹底杜絕系統誤判意圖而白白扣掉 1 張額度。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 有時再討論生圖內容時，先生成一張圖後，發現圖像不符，建議直接在原對話編輯修改，或是在下一個輸入框輸入再調整的項目，不然會不會一直記住原本錯誤的輸入</em></p>
+<p>Response: <strong>當發現生出的圖片大方向不符時，最建議直接在「原對話點擊鉛筆圖示（編輯原訊息）」修改提示詞重新生成，而不是在下一個輸入框接續輸入調整項目。</strong></p>
+<p>在 Gemini 的對話記憶機制中，「編輯原訊息（建立新分支）」<strong>與</strong>「往下接續輸入（延續對話串）」在底層的記憶運作完全不同，用錯方式確實會讓模型一直被錯誤的舊圖干擾：</p>
+<h3 id="section-86"><strong>一、 兩種修改方式的記憶差異對照</strong><a class="anchor" href="#section-86" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">操作方式</th>
+  <th style="text-align:left">模型當下「看得到」的記憶</th>
+  <th style="text-align:left">優缺點與適用時機</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>方法 A：點擊原訊息的「編輯（鉛筆圖示）」修改重送</strong></td>
+  <td style="text-align:left"><strong>完全忘記那張錯誤的圖！</strong> 系統會建立一條全新的對話分支，把原本那條「錯誤提示詞 ＋ 錯誤圖片」完全替換掉，模型只會根據你修改後的新提示詞重新思考。</td>
+  <td style="text-align:left">• <strong>優點：</strong> 100% 擺脫錯誤圖片的負面干擾，且不佔用多餘的對話脈絡空間。 • <strong>適用時機：</strong> 初稿構圖、畫風、主體動作與預期落差太大（大方向不符）時。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>方法 B：在下一個輸入框輸入「調整項目」</strong></td>
+  <td style="text-align:left"><strong>同時記住「原本錯誤的提示詞 ＋ 那張不符的圖片 ＋ 你的新指令」</strong>。 模型會把上一張圖當作「參考底圖（Image-to-Image）」來進行局部修改。</td>
+  <td style="text-align:left">• <strong>優點：</strong> 能鎖定原本成功的細節，只改局部小地方。 • <strong>缺點：</strong> 如果原圖本身結構已經錯了，往下接續修改容易「越修越歪」，甚至受到原本錯誤描述的殘留影響。 • <strong>適用時機：</strong> 整體構圖 80% 都很滿意，只想改背景顏色、換一個小配件或修正文字時。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-87"><strong>二、 避開「錯誤記憶殘留」的 3 個黃金法則</strong><a class="anchor" href="#section-87" aria-label="段落連結">#</a></h3>
+<ul>
+<li>只要發現第一張圖的主體姿勢、鏡頭角度或整體風格「完全不對」，<strong>立刻按原訊息右上角的「編輯（鉛筆圖示）」</strong>，把原本容易引起誤會的字眼刪掉或改寫後重新送出，這能直接切斷錯誤記憶。</li>
+<li>只有在「這張圖構圖很棒，但把左邊的杯子拿掉會更好」的情況下，才往下接續輸入指令。</li>
+</ul>
+<blockquote>
+<ol start="2">
+<li><strong>注意額度消耗相同：</strong> 無論你是按「編輯重送」還是「往下接續調整」，只要重新產出一張新圖，<strong>都會各扣 1 張生圖額度</strong>。既然同樣都要花 1 張額度，直接用「編輯原訊息」把提示詞改精準，成功率遠高於在爛底圖上硬修。</li>
+<li><strong>接續修改時避免使用「負面詞彙（不要…）」：</strong> 如果你選擇往下接續微調，盡量不要說「不要有背景裡的雜物」（模型看到「雜物」兩個字反而容易強化該元素的記憶），改用正向替換指令：「<em>保留主角不變，將背景替換為乾淨的純色牆面</em>」。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>「大改用編輯（鉛筆），小修用接續（新輸入框）」：</strong></li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 在寫 Gemini 生圖提示詞時，有哪些常見的字眼或寫法容易讓 AI 誤解而畫錯？請幫我整理避坑指南。</em></p>
+<p>Response: 這是一份非常實用的 Gemini 生圖提示詞「避坑指南」。Gemini 的生圖模型（Imagen 系列）雖然理解能力很強，但如果提示詞邏輯不清、充滿矛盾或使用模糊詞彙，很容易產生預期外的結果。</p>
+<p>以下整理出最常見的 6 大誤區與修正方法：</p>
+<h3 id="section-88"><strong>誤區一：賦予物件「不可能的物理屬性」或「邏輯矛盾」</strong><a class="anchor" href="#section-88" aria-label="段落連結">#</a></h3>
+<p>這是最常導致圖像崩壞或無法生成的原因。AI 雖然能畫出超現實場景，但必須遵守基本的視覺邏輯。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤寫法例子</th>
+  <th style="text-align:left">修正方向與說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「一個<strong>方形的圓</strong>」</td>
+  <td style="text-align:left"><strong>避免幾何矛盾：</strong> 不要要求兩個互斥的形狀同時存在。請明確選擇一個： 「一個紅色的正方形」或「一個藍色的圓形」。</td>
+</tr>
+<tr>
+  <td style="text-align:left">「一隻<strong>透明的黑貓</strong>」</td>
+  <td style="text-align:left"><strong>避免物理矛盾：</strong> 透明意味著光線穿透，黑色意味著吸光。這在物理上是衝突的。請改為強調「質感」： 「一隻在夜色中隱約可見的黑貓，帶有閃亮的毛髮」或「一隻玻璃雕刻而成的黑貓」。</td>
+</tr>
+<tr>
+  <td style="text-align:left">「在<strong>陽光下</strong>，背景是<strong>滿天星空</strong>」</td>
+  <td style="text-align:left"><strong>避免時間與光線矛盾：</strong> 陽光代表白天，星空代表黑夜。請設定明確的情境： 「黃昏時分，天空還有一抹亮光，幾顆星星剛升起」或「一個陽光明媚的午後，場景位於一座天文館內」。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-89"><strong>誤區二：過度使用「否定句」或「雙重否定」</strong><a class="anchor" href="#section-89" aria-label="段落連結">#</a></h3>
+<p>AI 對於「不要（Do not）」、「沒有（Without）」、「除了…以外都沒有」這類指令的理解力遠不如肯定句。模型傾向於先生成出那個被否定的東西，然後試圖將其隱藏，往往效果不佳。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤寫法例子</th>
+  <th style="text-align:left">修正方向（改用肯定句描述你「想要」什麼）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「一個<strong>沒有人的</strong>公園長椅」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> AI 可能會畫出模糊的人影或雕像來湊數。 ✔️ <strong>正確指令：</strong> 「一張空蕩蕩的公園長椅，周圍只有樹木和落葉，環境非常寧靜。」</td>
+</tr>
+<tr>
+  <td style="text-align:left">「<strong>不要有</strong>任何現代建築」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 很難界定什麼是絕對的「現代」，容易混入當代元素。 ✔️ <strong>正確指令：</strong> 「場景設定在 19 世紀初的歐洲街道，背景全是古老的石造建築與馬車。」</td>
+</tr>
+<tr>
+  <td style="text-align:left">「一個<strong>除了藍色以外什麼顏色都沒有</strong>的房間」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 容易畫出雜亂的顏色。 ✔️ <strong>正確指令：</strong> 「一個單色調的房間，牆壁、地板、家具全部統一採用不同的深淺藍色，營造沈浸感。」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-90"><strong>誤區三：將「風格形容詞」與「風格名稱」混用</strong><a class="anchor" href="#section-90" aria-label="段落連結">#</a></h3>
+<p>這會導致畫面風格雜亂，或者 AI 為了同時滿足多種衝突風格而產生怪異的疊加效果。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤寫法例子</th>
+  <th style="text-align:left">修正方向（專注於 1~2 個核心風格）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「一張<strong>寫實、水彩、普普藝術風格</strong>的貓」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 三種風格互相衝突，結果會四不像。 ✔️ <strong>正確指令：</strong> 「一張寫實風格的貓照片，但背景帶有普普藝術風格的鮮豔幾何圖案點綴。」（分清主次）</td>
+</tr>
+<tr>
+  <td style="text-align:left">「<strong>極簡、華麗、巴洛克式</strong>的客廳」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 極簡和華麗是完全相反的概念。 ✔️ <strong>正確指令：</strong> 「一個現代極簡風格的客廳，但在細節處（如抱枕、燈飾）點綴著華麗的金色巴洛克圖騰。」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-91"><strong>誤區四：對「數量」與「空間關係」描述不清</strong><a class="anchor" href="#section-91" aria-label="段落連結">#</a></h3>
+<p>AI 對精確數字（例如 3、7、12）的掌握度較弱，很容易多畫或少畫。同時，對複雜的相對位置（例如「在…的右邊的左邊的後面」）也容易搞混。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤寫法例子</th>
+  <th style="text-align:left">修正方向（簡化數量與方位）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「桌上有<strong>七顆蘋果</strong>」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 很難精準數到七顆，可能只有三顆或十顆。 ✔️ <strong>正確指令：</strong> 「桌上有一小籃蘋果，約莫七顆左右」或「桌上散落著幾顆紅蘋果，數量不多。」（如果不強求精準）</td>
+</tr>
+<tr>
+  <td style="text-align:left">「一隻貓在狗的上面，但狗在貓的後面，兩者中間隔著一本書」</td>
+  <td style="text-align:left"><strong>錯誤示範：</strong> 邏輯過於複雜，AI 會畫錯主體相對位置。 ✔️ <strong>正確指令：</strong> 「這是一張貓與狗的合照，貓在前，狗在後，狗的前爪搭在一本書上，而貓正好奇地看著鏡頭。」（拆解描述）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-92"><strong>誤區五：指令結構鬆散，缺乏層次</strong><a class="anchor" href="#section-92" aria-label="段落連結">#</a></h3>
+<p>想到什麼就寫什麼，沒有區分「主體」、「背景」、「風格」和「光線」，導致模型抓不到重點。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤寫法例子</th>
+  <th style="text-align:left">修正方向（採用結構化提示詞）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「一個女孩在森林裡，旁邊有小鹿，陽光很美，油畫風格，梵谷筆觸，色彩鮮豔」</td>
+  <td style="text-align:left"><strong>雖然這不是絕對錯誤，但結構不清，模型發揮不穩定。</strong> ✔️ <strong>建議結構：</strong>「[核心主體：一位穿著藍色連衣裙的年輕女孩在森林小徑漫步，帶著微笑，身旁有一隻溫馴的小鹿]。[環境：陽光透過樹冠灑落，形成斑駁光影]。[風格與媒介：採用經典的梵谷油畫風格，筆觸厚重明顯，色彩鮮豔飽和]。」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-93"><strong>誤區六：過度依賴生圖模型「理解不了」的特殊詞彙</strong><a class="anchor" href="#section-93" aria-label="段落連結">#</a></h3>
+<p>雖然 Gemini 的理解力在進步，但某些過於抽象、依賴特定軟體外掛或極度專業的術語，對生圖模型來說是噪音。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">錯誤詞彙例子（儘量避免）</th>
+  <th style="text-align:left">建議替換的描述方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">「使用 <strong>D5 渲染器</strong>風格」</td>
+  <td style="text-align:left">「極致寫實、電影級光影效果、光線追蹤質感」</td>
+</tr>
+<tr>
+  <td style="text-align:left">「<strong>V-Ray</strong> 材質球」</td>
+  <td style="text-align:left">「玻璃般的質感、光滑的金屬反射、逼真的表面紋理」</td>
+</tr>
+<tr>
+  <td style="text-align:left">「<strong>LoRA 模型</strong>『日本動漫臉』」</td>
+  <td style="text-align:left">「精緻的日系動漫風格、大眼睛、可愛的臉部特徵」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-94"><strong>總結：Gemini 生圖最佳實踐指南</strong><a class="anchor" href="#section-94" aria-label="段落連結">#</a></h3>
+<p>想要一次生成滿意的圖片，建議養成以下習慣：</p>
+<blockquote>
+<ol>
+<li><strong>使用肯定句：</strong> 明確告訴 AI 你要什麼，而不是不要什麼。</li>
+<li><strong>結構化指令：</strong> 依序描述：主體、動作、環境、光線、視角、風格。</li>
+<li><strong>避免疊加矛盾：</strong> 檢查提示詞中是否同時出現了互斥的概念（如「透明與黑色」、「白天與星空」）。</li>
+<li><strong>小步修正：</strong> 如果第一張圖不理想，優先使用「編輯訊息（鉛筆）」功能，修改提示詞中的「關鍵錯誤點」重新生成，而非追加指令。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 回到桌曆的設計，建議要提供哪些資訊來進行設計，以及建議的生成桌曆設計的提示詞</em></p>
+<p>Response: 設計一款高品質、結構完整且文字不易出錯的桌曆（特別是結合特定工藝風格如「摺紙」），在向 Gemini 下達指令時，建議拆解為「5 大核心設計資訊」<strong>，並套用</strong>「結構化提示詞範本」。</p>
+<h3 id="section-95"><strong>一、 設計桌曆前建議提供的 5 大核心資訊</strong><a class="anchor" href="#section-95" aria-label="段落連結">#</a></h3>
+<p>為了避免 AI 隨意發揮導致版面雜亂或日期錯亂，在構思時先確定以下 5 個維度：</p>
+<ul>
+<li><strong>結構：</strong> 線圈立式桌曆（Spiral-bound desk calendar）、三角木座插卡式、還是立體彈出式（Pop-up）？</li>
+<li><strong>比例：</strong> 橫式（如 16:9 或 4:3，適合左圖右曆）或直式（如 3:4 或 9:16，適合上圖下曆）。</li>
+</ul>
+<ul>
+<li>明確指定 <strong>年份與月份</strong>（例如：2027 年 1 月 或 JANUARY 2027）。</li>
+<li><strong>關鍵避坑：</strong> AI 算圖對 30/31 個小格子裡的精確星期幾對應有時會排錯。如果只是要「設計提案看視覺效果」，可指定 1 到 31 的整齊月曆網格；若要「實際印刷用」，建議只讓 AI 生成<strong>左側主視覺插畫＋大標題月份</strong>，右側留白自己用排版軟體填日期，或明確指定該月 1 號是星期幾。</li>
+</ul>
+<ul>
+<li>決定每個月份的代表意象（例如：1 月新年梅花與燈籠、5 月初夏櫻花或康乃馨、10 月秋楓與銀杏、12 月聖誕麋鹿與松樹）。</li>
+</ul>
+<ul>
+<li>明確描述紙張與字體的觸感（例如：米白色美術紙、帶有微纖維紋理的日本和紙、3D 立體多層次手工摺紙浮雕、月曆數字呈現帶有立體摺痕陰影的摺紙字體）。</li>
+</ul>
+<ul>
+<li>決定桌曆擺放的環境（例如：放在溫潤的淺色橡木書桌上、旁邊有一杯手沖咖啡與黃銅鋼筆、窗邊灑落清晨柔和的自然側光、微淺景深攝影質感）。</li>
+</ul>
+<blockquote>
+<ol start="5">
+<li><strong>展示場景與光影氛圍：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li><strong>核心材質與工藝表現：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>主題元素與視覺焦點（季節／節慶／IP 角色）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>時間資訊與日期準確性設定：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>桌曆的物理形式與版型比例：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-96"><strong>二、 可直接複製的桌曆設計提示詞範本</strong><a class="anchor" href="#section-96" aria-label="段落連結">#</a></h3>
+<p>你可以根據需要「橫式」或「直式」排版，將括號 [ ] 內的文字替換成你的主題即可：</p>
+<h4 id="section-97"><strong>範本 A：橫式「左圖右曆」經典商業設計（推薦，最不容易文字擠壓）</strong><a class="anchor" href="#section-97" aria-label="段落連結">#</a></h4>
+<p>「請生成一張商業產品攝影風格的實體桌曆設計圖，畫面比例為 16:9 橫幅。</p>
+<blockquote>
+<ul>
+<li><strong>【桌曆結構與版面】</strong> 一本精緻的銀色雙線圈立式桌曆，採用『左圖右曆』橫式排版，紙張為帶有細膩纖維質感的米白色美術紙，穩固立在淺色原木書桌上。</li>
+<li><strong>【左側主視覺】</strong> 桌曆左半邊是一幅精緻的 3D 立體手工摺紙浮雕藝術，主題為 [冬季的紅色梅花枝幹與兩隻小喜鵲]，紙張層次豐富，帶有真實的摺痕與微光影。</li>
+<li><strong>【右側月曆與摺紙字體】</strong> 桌曆右半邊上方有立體摺紙藝術字體拼成的 [JANUARY 2027] 標題；下方是整齊的 7 欄月曆網格（從 SUN 到 SAT），裡面的日期數字 1 到 31 全部採用統一的<strong>立體摺紙字體設計</strong>，每個數字都看得出紙張彎折的立體陰影，週日數字為暖紅色，其餘為深灰色。</li>
+<li><strong>【環境與光影】</strong> 桌曆旁擺放著一只手工陶瓷咖啡杯與一枝鋼筆，背景是柔和虛化的溫馨書房書架。清晨溫暖的自然陽光從左側窗戶斜射進來，突顯出摺紙的立體層次與紙張紋理，單眼相機微距拍攝質感。」</li>
+</ul>
+</blockquote>
+<h4 id="section-98"><strong>範本 B：直式「上圖下曆」文創插畫設計（適合社群展示或手機桌布比例）</strong><a class="anchor" href="#section-98" aria-label="段落連結">#</a></h4>
+<p>「請生成一張實體文創桌曆設計照片，畫面比例為 3:4 直幅。</p>
+<blockquote>
+<ul>
+<li><strong>【桌曆結構與版面】</strong> 一款搭配胡桃木底座的直立式插卡桌曆，採用『上圖下曆』排版，紙張為溫暖的象牙白和紙。</li>
+<li><strong>【上半部主視覺】</strong> 卡片上半部呈現精美的立體層疊紙雕與摺紙藝術，描繪 [台灣高山森林與雲海日出，前景有摺紙幾何風格的台灣黑熊]，色彩溫潤和諧。</li>
+<li><strong>【下半部月曆與摺紙字體】</strong> 卡片下半部印有醒目的摺紙風格月份標題 [2027 / 05 MAY]，下方排列整齊清晰的月曆數字網格，所有日期數字皆為具有立體摺痕質感的摺紙字體，排版乾淨留白充足。</li>
+<li><strong>【環境與光影】</strong> 桌曆擺放在簡約北歐風白色桌面上，旁邊有一小盆多肉植物，柔和的室內漫射光線照亮紙雕的每一層陰影，畫質清晰細膩。」</li>
+</ul>
+</blockquote>
+<h3 id="section-99"><strong>三、 實務執行與省額度建議</strong><a class="anchor" href="#section-99" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>先用「純文字討論」規劃 12 個月企劃（0 生圖額度）：</strong> 如果你要做整整 12 個月的系列桌曆，建議先用 4 Hydrogen 輸入：「<em>請幫我規劃一套 12 個月的台灣四季摺紙桌曆主題清單，列出每個月的代表摺紙元素與主色調，<strong>先用文字表格回覆，不要生圖</strong>。</em>」</li>
+<li><strong>系列一致性技巧：</strong> 生成第 1 個月（例如 1 月）的滿意定稿後，後續製作 2 月、3 月時，直接把 1 月的定稿圖上傳作為參考圖，並下達指令：「<em>完整保留這張圖的桌曆外觀結構、書桌場景、光影角度與右側摺紙數字字體風格，僅將左側的摺紙圖案替換為『2 月春節燈籠與水仙花』，月份標題改為 FEBRUARY 2027</em>」，就能確保整套 12 個月的桌曆看起來像同一個系列的完整作品。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如何描述桌曆的尺寸</em></p>
+<p>Response: 在向 Gemini（或任何 AI 生圖工具）描述桌曆尺寸時，<strong>千萬不要直接寫「21cm x 15cm」或「A5 大小」</strong>，因為 AI 對實體公分數沒有比例尺概念，很容易畫出形狀奇怪的長條或正方形。</p>
+<p>要讓 AI 精準畫出你想要的桌曆大小與體積感，必須結合「畫面長寬比（Aspect Ratio）」<strong>、</strong>「幾何形狀比例（橫長／直立／正方）」<strong>以及</strong>「桌面參照物比例（Visual Scale）」這三個維度來描述：</p>
+<h3 id="section-100"><strong>一、 描述桌曆尺寸的 3 大核心維度</strong><a class="anchor" href="#section-100" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">描述維度</th>
+  <th style="text-align:left">AI 聽得懂的精準寫法</th>
+  <th style="text-align:left">避免使用的無效寫法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 桌曆本身的幾何比例</strong> <em>(決定本體形狀)</em></td>
+  <td style="text-align:left">• <strong>標準橫式：</strong>「寬高比約為 4:3 的標準橫式桌曆」 • <strong>寬幅全景橫式：</strong>「寬高比約為 2:1 的扁長型橫幅桌曆」 • <strong>直立式：</strong>「寬高比約為 3:4 的直立式桌曆」 • <strong>正方型：</strong>「1:1 正方形迷你桌曆」</td>
+  <td style="text-align:left">❌「寬 21 公分、高 14.8 公分」 ❌「A5 尺寸」 ❌「B6 規格」</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 透過「周邊物件」建立體積感</strong> <em>(決定大本還是迷你)</em></td>
+  <td style="text-align:left">• <strong>迷你掌上型：</strong>「小巧的迷你桌曆，高度與旁邊的<strong>馬克杯或智慧型手機</strong>差不多」 • <strong>標準辦公桌尺寸：</strong>「標準中型桌曆，寬度約為旁邊<strong>標準鍵盤的一半</strong>，高度略高於一枝<strong>直立的鋼筆</strong>」 • <strong>大型展示型：</strong>「份量感十足的大型桌曆，佔據了書桌中央的主要視覺區域」</td>
+  <td style="text-align:left">❌「這是一本小型桌曆」 ❌「尺寸適中」 <em>(缺乏參照物，AI 無法判斷大小)</em></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>3. 整體畫面的裁切比例</strong> <em>(決定圖片輸出框)</em></td>
+  <td style="text-align:left">• 橫式桌曆建議搭配：<strong>「整體畫面比例為 16:9（或 4:3）」</strong> • 直式桌曆建議搭配：<strong>「整體畫面比例為 3:4（或 9:16）」</strong></td>
+  <td style="text-align:left">❌ 只寫「大圖」或「滿版」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-101"><strong>二、 4 種常見桌曆尺寸的直接套用句型</strong><a class="anchor" href="#section-101" aria-label="段落連結">#</a></h3>
+<p>你可以根據實際想要的桌曆規格，直接複製對應的句子放進提示詞中：</p>
+<blockquote>
+<ol>
+<li><strong>常見「A5 標準橫式桌曆」（最適合左圖右曆）：</strong>「一本<strong>寬高比約 4:3 的標準中型橫式線圈桌曆</strong>，擺放在木質書桌上，其高度與旁邊的<strong>陶瓷馬克杯相當</strong>，整體畫面比例為 16:9。」</li>
+<li><strong>精緻「正方形文創小桌曆」（適合桌上空間有限者）：</strong>「一款<strong>小巧的 1:1 正方形木座插卡式迷你桌曆</strong>，體積精緻，大小與旁邊的<strong>咖啡杯墊或智慧型手機相近</strong>，採用『上圖下曆』緊湊排版。」</li>
+<li><strong>寬幅「扁長型景觀桌曆」（適合電腦螢幕下方擺放）：</strong>「一本<strong>寬高比約 2:1 的扁長型橫幅桌曆</strong>，高度較低，剛好能平穩放置在<strong>電腦螢幕正下方</strong>，寬度約為鍵盤的三分之二。」</li>
+<li><strong>經典「直立式桌曆」（適合人像或直幅插畫）：</strong>「一本<strong>寬高比約 3:4 的直立式三角桌曆</strong>，修長挺拔，高度約為旁邊<strong>手沖咖啡壺的 1.5 倍</strong>，整體畫面比例為 3:4。」</li>
+</ol>
+</blockquote>
+<h3 id="section-102"><strong>三、 實用小提醒</strong><a class="anchor" href="#section-102" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>如果要拿去實際印刷：</strong> AI 生成的圖片主要是用來做「視覺提案」或「生成左側插畫素材」。如果你有嚴格的印刷尺寸（例如印刷廠規定 210mm x 148mm 含 3mm 出血），建議在提示詞中選擇最接近的長寬比（4:3 或 3:2）生成高解析度主視覺插畫，最後再放進 Canva、Illustrator 或 InDesign 中套用精準的印刷刀模與日期格線。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 如何將設計好的圖像，轉換成可以匯入到Canva編輯的專案檔</em></p>
+<p>Response: Gemini 生成的圖像（.jpg 或 .png）本質上是一張<strong>平面點陣圖（扁平化單一圖層）</strong>，無法直接匯出成包含獨立文字層與向量圖層的 Canva 原生專案檔；但只要透過「高畫質匯入 ＋ Canva 內建 AI 圖層拆解工具（Magic Grab / Grab Text）」，就能在幾分鐘內把它變成「文字可修改、插畫可移動」的 Canva 可編輯專案。</p>
+<p>以下為將 Gemini 生成的桌曆設計圖轉為 Canva 可編輯專案的完整實作流程：</p>
+<h3 id="section-103"><strong>一、 事前準備：從 Gemini 產出「最適合進 Canva 編輯」的底圖</strong><a class="anchor" href="#section-103" aria-label="段落連結">#</a></h3>
+<p>如果你還沒生成最終版，或打算重新生成供印刷／排版使用的底圖，在 Gemini 下指令時多注意這兩點，進 Canva 後會省事很多：</p>
+<ul>
+<li>之前生成的 3D 斜角度書桌照片適合用來做「商品展示預覽（Mockup）」，但無法直接印刷或排版。</li>
+<li>要進 Canva 編輯，請在提示詞指定：<strong>「2D 平面俯視設計稿（Flat 2D graphic layout），無透視變形，滿版填滿畫面」</strong>，這樣匯入 Canva 畫布時四個邊角才會完全對齊。</li>
+</ul>
+<ul>
+<li>在 Gemini 圖片右上角點擊 <strong>「下載原尺寸（Download full size）」</strong>（若有 Pro 額度建議先用 3.1 Pro 渲染至 4K），確保印刷或放大時不會有鋸齒。</li>
+</ul>
+<blockquote>
+<ol start="2">
+<li><strong>務必下載原尺寸圖檔：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>生成「純平面版面（Flat Lay / 2D 設計稿）」而非「斜拍實體照」：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-104"><strong>二、 匯入 Canva 並「拆解圖層」的 4 個步驟</strong><a class="anchor" href="#section-104" aria-label="段落連結">#</a></h3>
+<ul>
+<li>登入 Canva，點擊右上角 <strong>「建立設計」➔「自訂尺寸」</strong>，輸入你的實際印刷規格（例如標準 A5 橫式桌曆輸入 210 x 148 mm）。</li>
+</ul>
+<ul>
+<li>將下載好的 Gemini 圖片直接拖曳進 Canva 畫布中，拉大至貼齊畫布邊緣。</li>
+</ul>
+<ul>
+<li>點擊畫布上的圖片 ➔ 點選上方工具列的 <strong>「編輯（Edit）」</strong>，使用以下功能將平面圖拆開（<em>註：部分進階魔法工具需 Canva Pro 或教育版帳號</em>）：<ul>
+<li><strong>擷取文字（Grab Text）：</strong> Canva 會自動辨識圖片上的 MAY 2025 與月曆數字，將它們從背景分離出來變成<strong>可以直接雙擊修改字型、顏色與修正錯誤日期的獨立文字框</strong>（同時自動補齊文字背後的紙張底色）。</li>
+<li><strong>魔法抓取（Magic Grab）：</strong> 圈選左側的「摺紙花朵主視覺」，Canva 會自動把主視覺從紙張背景摳出來變成獨立物件，讓你可以自由縮放、移動位置，甚至複製貼到其他月份的頁面。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>如果你想確保 12 個月的日期 100% 精準無誤，建議直接用 Canva 內建的 <strong>「橡皮擦（Magic Eraser）」</strong> 把圖片右側原本的數字擦掉（只保留乾淨的美術紙底紋與左側摺紙插畫），再從 Canva 左側邊欄「元素」搜尋 <strong>Calendar Grid（月曆格線）</strong> 疊加上去，套用立體陰影字體效果即可。</li>
+</ul>
+<blockquote>
+<ol start="4">
+<li><strong>套用 Canva 原生月曆表格（最精準排版）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>利用 Canva 內建 AI 拆解成「可編輯圖層」（核心關鍵）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>上傳並置入 Gemini 圖片：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>建立對應尺寸的 Canva 畫布：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-105"><strong>三、 進階技巧：想讓摺紙插畫變成「可自由改色的向量圖（SVG）」？</strong><a class="anchor" href="#section-105" aria-label="段落連結">#</a></h3>
+<p>如果你在 Gemini 生成的是偏扁平插畫風格的摺紙圖案，希望進 Canva 後能像向量素材一樣隨意更改每個色塊的顏色：</p>
+<blockquote>
+<ol>
+<li>先用免費線上去背工具（或 Canva 背景移除）去掉背景。</li>
+<li>透過免費向量轉換工具（如 <strong>Vectorizer.ai</strong> 或 <strong>Adobe Express 免費轉 SVG 工具</strong>）將 .png 轉存為 <strong>.svg 向量檔</strong>。</li>
+<li>將 .svg 檔直接拖曳進 Canva，上方工具列就會自動出現「色票編輯器」，讓你像編輯 Canva 內建插畫一樣逐一替換每個摺紙區塊的顏色。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 在與AI對話中，一種知識的討論，議題的討論，一種是生圖的討論，設計的討論，在對話用詞上有什麼建議及注意事項</em></p>
+<p>Response: 與 AI（如 Gemini）對話時，<strong>「知識／議題討論」與「生圖／設計討論」調用的是完全不同的底層運算邏輯：前者依賴「邏輯推理與知識邊界控制」</strong>，後者依賴「空間視覺翻譯與意圖觸發防呆」。</p>
+<p>用錯溝通語氣，不僅容易得到籠統的「AI 腔」廢話，在多模態介面中更常發生「只是想討論設計卻誤扣生圖額度」或「畫出四不像」的狀況。以下為你整理這兩大類對話的核心用詞建議與避坑注意事項：</p>
+<h3 id="section-106"><strong>一、 兩大對話類型的核心用詞差異總覽</strong><a class="anchor" href="#section-106" aria-label="段落連結">#</a></h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">比較維度</th>
+  <th style="text-align:left">類型 A：知識與議題討論 <em>(分析、研究、辯證、資料整理)</em></th>
+  <th style="text-align:left">類型 B：生圖與設計討論 <em>(視覺企劃、生圖提示詞、排版構圖)</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>AI 的核心大腦</strong></td>
+  <td style="text-align:left">邏輯推理引擎（如 4 Hydrogen 思考 / Pro）</td>
+  <td style="text-align:left">視覺空間與圖像渲染引擎（Nano Banana 系列）</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>黃金開頭動詞</strong></td>
+  <td style="text-align:left">「<strong>分析、比較、拆解、驗證、評估、列舉、反駁</strong>」</td>
+  <td style="text-align:left">• <strong>純討論階段：</strong>「<strong>構思、提案、規劃、撰寫提示詞</strong>」 • <strong>確定出圖階段：</strong>「<strong>生成一張、繪製、渲染</strong>」</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>描述重點方向</strong></td>
+  <td style="text-align:left">聚焦於「因果邏輯、正反觀點、數據來源、應用場景」</td>
+  <td style="text-align:left">聚焦於「看得到的實體畫面、光影材質、構圖比例、色彩」</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>最怕出現的用詞</strong></td>
+  <td style="text-align:left">過度開放的問句（如「你怎麼看？」）、未設邊界的「幫我介紹…」</td>
+  <td style="text-align:left">抽象形容詞（如「有質感、大氣、高端」）、否定句（如「不要…、沒有…」）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-107"><strong>二、 「知識與議題討論」的 4 個用詞建議與注意事項</strong><a class="anchor" href="#section-107" aria-label="段落連結">#</a></h3>
+<p>進行深度議題探討、學術研究或資料分析時，AI 預設傾向給出「面面俱到但平庸」的教科書式回答。要逼出深度見解，用詞上需注意：</p>
+<ul>
+<li>❌ <em>避免：</em>「請幫我分析遠距工作的優缺點。」（會得到網路上隨處可見的制式條列）</li>
+<li>✔️ <em>建議：</em>「請以『企業組織發展顧問』的角度，針對台灣科技業實施混合辦公的現況，從『管理成本、人才留任、資安風險』三個維度進行深度利弊評估，並提出具體數據或案例支撐。」</li>
+</ul>
+<ul>
+<li>AI 預設會順著你的話講（討好傾向）。在討論政策、商業決策或爭議議題時，務必加入制衡用詞：</li>
+<li>✔️ <em>建議：</em>「以上是我目前的企劃構想。<strong>請扮演嚴格的審查委員，專門挑出這套方案在執行上最可能失敗的 3 個盲點與反對意見</strong>，不要只講好聽話。」</li>
+</ul>
+<ul>
+<li>討論專業法規、醫療、學術論文或特定文件時，加上嚴格限制詞：</li>
+<li>✔️ <em>建議：</em>「<strong>請嚴格根據我提供的文件（或截至目前的公開事實）回答；若涉及不確定或缺乏實證的部分，請直接標註『目前無確切資料』，嚴禁自行推測補完。</strong>」</li>
+</ul>
+<ul>
+<li>遇到多議題比較時，直接指定輸出載體（例如：「請用 <strong>Markdown 表格</strong>列出兩者在核心假設、適用條件與局限性的差異」），資訊密度會比純段落高出許多。</li>
+</ul>
+<blockquote>
+<ol start="4">
+<li><strong>要求「結構化對照」而非「長篇大論」：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>明確劃定「事實邊界」防止一本正經胡說八道（幻覺）：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>善用「反面辯證（魔鬼代言人）」打破同溫層：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>用「設定角色＋任務邊界」取代「隨口發問」：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-108"><strong>三、 「生圖與設計討論」的 4 個用詞建議與注意事項</strong><a class="anchor" href="#section-108" aria-label="段落連結">#</a></h3>
+<p>生圖引擎無法理解人類的「抽象審美」，它只認得「鏡頭拍得到的具體物理特徵」。在進行視覺設計討論與下達生圖指令時，請掌握以下用詞法則：</p>
+<ul>
+<li>在多模態對話框中，只要出現「畫、生成、出圖」等動詞，系統就可能直接啟動生圖引擎並扣除當日額度。</li>
+<li>✔️ <em>討論階段必備防呆句尾：</em>「我們先討論視覺風格與構圖規劃，<strong>請用純文字條列提案，先不要生成圖片</strong>。」</li>
+</ul>
+<ul>
+<li>設計師常說的「高級感、文青風、溫馨、科技感」，對 AI 來說都是模糊雜訊，必須拆解成<strong>材質、光線、色調與鏡頭</strong>：</li>
+<li>❌ <em>避免：</em>「幫我設計一張很有高級感、文青風的桌曆。」</li>
+<li>✔️ <em>建議：</em>「採用<strong>米白色美術紙材質、莫蘭迪低飽和大地色系</strong>，搭配<strong>清晨窗邊灑落的柔和自然側光</strong>與<strong>微淺景深微距攝影</strong>。」</li>
+</ul>
+<ul>
+<li>生圖模型看到「不要有雜物」、「沒有人的街道」時，往往會先畫出「雜物」和「人」再試圖抹除，反而容易穿幫。</li>
+<li>❌ <em>避免：</em>「背景不要有複雜的東西，也不要有文字。」</li>
+<li>✔️ <em>建議：</em>「背景是<strong>乾淨純粹的淺灰色霧面牆面，保留大面積純淨留白</strong>。」</li>
+</ul>
+<ul>
+<li>不要用「20 公分大」這種實體單位，改用「畫面比例（如 16:9、3:4）」<strong>加上</strong>「相對位置（左半邊、前景、正上方）」<strong>與</strong>「周邊參照物（高度與旁邊的陶瓷馬克杯相當）」，才能精準控制設計構圖。</li>
+</ul>
+<blockquote>
+<ol start="4">
+<li><strong>指定「空間方位」與「版面比例尺」：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><strong>全盤改用「正向肯定句」，戒掉「否定詞（不要…）」：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><strong>將「抽象感覺詞」翻譯為「具體物理視覺詞」：</strong></li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>嚴格區分「討論設計」與「執行出圖」的觸發詞（防誤扣額度）：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-109"><strong>四、 跨類型通用心法：善用「對話分段」切換思維</strong><a class="anchor" href="#section-109" aria-label="段落連結">#</a></h3>
+<p>當一個專案同時包含「議題研究」與「視覺產出」（例如先研究市場趨勢，再做成資訊圖卡）時，最佳的對話策略是「前段用理性討論詞彙定調 ➔ 後段用視覺描述詞彙執行」： 先在文字討論階段把所有邏輯、數據與文字稿敲定，最後再下達「<em>請根據以上確認的文字重點，轉換為具體的視覺畫面生成一張圖卡</em>」，就能同時兼顧內容深度與視覺精準度。</p>
+<hr />
+<p><em>User prompt: 如果要AI針對文章內容，輸入的個人想法，參考圖像，進行建議看法或是評論，要如何處理</em></p>
+<p>Response: 將「文章內容（客觀資料）」、「個人想法（主觀觀點）」與「參考圖像（視覺線索）」三者同時交給 Gemini 進行跨模態交叉評論，是發揮多模態推理最強威力的方式。這類操作<strong>完全不會消耗生圖額度</strong>，建議直接切換至 <strong>4 Hydrogen 思考</strong>（每 4 小時 80 次額度）執行，邏輯拆解與觀點洞察會最深刻。</p>
+<p>為了避免 AI 把三種資訊混為一談、或只挑順耳的話稱讚你，請依照以下「資訊標籤隔離法」<strong>與</strong>「批判性評論框架」來處理：</p>
+<h3 id="section-110"><strong>一、 操作步驟與資訊輸入結構</strong><a class="anchor" href="#section-110" aria-label="段落連結">#</a></h3>
+<ul>
+<li><strong>參考圖像：</strong> 點擊左下角 <strong>「＋」</strong> 上傳圖片（可多張），或在對話框直接按 Ctrl + V 貼上截圖。</li>
+<li><strong>文章內容與個人想法：</strong> 為了讓 AI 精準區分「哪段是原文、哪段是你的看法」，務必使用 <strong>Markdown 分隔符號（--- 或 【】 標籤）</strong> 將三者清楚隔開，不要混在同一段文字裡。</li>
+</ul>
+<blockquote>
+<ol start="2">
+<li><strong>選用模型：</strong> 切換至 <strong>4 Hydrogen 思考</strong>（或 3.1 Pro），因為同時比對圖、文、觀點需要多步驟邏輯推演。</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol>
+<li><strong>上傳或貼上三類素材（在同一個對話框內完成）：</strong></li>
+</ol>
+</blockquote>
+<h3 id="section-111"><strong>二、 可直接複製的「圖＋文＋個人觀點」交叉評論指令範本</strong><a class="anchor" href="#section-111" aria-label="段落連結">#</a></h3>
+<p>你可以直接複製以下結構，將括號 [ ] 內的內容替換成你的素材（句尾已內建防誤觸生圖鎖定）：</p>
+<p>「我提供了三項資訊：<strong>(1) 參考文章內容</strong>、<strong>(2) 我對這件事的個人想法</strong>，以及 <strong>(3) 我上傳的參考圖像</strong>。請你扮演一位『資深領域顧問兼批判性審查者』<strong>，針對這三者的關聯性進行深度分析與評論。</strong>（請用純文字 Markdown 格式回覆，不要生成圖片）</p>
+<p>請依序從以下 4 個維度提出具體看法：</p>
+<blockquote>
+<ol>
+<li><strong>圖文與觀點的契合度評估：</strong> 我上傳的『參考圖像』所傳達的視覺訊息（或數據細節），是否能有效支撐『文章內容』與我的『個人想法』？兩者之間有沒有互相矛盾或脫節的地方？</li>
+<li><strong>個人想法的亮點與盲點（反面辯證）：</strong> 請客觀評價我的個人想法哪裡切中要害；同時，請扮演魔鬼代言人，指出我可能忽略的邏輯漏洞、潛在風險或過度主觀的假設。</li>
+<li><strong>視覺與內容的優化建議：</strong> 如果我想將這套觀點結合這張圖像對外發表（或做成提案），在論述切入點與視覺呈現上，你建議做哪 3 項具體調整？</li>
+<li><strong>延伸思考問題：</strong> 提出 2 個我目前還沒考慮到、但值得進一步深究的關鍵問題。</li>
+</ol>
+</blockquote>
+<p><strong>【一、參考文章內容】</strong> [在此貼上文章內文，或註明：請參閱我同時上傳的 PDF 檔案]</p>
+<p><strong>【二、我的個人想法】</strong> [在此輸入你的初步看法、靈感或企劃方向]</p>
+<p><strong>【三、參考圖像說明】</strong> [簡述上傳圖片的用途，例如：圖一是我打算搭配的封面設計草稿 / 圖二是文章提到的數據圖表]」</p>
+<h3 id="section-112"><strong>三、 讓評論更有深度的 3 個用詞細節</strong><a class="anchor" href="#section-112" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>明確賦予「評審角色」與「批判權限」：</strong> AI 預設具有「討好用戶」的傾向，如果你只問「你覺得我的想法跟這張圖搭嗎？」，它通常會回答「非常棒，很有創意！」。加上「指出盲點與矛盾」、「不要只講好聽話」等用詞，才能逼出真正有建設性的修改建議。</li>
+<li><strong>交代「圖像在任務中的角色」：</strong> 同樣一張圖片，它是「文章裡原有的證據圖表」，還是「你自己找來想當作設計靈感的參考圖」，AI 的評論標準完全不同。在【三、參考圖像說明】用一句話點明它的用途，能讓評論精準度大幅提升。</li>
+<li><strong>透過追問進行多輪辯論：</strong> 第一輪拿到評論後，你可以針對它指出的某個盲點繼續反駁或補充背景（例如：「<em>關於你提到的第二點風險，其實我的目標受眾是大學生，在這個前提下你的看法會如何調整？</em>」），透過 2～3 輪的深度交鋒，能把原本零散的想法打磨得非常完整。</li>
+</ul>
+</blockquote>
+<p>如果你想試試看，可以直接把文章片段、你的想法和圖片丟上來，我立刻幫你進行一次完整的交叉分析與評論！</p>
+<hr />
+<p><em>User prompt: 在輸入文字時，可輸入markdown格式的文字內容嗎</em></p>
+<p>Response: <strong>完全可以，而且非常推薦！</strong> Gemini 的底層語言模型原生就受過大量 Markdown 語法的訓練，它不僅能百分之百看懂你輸入的 Markdown 符號，甚至<strong>用 Markdown 格式輸入複雜指令時，AI 的理解準確率與執行精準度會比純文字高出許多</strong>。</p>
+<p>以下為你在輸入框使用 Markdown 的實際效果、最推薦的幾個語法，以及操作時的小細節：</p>
+<h3 id="section-113"><strong>一、 最能提升 AI 理解力的 5 種輸入語法</strong><a class="anchor" href="#section-113" aria-label="段落連結">#</a></h3>
+<p>當你的問題包含多個條件、長篇文章或特定規則時，善用以下語法幫資訊「劃分邊界」，能有效防止 AI 漏看重點或把不同資料混為一談：</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Markdown 語法</th>
+  <th style="text-align:left">輸入寫法範例</th>
+  <th style="text-align:left">對 AI 的實際幫助（為什麼有效？）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>1. 階層標題 (#, ##)</strong></td>
+  <td style="text-align:left">## 背景資料 ## 任務要求</td>
+  <td style="text-align:left">明確區分「參考資料」與「執行指令」，避免 AI 把文章裡的句子誤當成你要它執行的命令。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2. 粗體強調 (**...**)</strong></td>
+  <td style="text-align:left">請**嚴格根據**以下文件回答，**不要自行推測**。</td>
+  <td style="text-align:left">強化關鍵限制詞的權重，讓模型在注意力機制中優先鎖定你的核心規範。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>3. 程式碼區塊 (```)</strong></td>
+  <td style="text-align:left">``` (貼上長篇文章或程式碼) ```</td>
+  <td style="text-align:left"><strong>最強隔離盒！</strong> 用三個反引號把要翻譯、摘要或清洗的原文包起來，即使原文裡包含「請幫我畫一張圖」等字眼，AI 也會知道那只是「被處理的資料」，不會誤觸生圖或誤執行。</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>4. 項目符號 (-, 1.)</strong></td>
+  <td style="text-align:left">1. 摘要重點 2. 整理成表格</td>
+  <td style="text-align:left">強迫模型按照你指定的邏輯順序逐項作答，大幅降低遺漏其中一項的機率。</td>
+</tr>
+<tr>
+  <td style="text-align:left">5. Markdown 表格 (`</td>
+  <td style="text-align:left">...</td>
+  <td style="text-align:left">`)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-114"><strong>二、 操作介面上的 2 個小細節</strong><a class="anchor" href="#section-114" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>輸入框內不會即時渲染預覽（這很正常）：</strong> 你在 Gemini 的對話輸入框打字或貼上 Markdown 語法時，畫面只會顯示純文字與原始符號（例如會直接看到 **粗體** 和 ### 標題），不會像 Notion 那样即時變成大字體；但只要按「送出」，你剛剛發出的訊息氣泡就會自動渲染成排版整齊的粗體、標題與表格。</li>
+<li><strong>換行快捷鍵注意：</strong> 在電腦網頁版輸入 Markdown 列表或分段時，直接按 <strong>Enter</strong> 會送出訊息；要換行請按 <strong>Shift + Enter</strong>（手機版則直接按鍵盤上的換行鍵即可）。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 請繼續</em></p>
+<p>Response: 延續上一則關於在 Gemini 輸入框使用 Markdown 語法的進階技巧，這能進一步幫你精準控制輸出格式、處理多層次檔案，並把整套對話技巧落實到日常工作流中。</p>
+<h3 id="section-115"><strong>一、 進階 Markdown 輸入技巧（精準控制 AI 回覆長相）</strong><a class="anchor" href="#section-115" aria-label="段落連結">#</a></h3>
+<p>除了基礎的標題與粗體外，當你有特定的筆記排版需求（例如要直接貼進 Notion 資料庫或轉成簡報大綱）時，可以直接在輸入框給 AI <strong>「Markdown 填空模板」</strong>：</p>
+<blockquote>
+<ol>
+<li><strong>用「空白結構模板」鎖定輸出格式（Few-shot 模板法）：</strong> 如果你希望 AI 每次整理文章都長得一模一樣，直接在指令末尾貼上一個帶有占位符的 Markdown 骨架：<br />
+請將以下文章整理成完全符合下方結構的筆記：</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>### 📌 核心結論<br />
+- [一句話總結]</p>
+</blockquote>
+<blockquote>
+<p>### 📊 關鍵數據對照<br />
+| 項目 | 2025 數據 | 2026 數據 | 變化趨勢 |<br />
+| :--- | :--- | :--- | :--- |<br />
+| [填寫] | [填寫] | [填寫] | [填寫] |</p>
+</blockquote>
+<blockquote>
+<p>### 💡 可執行行動建議<br />
+1. **[動詞開頭]**：[具體說明]</p>
+</blockquote>
+<blockquote>
+<p>模型看到這個骨架後，會嚴格把內容填進對應的欄位裡，完全不會自己亂改標題層級或漏畫表格。<br />
+2. <strong>用「引用區塊（&gt;）」標示重點追問或修正意見：</strong> 當你要針對 AI 上一輪長篇回覆中的「某一段」進行局部修改時，把那段原文用 &gt; 符號包起來貼在最上方，下方再寫你的修改意見：<br />
+&gt; 這裡貼上 AI 上一輪回覆中你覺得寫得不夠精準的那段文字</p>
+</blockquote>
+<blockquote>
+<p>請針對上方引用區塊的內容進行改寫，語氣再更精簡專業一些，其餘章節保持不變。</p>
+</blockquote>
+<blockquote>
+<p>這能讓 AI 瞬間鎖定修改範圍，避免它把整篇幾千字的報告全部重寫一遍而浪費時間或觸及字數上限。<br />
+3. <strong>用「任務清單（- [ ]）」指派多步驟連續任務：</strong> 當一次要它處理好幾件事（例如：先翻譯、再抓重點、最後寫生圖指令），用待辦清單格式條列比寫成一長段文字更容易被完整執行：<br />
+請依序完成以下三項任務：<br />
+- [ ] 1. 將下方英文報導翻譯為流暢的繁體中文<br />
+- [ ] 2. 提煉出 3 個最重要的市場趨勢<br />
+- [ ] 3. 根據這 3 個趨勢，寫一段適合用來生成資訊圖卡的生圖提示詞（先不要生圖）</p>
+</blockquote>
+<h3 id="section-116"><strong>二、 輸入 Markdown 時的 2 個防錯注意事項</strong><a class="anchor" href="#section-116" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ul>
+<li><strong>貼上包含「巢狀反引號」的內容時要加長外框：</strong> 如果你要貼進去的文章或筆記本身裡面已經包含了三個反引號（```），最外層用來隔離資料的程式碼區塊就必須改用四個反引號（````）包起來，否則系統會在文章中間就提前關閉隔離盒，導致後半段文字外溢被當成指令執行。</li>
+<li><strong>從 Notion 複製文字貼進 Gemini 時：</strong> 在 Notion 中直接選取多個區塊（Blocks）按 Ctrl + C，貼進 Gemini 輸入框時會自動轉換為乾淨的標準 Markdown 語法（包含標題、項目符號、Callout 引用與表格），非常適合用來把 Notion 裡的專案草稿丟給 Gemini 進行審查或擴寫。</li>
+</ul>
+</blockquote>
+<hr />
+<p><em>User prompt: 請幫我規劃一套結合 Gemini 與 Notion 的日常知識管理與圖文創作標準作業流程（SOP），包含如何分類筆記與管理提示詞庫。</em></p>
+<p>Response: 這是一套結合 <strong>Gemini（資料萃取、深度推理與生圖引擎）</strong> 與 <strong>Notion（結構化知識庫、提示詞資料庫與專案看板）</strong> 的日常標準作業流程（SOP）。這套系統的核心設計原則是：<strong>「不浪費任何一滴 Gemini 額度，並讓所有高價值的對話與提示詞都在 Notion 中產生複利效應。」</strong></p>
+<h3 id="section-117"><strong>一、 Notion 系統架構設計（三大核心資料庫）</strong><a class="anchor" href="#section-117" aria-label="段落連結">#</a></h3>
+<p>在開始日常運作前，建議在 Notion 建立三個互相串聯的資料庫（Database）：</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">資料庫名稱</th>
+  <th style="text-align:left">核心用途</th>
+  <th style="text-align:left">建議設定的關鍵屬性（Properties）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">1. 知識萃取庫 <em>(Knowledge Hub)</em></td>
+  <td style="text-align:left">存放從網頁、PDF、YouTube 影片透過 Gemini 消化後的精華筆記。</td>
+  <td style="text-align:left">• <strong>主題分類</strong>（Select）：AI 應用、設計美學、專業研究、生活靈感 • <strong>來源類型</strong>（Select）：網頁文章、PDF 論文、YouTube 影片、深度對話 • <strong>原始連結／檔案</strong>（URL / Files） • <strong>處理狀態</strong>（Status）：待消化 ➔ AI 已摘要 ➔ 已內化</td>
+</tr>
+<tr>
+  <td style="text-align:left">2. 萬用提示詞庫 <em>(Prompt Library)</em></td>
+  <td style="text-align:left">收藏測試成功的高效指令，避免每次重新摸索而浪費額度。</td>
+  <td style="text-align:left">• <strong>指令用途</strong>（Select）：資料彙總、生圖草稿、Pro 精修、多圖融合、批判評論 • <strong>推薦模型</strong>（Select）：4 Hydrogen、4 Hydrogen 思考、3.1 Pro • <strong>是否消耗生圖額度</strong>（Checkbox）：勾選標示，作為防呆提醒 • <strong>效果評分</strong>（Select）：⭐⭐⭐（一次到位）</td>
+</tr>
+<tr>
+  <td style="text-align:left">3. 圖文創作看板 <em>(Content Studio)</em></td>
+  <td style="text-align:left">管理從文字企劃到 AI 生圖、Canva 完稿的專案進度。</td>
+  <td style="text-align:left">• <strong>專案階段</strong>（Status）：文字企劃（0 生圖額度）➔ 草稿抽卡（標準額度）➔ Pro 精修 ➔ Canva 排版完稿 • <strong>關聯知識</strong>（Relation）：連結至「知識萃取庫」 • <strong>使用提示詞</strong>（Relation）：連結至「萬用提示詞庫」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-118"><strong>二、 日常知識管理與圖文創作 4 階段 SOP</strong><a class="anchor" href="#section-118" aria-label="段落連結">#</a></h3>
+<h4 id="section-119"><strong>階段一：資訊輸入與去噪萃取（零生圖額度消耗）</strong><a class="anchor" href="#section-119" aria-label="段落連結">#</a></h4>
+<ol>
+<li><strong>網頁／PDF 淨化：</strong> 遇到多廣告網頁先開瀏覽器「閱讀模式」另存為 PDF（連同本文圖表一起保留），再拖曳進 Gemini。</li>
+<li><strong>套用 Markdown 填空模板：</strong> 從 Notion 提示詞庫複製「結構化摘要模板」（包含 ### 核心結論、Markdown 表格 與 行動建議），並在指令加上「<strong>先用純文字回覆，不要生圖</strong>」。</li>
+<li><strong>一鍵入庫：</strong> 點擊 Gemini 回覆下方的 <strong>「複製（📋）」</strong>，直接 Ctrl + V 貼進 Notion「知識萃取庫」的新頁面中，標題與表格會自動完美還原。</li>
+</ol>
+<blockquote>
+<ul>
+<li><strong>使用模型：</strong> 一般資料用 <strong>4 Hydrogen</strong>；長篇論文或複雜數據用 <strong>4 Hydrogen 思考</strong>（每 4 小時 80 次，平均每 3 分鐘一次，可常駐使用）。</li>
+<li><strong>執行動作：</strong></li>
+</ul>
+</blockquote>
+<h4 id="section-120"><strong>階段二：跨模態思辨與圖文企劃（文字定調階段）</strong><a class="anchor" href="#section-120" aria-label="段落連結">#</a></h4>
+<ol>
+<li><strong>資料與個人觀點交叉評論：</strong> 在新對話中貼上 Notion 裡的筆記重點、你的個人看法與參考圖，使用 --- 分隔標籤，請 AI 扮演「批判性審查者」挑出盲點。</li>
+<li><strong>撰寫結構化生圖提示詞：</strong> 討論定案後，請 AI 根據確認的文字重點，改寫成「肯定句＋具體物理視覺描述＋比例尺（如 16:9）」的生圖提示詞草稿。</li>
+<li><strong>將驗證成功的提示詞存入 Notion：</strong> 把這段精煉後的提示詞存進 Notion「萬用提示詞庫」中（建議放在 Notion 的 <strong>Code 區塊</strong>內，方便日後一鍵點擊右上角 Copy）。</li>
+</ol>
+<blockquote>
+<ul>
+<li><strong>使用模型：</strong> <strong>4 Hydrogen 思考</strong>。</li>
+<li><strong>執行動作：</strong></li>
+</ul>
+</blockquote>
+<h4 id="section-121"><strong>階段三：雙軌制 AI 視覺生成（精準控管每日 20 張 / 3 張額度）</strong><a class="anchor" href="#section-121" aria-label="段落連結">#</a></h4>
+<ol>
+<li><strong>開啟全新純淨對話：</strong> 避免舊對話記憶干擾，開新視窗貼上剛剛準備好的生圖提示詞。</li>
+<li><strong>草稿抽卡（切回 4 Hydrogen）：</strong> 先用預設標準模型生成初稿（消耗每日 20 張標準額度）。若大方向不符，直接按原訊息的 <strong>「編輯（鉛筆圖示）」</strong> 修改關鍵字重送，切斷錯誤記憶；若只差小細節，則在下一輪打包所有修改項目一次微調。</li>
+<li><strong>最終定稿精修（切換 3.1 Pro）：</strong> 確認構圖 100% 滿意後，在同對話框將模型切換至 <strong>3.1 Pro</strong>，輸入「<em>保留上一張圖的完整構圖與細節，以最高精細度重繪並優化文字清晰度</em>」（精準消耗每日 3 張 Pro 額度中的 1 張），完成後點擊右上角「下載原尺寸」。</li>
+</ol>
+<blockquote>
+<ul>
+<li><strong>執行動作：</strong></li>
+</ul>
+</blockquote>
+<h4 id="section-122"><strong>階段四：後製完稿與長對話歸檔</strong><a class="anchor" href="#section-122" aria-label="段落連結">#</a></h4>
+<ol>
+<li><strong>匯入 Canva 排版：</strong> 將下載的高畫質原圖匯入 Canva 對應印刷或社群尺寸畫布，利用 <strong>「擷取文字（Grab Text）」</strong> 或 <strong>「魔法抓取（Magic Grab）」</strong> 拆解圖層，微調字型或套用精準月曆格線後輸出成品。</li>
+<li><strong>長對話總結歸檔：</strong> 若該專案對話超過 20 輪，在結束前使用「全對話彙總指令」產出總結，或直接請 Gemini 生成可下載的 <strong>.md 檔案</strong>，透過 Notion 右上角 Import ➔ Markdown 完整歸檔至專案頁面中。</li>
+</ol>
+<blockquote>
+<ul>
+<li><strong>執行動作：</strong></li>
+</ul>
+</blockquote>
+<h3 id="section-123"><strong>三、 Notion 提示詞庫（Prompt Library）高效管理 3 訣竅</strong><a class="anchor" href="#section-123" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>善用「變數占位符 [ ]」設計模板：</strong> 不要只存死板的單次指令，把變動的部分改寫成括號標記（例如：主題為 [季節花卉]，月份標題為 [JANUARY 2027]），每次使用時只需替換括號內的文字，就能穩定複製高品質結果。</li>
+<li><strong>建立「失敗避坑紀錄（Negative Log）」欄位：</strong> 在每個提示詞頁面下方留一塊筆記區，記錄「曾經用過哪些詞彙導致 AI 畫錯（例如用了否定句『不要雜物』結果反而畫出雜物）」以及「最後如何改寫才成功」，這會成為你最珍貴的專屬調教經驗庫。</li>
+<li><strong>利用 Notion 模板按鈕（Template Button）一鍵生成筆記骨架：</strong> 在「知識萃取庫」中設定一個預設頁面模板，內建好 【一、原始資料來源】、【二、AI 結構化摘要】、【三、我的批判思考與延伸】、【四、衍生生圖提示詞】 四個區塊，每次開啟新筆記就能直接把 Gemini 產出的 Markdown 內容對號入座。</li>
+</ol>
+</blockquote>
+<hr />
+<p><em>User prompt: 在回覆的內容中在表格下方出現「⋯」，代表什麼，點下去出現「匯出到試算表」</em></p>
+<p>Response: 表格下方出現的 <strong>⋯（或「匯出到試算表」按鈕）</strong>，是 Gemini 針對「結構化表格資料」內建的<strong>一鍵轉存 Google 試算表（Google Sheets）快捷功能</strong>。</p>
+<p>當你在 Gemini 的回覆中看到任何 Markdown 表格時，系統會自動在表格右下角或下方提供這個選項，讓你不需要手動框選複製貼上，就能直接把表格轉換成可編輯的雲端試算表檔案。</p>
+<h3 id="section-124"><strong>一、 點擊「匯出到試算表」後的實際運作流程</strong><a class="anchor" href="#section-124" aria-label="段落連結">#</a></h3>
+<blockquote>
+<ol>
+<li><strong>自動建立雲端試算表：</strong> 點擊後，畫面左下角會顯示「正在建立試算表…」，幾秒後出現「開啟試算表（Open Sheets）」的連結按鈕。</li>
+<li><strong>完整保留欄列結構：</strong> Gemini 會自動在你的 Google 雲端硬碟（Google Drive）根目錄建立一份全新的 Google Sheets 檔案（檔名通常會自動帶入該則對話的標題），並將表格的每一欄、每一列、數字與文字精準填入儲存格中。</li>
+<li><strong>不消耗任何額度：</strong> 這只是介面內建的資料匯出工具，<strong>完全不會消耗你的文字推理次數或生圖額度</strong>。</li>
+</ol>
+</blockquote>
+<h3 id="section-125"><strong>二、 結合你剛建立的「Notion 知識庫」的 3 種進階用法</strong><a class="anchor" href="#section-125" aria-label="段落連結">#</a></h3>
+<p>這個功能非常適合用來銜接數據整理或 Notion 資料庫建置：</p>
+<blockquote>
+<ul>
+<li><strong>用法 1：快速建立 Notion 資料庫（Database）結構</strong> 如果你請 Gemini 幫你規劃了一張包含數十筆資料的「提示詞清單」或「12 個月桌曆企劃表」，可以先點擊「匯出到試算表」，在 Google Sheets 裡檢查微調後下載成 <strong>.csv 檔案</strong>，再直接匯入 Notion 變成可以篩選、排序的原生資料庫（Database），比貼成純 Markdown 靜態表格更好管理。</li>
+<li><strong>用法 2：PDF 財報與數據圖表二次計算</strong> 上傳 PDF 並要求 Gemini 提取數據成表格後，直接一鍵匯出到 Google Sheets，就能立刻在試算表裡套用 SUM、AVERAGE 公式或生成統計折線圖。</li>
+<li><strong>用法 3：教育帳戶雲端同步注意</strong> 使用學校教育帳戶點擊「匯出到試算表」時，檔案會直接存進你該教育帳號所屬的 Google 雲端硬碟中（若學校管理員有開放 Drive 連動權限即可正常使用；若點擊後顯示無法建立，則代表學校後台限制了外部應用程式寫入雲端硬碟的權限）。</li>
+</ul>
+</blockquote>
+<hr />
+</article></main></div><footer class="footer">自然風格閱讀頁面 · Responsive Web Design · 單一 HTML 檔案</footer><script>
+const input=document.getElementById('search'),status=document.getElementById('status'),article=document.getElementById('article');let hits=[],index=-1;function unmark(){article.querySelectorAll('mark[data-search]').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));article.normalize()}function search(){unmark();hits=[];index=-1;const q=input.value.trim();if(!q){status.textContent='';return}const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode(n){return n.parentElement.closest('script,style,code,pre')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);for(const n of nodes){const s=n.textContent;let pos=0,at=s.toLocaleLowerCase().indexOf(q.toLocaleLowerCase());if(at<0)continue;const frag=document.createDocumentFragment();while(at>=0){frag.append(document.createTextNode(s.slice(pos,at)));const m=document.createElement('mark');m.dataset.search='1';m.textContent=s.slice(at,at+q.length);frag.append(m);hits.push(m);pos=at+q.length;at=s.toLocaleLowerCase().indexOf(q.toLocaleLowerCase(),pos)}frag.append(document.createTextNode(s.slice(pos)));n.replaceWith(frag)}status.textContent=hits.length+' 處符合';next()}function next(){if(!hits.length)return;index=(index+1)%hits.length;hits[index].scrollIntoView({behavior:'smooth',block:'center'});status.textContent=(index+1)+' / '+hits.length+' 處符合'}input.addEventListener('keydown',e=>{if(e.key==='Enter'){if(input.dataset.q===input.value)next();else{input.dataset.q=input.value;search()}}});document.getElementById('clear').onclick=()=>{input.value='';input.dataset.q='';unmark();hits=[];status.textContent=''};document.querySelectorAll('.navitem').forEach(a=>a.addEventListener('click',()=>document.querySelector('.mobile-nav')?.removeAttribute('open')));
+</script></body></html>
